@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public Level[] levels = new Level[3];
+    public Levels levels;
+    // levels.list
+    public List<Room> roomList;
 
     // Start is called before the first frame update
     void Start()
@@ -20,14 +22,17 @@ public class LevelManager : MonoBehaviour
 
     void GenerateRun()
     {
-        foreach (Level level in levels)
+        foreach (Level level in levels.list)
         {
-            level.FillRooms();
+            List<Room> levelRooms = level.GenerateRooms();
+            roomList.AddRange(levelRooms);
 
             // FOR TESTING
-            int num = System.Array.IndexOf(levels, level) + 1;
-            Debug.Log("Level " + num + ": " + level.name);
-            level.PrintInfo();
+            Debug.Log(level.name);
+            foreach (Room room in levelRooms)
+            {
+                room.PrintInfo();
+            }
         }
     }
 }

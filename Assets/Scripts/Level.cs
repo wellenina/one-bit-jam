@@ -2,54 +2,43 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewLevel", menuName = "Scriptables/Level")]
-public class Level : ScriptableObject
+[System.Serializable] public class Level
 {
-    public new string name;
+    public string name;
     public float bonusMultiplier = 1.0f;
 
-    public Room room1;
-    public List<Room> slot1rooms = new List<Room>();
+    public List<Room> slot1Rooms = new List<Room>();
+    public List<Room> slot2Rooms = new List<Room>();
+    public List<Room> slot3Rooms = new List<Room>();
 
-    public Room room2;
-    public List<Room> slot2rooms = new List<Room>();
-
-    public Room room3;
-    public List<Room> slot3rooms = new List<Room>();
-
-    public void FillRooms()
+    public List<Room> GenerateRooms()
     {
-        room1 = GetRandomRoom(slot1rooms);
+        List<Room> rooms = new List<Room>();
 
-        room2 = GetRandomRoom(slot2rooms);
+        Room room1 = GetRandomRoom(slot1Rooms);
+        rooms.Add(room1);
+
+        Room room2 = GetRandomRoom(slot2Rooms);
         while (room1 == room2)
         {
-            room2 = GetRandomRoom(slot2rooms);
+            room2 = GetRandomRoom(slot2Rooms);
         }
+        rooms.Add(room2);
 
-        room3 = GetRandomRoom(slot3rooms);
+        Room room3 = GetRandomRoom(slot3Rooms);
         while (room3 == room1 || room3 == room2)
         {
-            room3 = GetRandomRoom(slot3rooms);
+            room3 = GetRandomRoom(slot3Rooms);
         }
+        rooms.Add(room3);
+
+        return rooms;
     }
+    
     public Room GetRandomRoom(List<Room> list)
     {
         int index = UnityEngine.Random.Range(0, list.Count);
         return list[index];
-    }
-
-    // FOR TESTING
-    public void PrintInfo()
-    {
-        Debug.Log("Room 1: ");
-        room1.PrintInfo();
-
-        Debug.Log("Room 2: ");
-        room2.PrintInfo();
-
-        Debug.Log("Room 3: ");
-        room3.PrintInfo();
     }
 
 }

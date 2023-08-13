@@ -152,10 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3672ac615c6b4b5d86edb38eceac92b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levels:
-  - {fileID: 11400000, guid: a5f24462ffa7b4186a74264efe3d9681, type: 2}
-  - {fileID: 11400000, guid: 3ca350b659d6741029c75b87f2fb4ef6, type: 2}
-  - {fileID: 11400000, guid: 25a46ff4af6b14280b25fdc93e4464fc, type: 2}
+  levels: {fileID: 11400000, guid: 7062ab130f57944cfb42623250b20f34, type: 2}
+  roomList: []
 --- !u!4 &17527207
 Transform:
   m_ObjectHideFlags: 0
