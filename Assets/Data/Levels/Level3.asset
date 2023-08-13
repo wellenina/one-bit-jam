@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7afffcb6cd9e34e779476c5ca1c51d7b, type: 3}
+  m_Name: Level3
+  m_EditorClassIdentifier: 
+  name: The Epic Castle
+  bonusMultiplier: 1
+  room1: {fileID: 11400000, guid: e1269018413db4e89bb86b3ed75562a5, type: 2}
+  slot1rooms:
+  - {fileID: 11400000, guid: e1269018413db4e89bb86b3ed75562a5, type: 2}
+  - {fileID: 11400000, guid: f8076d39640a04e73a4598d487006c34, type: 2}
+  room2: {fileID: 11400000, guid: 133afeaa92e8d400eadd1dcf11a26156, type: 2}
+  slot2rooms:
+  - {fileID: 11400000, guid: 133afeaa92e8d400eadd1dcf11a26156, type: 2}
+  - {fileID: 11400000, guid: e1269018413db4e89bb86b3ed75562a5, type: 2}
+  room3: {fileID: 11400000, guid: c987e7f7b3836411d9383d097fb5688b, type: 2}
+  slot3rooms:
+  - {fileID: 11400000, guid: c987e7f7b3836411d9383d097fb5688b, type: 2}
+  - {fileID: 11400000, guid: f8076d39640a04e73a4598d487006c34, type: 2}
