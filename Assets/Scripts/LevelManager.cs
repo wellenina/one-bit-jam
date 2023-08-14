@@ -4,35 +4,33 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public Levels levels;
-    // levels.list
-    public List<Room> roomList;
+    [SerializeField] private Levels levels;
+    [SerializeField] private List<Room> roomList;
+    private int currentRoomIndex = 0;
+    public Room currentRoom;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        GenerateRun();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    void GenerateRun()
+    public void GenerateRun()
     {
         foreach (Level level in levels.list)
         {
             List<Room> levelRooms = level.GenerateRooms();
             roomList.AddRange(levelRooms);
 
-            // FOR TESTING
+            /* // FOR TESTING
             Debug.Log(level.name);
             foreach (Room room in levelRooms)
             {
                 room.PrintInfo();
-            }
+            } */
         }
+
+        currentRoom = roomList[currentRoomIndex];
     }
+
+    public void GetNextRoom()
+    {
+        currentRoom = roomList[currentRoomIndex++];
+    }
+
 }
