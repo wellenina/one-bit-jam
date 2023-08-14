@@ -5,20 +5,18 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public Levels levels;
-    // levels.list
     public List<Room> roomList;
+    public int currentRoomIndex = 0;
+    private MainUIManager UImanager;
 
-    // Start is called before the first frame update
+
     void Start()
     {
+        UImanager = GetComponent<MainUIManager>();
         GenerateRun();
+        UImanager.SetNewRoom(roomList[currentRoomIndex]);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     void GenerateRun()
     {
@@ -35,4 +33,20 @@ public class LevelManager : MonoBehaviour
             }
         }
     }
+
+    public void EnterNextRoom()
+    {
+        currentRoomIndex++;
+        Room room = roomList[currentRoomIndex];
+
+        Debug.Log("ENTERING ROOM NUMBER " + currentRoomIndex);
+
+        // UI:
+        UImanager.SetNewRoom(room);
+
+        // in scena:
+        // background = room.background;
+
+    }
+
 }
