@@ -17,4 +17,4 @@ MonoBehaviour:
   isLight: 1
   isSpecial: 0
   diceNum: 1
-  background: {fileID: 0}
+  background: {fileID: 7435492053415536126, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}
