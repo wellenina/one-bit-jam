@@ -14,7 +14,7 @@ public class MainUIManager : MonoBehaviour
     [SerializeField] private Color lightColor = Color.white;
     [SerializeField] private Color shadowColor = Color.black;
 
-    // room.diceNum ??
+    // room.diceNum
 
 
     // HERO
@@ -24,6 +24,7 @@ public class MainUIManager : MonoBehaviour
     [SerializeField] private Button torchBtn;
     private bool isTorchDisabled;
 
+
     [SerializeField] private TextMeshProUGUI coinsText;
 
 
@@ -31,8 +32,16 @@ public class MainUIManager : MonoBehaviour
     {
         roomNameText.text = room.name;
         roomFlavorText.text = room.flavorText;
-        LightRoom(room.isLight);
         // NUMERO DI DADI: room.diceNum
+        LightRoom(room.isLight); // TIPO DI DADI
+        // room.isSpecial --> terzo tipo di dadi
+    }
+
+    public void ShowHeroStats(Hero hero)
+    {
+        hpText.text = hero.hp.ToString();
+        sanityText.text = hero.sanity.ToString();
+        torchText.text = hero.torch.ToString();
     }
 
     public void LightRoom(bool light)
@@ -44,24 +53,14 @@ public class MainUIManager : MonoBehaviour
         torchBtn.interactable = !light;
     }
 
+    public void UpdateTorchText(int newValue)
+    {
+        torchText.text = newValue.ToString();
+    }
+
     public void DisableTorchBtn()
     {
         isTorchDisabled = true;
-    }
-
-
-    public void UseTorch() // ON CLICK - TORCH BUTTON
-    // metodo da spostare nello script che gestisce il personaggio
-    // che chiamerà questo script della UI per accendere la luce e disabilitare il bottone
-    {
-        LightRoom(true); // --> UImanager.LightRoom(true);
-        Debug.Log("USING TORCH!");
-        
-        /* hero.torch--;
-        if (hero.torch == 0)
-        {
-            UImanager.DisableTorchBtn();
-        } */
     }
 
 }

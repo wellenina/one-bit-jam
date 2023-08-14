@@ -4,49 +4,33 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public Levels levels;
-    public List<Room> roomList;
-    public int currentRoomIndex = 0;
-    private MainUIManager UImanager;
+    [SerializeField] private Levels levels;
+    [SerializeField] private List<Room> roomList;
+    private int currentRoomIndex = 0;
+    public Room currentRoom;
 
 
-    void Start()
-    {
-        UImanager = GetComponent<MainUIManager>();
-        GenerateRun();
-        UImanager.SetNewRoom(roomList[currentRoomIndex]);
-    }
-
-
-    void GenerateRun()
+    public void GenerateRun()
     {
         foreach (Level level in levels.list)
         {
             List<Room> levelRooms = level.GenerateRooms();
             roomList.AddRange(levelRooms);
 
-            // FOR TESTING
+            /* // FOR TESTING
             Debug.Log(level.name);
             foreach (Room room in levelRooms)
             {
                 room.PrintInfo();
-            }
+            } */
         }
+
+        currentRoom = roomList[currentRoomIndex];
     }
 
-    public void EnterNextRoom()
+    public void GetNextRoom()
     {
-        currentRoomIndex++;
-        Room room = roomList[currentRoomIndex];
-
-        Debug.Log("ENTERING ROOM NUMBER " + currentRoomIndex);
-
-        // UI:
-        UImanager.SetNewRoom(room);
-
-        // in scena:
-        // background = room.background;
-
+        currentRoom = roomList[currentRoomIndex++];
     }
 
 }
