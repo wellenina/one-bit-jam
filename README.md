@@ -1,2 +1,2 @@
 # one-bit-jam
-Projet for 1-BIT JAM 2023 on itch.io
+Project for [1-BIT JAM](https://itch.io/jam/1-bit-jam-wow) 2023 on itch.io
