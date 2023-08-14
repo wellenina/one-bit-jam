@@ -16,19 +16,12 @@ public class LevelManager : MonoBehaviour
         {
             List<Room> levelRooms = level.GenerateRooms();
             roomList.AddRange(levelRooms);
-
-            /* // FOR TESTING
-            Debug.Log(level.name);
-            foreach (Room room in levelRooms)
-            {
-                room.PrintInfo();
-            } */
         }
 
         currentRoom = roomList[currentRoomIndex];
     }
 
-    public void GetNextRoom()
+    public void GoToNextRoom()
     {
         currentRoom = roomList[currentRoomIndex++];
     }

@@ -14,27 +14,23 @@ public class MainUIManager : MonoBehaviour
     [SerializeField] private Color lightColor = Color.white;
     [SerializeField] private Color shadowColor = Color.black;
 
-    // room.diceNum
-
 
     // HERO
-    [SerializeField] private TextMeshProUGUI hpText;
-    [SerializeField] private TextMeshProUGUI sanityText;
+    public TextMeshProUGUI hpText;
+    public TextMeshProUGUI sanityText;
     [SerializeField] private TextMeshProUGUI torchText;
     [SerializeField] private Button torchBtn;
     private bool isTorchDisabled;
 
 
-    [SerializeField] private TextMeshProUGUI coinsText;
+    public TextMeshProUGUI coinsText;
 
 
     public void SetNewRoom(Room room)
     {
         roomNameText.text = room.name;
         roomFlavorText.text = room.flavorText;
-        // NUMERO DI DADI: room.diceNum
-        LightRoom(room.isLight); // TIPO DI DADI
-        // room.isSpecial --> terzo tipo di dadi
+        LightRoom(room.isLight);
     }
 
     public void ShowHeroStats(Hero hero)
@@ -47,7 +43,6 @@ public class MainUIManager : MonoBehaviour
     public void LightRoom(bool light)
     {
         roomStateIcon.color = light ? lightColor : shadowColor;
-        // TIPO DI DADI: light --> light, !light --> shadow;
 
         if (isTorchDisabled) { return; }
         torchBtn.interactable = !light;
@@ -56,11 +51,10 @@ public class MainUIManager : MonoBehaviour
     public void UpdateTorchText(int newValue)
     {
         torchText.text = newValue.ToString();
-    }
-
-    public void DisableTorchBtn()
-    {
-        isTorchDisabled = true;
+        if (newValue < 1)
+        {
+            isTorchDisabled = true;
+        }
     }
 
 }
