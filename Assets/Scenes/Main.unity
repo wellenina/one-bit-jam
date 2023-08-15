@@ -157,7 +157,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels: {fileID: 11400000, guid: 7062ab130f57944cfb42623250b20f34, type: 2}
-  roomList: []
   currentRoom: {fileID: 0}
   roomSlots:
   - {fileID: 1034466060}

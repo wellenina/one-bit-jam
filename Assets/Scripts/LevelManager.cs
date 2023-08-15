@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private Levels levels;
-    [SerializeField] private List<Room> roomList;
+    private List<Room> roomList = new List<Room>();
     private int currentRoomIndex = 0;
     public Room currentRoom;
 
@@ -28,6 +29,8 @@ public class LevelManager : MonoBehaviour
             List<Room> levelRooms = level.GenerateRooms();
             roomList.AddRange(levelRooms);
         }
+
+        roomList.Last().isLastLevel = true;
 
         InstantiateFirstRooms();
         currentRoom = roomList[currentRoomIndex];
@@ -72,6 +75,17 @@ public class LevelManager : MonoBehaviour
         {
             roomsInScene[i].transform.position = roomSlotsPositions[i];
         }
+    }
+
+    public void DestroyRooms()
+    {
+        roomList.Clear();
+        currentRoomIndex = 0;
+        foreach (GameObject room in roomsInScene)
+        {
+            Destroy(room);
+        }
+        roomsInScene.Clear();
     }
 
 }

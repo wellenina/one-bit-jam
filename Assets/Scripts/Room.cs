@@ -12,4 +12,7 @@ public class Room : ScriptableObject
     public bool isSpecial; // type
     [Range(1,3)] public int diceNum;
     public GameObject background;
+
+    [HideInInspector] public bool isLastRoom = false;
+    [HideInInspector] public bool isLastLevel = false;
 }

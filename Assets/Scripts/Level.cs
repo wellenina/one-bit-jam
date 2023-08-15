@@ -30,6 +30,7 @@ using UnityEngine;
         {
             room3 = GetRandomRoom(slot3Rooms);
         }
+        room3.isLastRoom = true;
         rooms.Add(room3);
 
         return rooms;
