@@ -12,10 +12,4 @@ public class Room : ScriptableObject
     public bool isSpecial; // type
     [Range(1,3)] public int diceNum;
     public GameObject background;
-
-    // FOR TESTING
-    public void PrintInfo()
-    {
-        Debug.Log(name + ": " + flavorText + ". Light: " + isLight + ", number of dice: " + diceNum);
-    }
 }
