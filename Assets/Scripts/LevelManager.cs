@@ -9,17 +9,18 @@ public class LevelManager : MonoBehaviour
     private List<Room> roomList = new List<Room>();
     private int currentRoomIndex = 0;
     public Room currentRoom;
-
-    [SerializeField] private List<GameObject> roomSlots = new List<GameObject>();
-    private List<Vector3> roomSlotsPositions = new List<Vector3>();
-
     [SerializeField] private List<GameObject> roomsInScene = new List<GameObject>();
 
+    [SerializeField] private Vector3 firstRoomPosition;
+    [SerializeField] private Vector3 nextRoomPosition;
+    [SerializeField] private GameObject roomsParent;
+    private Vector3 targetPosition;
+    private bool roomsAreMoving = false;
+    [SerializeField] private float speed = 1.0f;
+    [SerializeField] private float roomWidth = 106.0f;
 
-    void Start()
-    {
-        GetRoomSlotsPositions();
-    }
+    [SerializeField] private GameObject town;
+    private Vector3 townOriginalPosition;
 
 
     public void GenerateRun()
@@ -32,52 +33,80 @@ public class LevelManager : MonoBehaviour
 
         roomList.Last().isLastLevel = true;
 
+        townOriginalPosition = town.transform.position;
+        roomsParent.transform.position = Vector3.zero;
         InstantiateFirstRooms();
         currentRoom = roomList[currentRoomIndex];
-    }
-
-    public void GoToNextRoom()
-    {
-        currentRoom = roomList[currentRoomIndex++];
-        InstantiateNextRoom();
-        moveRooms();
-    }
-
-
-    void GetRoomSlotsPositions()
-    {
-        foreach (GameObject slot in roomSlots)
-        {
-            roomSlotsPositions.Add(slot.transform.position);
-        }
     }
 
     void InstantiateFirstRooms()
     {
         for (int i = 0; i < 3; i++)
         {
-            GameObject newRoom = Instantiate(roomList[i].background, roomSlotsPositions[i+2], Quaternion.identity);
+            GameObject prefab = roomList[i].background;
+            Vector3 position = firstRoomPosition + new Vector3(roomWidth * i, 0, 0);
+            GameObject newRoom = Instantiate(prefab, position, Quaternion.identity);
+            newRoom.transform.SetParent(roomsParent.transform);
             roomsInScene.Add(newRoom);
         }
     }
 
+    public void MoveTown() // <-- run manager BeginRun()
+    {
+        town.transform.SetParent(roomsParent.transform);
+        StartMovingRooms(2);
+    }
+
+    public void GoToNextRoom()
+    {
+        currentRoom = roomList[currentRoomIndex++];
+        InstantiateNextRoom();
+        if (currentRoomIndex == 2)
+        {
+            town.transform.SetParent(null);
+            town.SetActive(false);
+        }
+        StartMovingRooms();
+    }
+
     void InstantiateNextRoom()
     {
-        Destroy(roomsInScene[0]);
-        roomsInScene.RemoveAt(0);
-        GameObject newRoom = Instantiate(roomList[currentRoomIndex+2].background, roomSlotsPositions[4], Quaternion.identity);
+        if (roomsInScene.Count == 5)
+        {
+            Destroy(roomsInScene[0]);
+            roomsInScene.RemoveAt(0);
+        }
+        GameObject prefab = roomList[currentRoomIndex+2].background;
+        GameObject newRoom = Instantiate(prefab, nextRoomPosition, Quaternion.identity);
+        newRoom.transform.SetParent(roomsParent.transform);
         roomsInScene.Add(newRoom);
     }
 
-    void moveRooms()
+    void StartMovingRooms(int amount = 1)
     {
-        for (int i = 0; i < roomsInScene.Count; i++)
+        targetPosition = roomsParent.transform.position + Vector3.left * roomWidth * amount;
+        roomsAreMoving = true;
+    }
+
+    void Update()
+    {
+        if (roomsAreMoving)
         {
-            roomsInScene[i].transform.position = roomSlotsPositions[i];
+            MoveRooms();
         }
     }
 
-    public void DestroyRooms()
+    void MoveRooms()
+    {
+        float step =  speed * Time.deltaTime;
+        roomsParent.transform.position = Vector3.MoveTowards(roomsParent.transform.position, targetPosition, step);
+        if (roomsParent.transform.position == targetPosition)
+        {
+            roomsAreMoving = false;
+        }
+    }
+
+    public void DestroyRooms() // for the END of the RUN
     {
         roomList.Clear();
         currentRoomIndex = 0;
@@ -87,5 +116,4 @@ public class LevelManager : MonoBehaviour
         }
         roomsInScene.Clear();
     }
-
 }

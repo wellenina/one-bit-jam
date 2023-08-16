@@ -21,22 +21,35 @@ public class RunManager : MonoBehaviour
     }
 
 
-    void Start() // START A NEW RUN
+    void Start() // public START A NEW RUN <-- BUTTON NEW RUN
     {
-        runCoins = 0;
         heroManager.CreateNewHero();
-        // mostra schermata con il nuovo personaggio
+        // townUIManager.ShowHeroPopup(heroManager.hero);
+        // appare personaggio in scena: heroManager.InstantiateHero();
+
+        // PREPARA COSE PER DOPO:
+        runCoins = 0;
         levelManager.GenerateRun();
         UImanager.SetNewRoom(levelManager.currentRoom);
         UImanager.ShowHeroStats(heroManager.hero);
         diceManager.PrepareDice(levelManager.currentRoom.diceNum, levelManager.currentRoom.isSpecial, levelManager.currentRoom.isLight);
+    
+        levelManager.MoveTown(); // FOR TESTING
+    }
+
+
+    public void BeginRun() // <-- BUTTON OK su pop up del personaggio
+    {
+        // tutta la UI del villagio si spegne: townUIManager.ActivateTownUI(false);
+        // tutta la UI della nuova RUN si accende
+
+        levelManager.MoveTown();
     }
 
 
 
     public void UseTorch() // ON CLICK - TORCH BUTTON
     {
-        Debug.Log("USING TORCH!"); // FOR TESTING
         UImanager.LightRoom(true);
         diceManager.LightDice();
         heroManager.hero.torch--;
