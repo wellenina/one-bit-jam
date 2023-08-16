@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TownVersion
+[System.Serializable] public class TownVersion
 {
     public int coinThreshold;
     public GameObject image;

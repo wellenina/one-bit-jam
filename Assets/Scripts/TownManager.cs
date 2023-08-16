@@ -4,26 +4,25 @@ using UnityEngine;
 
 public class TownManager : MonoBehaviour
 {
-    [SerializeField] private List<GameObject> townVersions = new List<GameObject>();
-    [SerializeField] private List<int> coinThresholds = new List<int>();
+    [SerializeField] private List<TownVersion> townVersions = new List<TownVersion>();
     private int currentVersionIndex = 0;
 
     void Start()
     {
-        townVersions[currentVersionIndex].SetActive(true);
+        townVersions[currentVersionIndex].image.SetActive(true);
     }
 
     public void UpdateTownVersion(int coins)
     {
         // ugly but works
-        for (int i = coinThresholds.Count-1; i >= 0; i--)
+        for (int i = townVersions.Count-1; i >= 0; i--)
         {
-            if (coins > coinThresholds[i])
+            if (coins > townVersions[i].coinThreshold)
             {
                 if (currentVersionIndex != i)
                 {
-                    townVersions[currentVersionIndex].SetActive(false);
-                    townVersions[i].SetActive(true);
+                    townVersions[currentVersionIndex].image.SetActive(false);
+                    townVersions[i].image.SetActive(true);
                     currentVersionIndex = i;
                 }
                 break;

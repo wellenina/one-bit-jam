@@ -22,6 +22,13 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private GameObject town;
     private Vector3 townOriginalPosition;
 
+    private RunManager runManager;
+
+    void Awake()
+    {
+        runManager = GetComponent<RunManager>();
+    }
+
 
     public void GenerateRun()
     {
@@ -105,6 +112,7 @@ public class LevelManager : MonoBehaviour
         if (roomsParent.transform.position == targetPosition)
         {
             roomsAreMoving = false;
+            runManager.MovementIsOver();
         }
     }
 

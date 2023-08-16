@@ -50,7 +50,13 @@ public class RunManager : MonoBehaviour
         townUImanager.ActivateTownUI(false);
         UImanager.ActivateMainUI(true);
 
-        levelManager.MoveTown();
+        heroManager.StartRunning(true);
+        levelManager.MoveTown(); // hero run
+    }
+
+    public void MovementIsOver()
+    {
+        heroManager.StartRunning(false);
     }
 
     public void UseTorch() // invoked by torch button
@@ -122,7 +128,8 @@ public class RunManager : MonoBehaviour
 
     public void EnterNextRoom()
     {
-        levelManager.GoToNextRoom();
+        heroManager.StartRunning(true);
+        levelManager.GoToNextRoom(); // hero run
         UImanager.SetNewRoom(levelManager.currentRoom);
         diceManager.PrepareDice(levelManager.currentRoom);
     }
