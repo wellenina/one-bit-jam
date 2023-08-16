@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 32fda636a4274442f9a62f5f460aa9b2
+guid: 9d61f9a8db4a34dd6894a3a873bb24ea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -123,64 +123,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Messages
+      name: Frame1
       rect:
         serializedVersion: 2
-        x: 77
-        y: 1989
-        width: 201
-        height: 235
+        x: 38
+        y: 70
+        width: 180
+        height: 180
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 24, y: 24, z: 24, w: 24}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d436f88a993746bcaaa3fad23154196
-      internalID: 975144650
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Message_Long
-      rect:
-        serializedVersion: 2
-        x: 104
-        y: 1779
-        width: 352
-        height: 157
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63a7b589ee47d4e809fd059f6b438248
-      internalID: 707018806
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 1_0
-      rect:
-        serializedVersion: 2
-        x: 874
-        y: 327
-        width: 124
-        height: 1
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5808eac3837a34957863baa533eed410
-      internalID: 2102905993
+      spriteID: 1c701f6a781a344f881aee98b91417ef
+      internalID: -1983837223
       vertices: []
       indices: 
       edges: []
@@ -189,19 +147,19 @@ TextureImporter:
       name: divider
       rect:
         serializedVersion: 2
-        x: 913
-        y: 311
-        width: 46
-        height: 2
+        x: 38
+        y: 51
+        width: 180
+        height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 7, y: 0, z: 7, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e2f47d5cd7844219976ddfaa13737e7
-      internalID: 913353248
+      spriteID: 66b232f431013490ba629acb82f0a93f
+      internalID: 9749922
       vertices: []
       indices: 
       edges: []
@@ -209,7 +167,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5f1f166097fae406183ff06f2fed6eee
+    spriteID: d49f68a99e244450ca58bc57cda2f09f
     internalID: 0
     vertices: []
     indices: 
@@ -217,10 +175,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      1_0: 2102905993
-      Message_Long: 707018806
-      Messages: 975144650
-      divider: 913353248
+      Frame1: -1983837223
+      divider: 9749922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
