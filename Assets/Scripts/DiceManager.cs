@@ -40,8 +40,6 @@ public class DiceManager : MonoBehaviour
             die = blackDie;
         }
 
-        Debug.Log(diceQuantity.ToString() + " " + die.name); // TESTING
-
         // per ciascuno dei figli dell'elemento acceso:
         // cambiare l'aspetto del dado
     }
@@ -49,7 +47,6 @@ public class DiceManager : MonoBehaviour
     public void LightDice()
     {
         die = whiteDie;
-        Debug.Log("Black dice just became white!");
     }
 
     public void Roll()
@@ -85,11 +82,5 @@ public class DiceManager : MonoBehaviour
             break;
         }
     }
-
-
-
-
-
-
 
 }

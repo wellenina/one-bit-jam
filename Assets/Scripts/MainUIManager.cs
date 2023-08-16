@@ -25,6 +25,14 @@ public class MainUIManager : MonoBehaviour
     [SerializeField] private Button torchBtn;
     private bool isTorchDisabled;
 
+    // popups
+    [SerializeField] GameObject endLevelPopup;
+    [SerializeField] private TextMeshProUGUI endLevelCoins;
+    [SerializeField] GameObject youLosePopup;
+    // [SerializeField] private TextMeshProUGUI youLoseCoins;
+    [SerializeField] GameObject youWinPopup;
+    [SerializeField] private TextMeshProUGUI youWinCoins;
+
 
     public void ActivateMainUI(bool isActive)
     {
@@ -61,6 +69,27 @@ public class MainUIManager : MonoBehaviour
         {
             isTorchDisabled = true;
         }
+    }
+
+
+    // popups
+
+    public void ShowEndLevelPopup(int coins)
+    {
+        endLevelCoins.text = coins.ToString();
+        endLevelPopup.SetActive(true);
+    }
+
+    public void ShowYouLosePopup(int coins)
+    {
+        // youLoseCoins.text = coins.ToString();
+        youLosePopup.SetActive(true);
+    }
+
+    public void ShowYouWinPopup(int coins)
+    {
+        youWinCoins.text = coins.ToString();
+        youWinPopup.SetActive(true);
     }
 
 }

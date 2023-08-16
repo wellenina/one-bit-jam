@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class Hero
 {
-
     public string name;
-
     public string className;
     public int hp;
     public int sanity;
-    public GameObject image; // prefab
+    public GameObject image;
     public int torch = 3;
 
     public void GetValuesFromClass(HeroClass heroClass)

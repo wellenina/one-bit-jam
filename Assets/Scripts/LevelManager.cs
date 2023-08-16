@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private Levels levels;
-    private List<Room> roomList = new List<Room>(); //
-    private int currentRoomIndex = 0; //
+    private int levelLenght = 3;
+    private List<Room> roomList = new List<Room>();
+    private int currentRoomIndex = 0;
     [HideInInspector] public Room currentRoom;
     private List<GameObject> roomsInScene = new List<GameObject>();
 
@@ -30,8 +30,6 @@ public class LevelManager : MonoBehaviour
             List<Room> levelRooms = level.GenerateRooms();
             roomList.AddRange(levelRooms);
         }
-
-        roomList.Last().isLastLevel = true;
 
         townOriginalPosition = town.transform.position;
         roomsParent.transform.position = Vector3.zero;
@@ -106,7 +104,17 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    public void DestroyRooms() // for the END of the RUN
+    public bool isLastLevel()
+    {
+        return currentRoomIndex == roomList.Count - 1;
+    }
+
+    public bool isEndLevel()
+    {
+        return (currentRoomIndex + 1) % levelLenght == 0;
+    }
+
+    public void EndRunDestroyRooms()
     {
         roomList.Clear();
         currentRoomIndex = 0;
@@ -115,5 +123,9 @@ public class LevelManager : MonoBehaviour
             Destroy(room);
         }
         roomsInScene.Clear();
+
+        town.transform.SetParent(null);
+        town.transform.position = townOriginalPosition;
+        town.SetActive(true);
     }
 }

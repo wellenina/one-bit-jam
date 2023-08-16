@@ -7,13 +7,13 @@ using TMPro;
 public class TownUIManager : MonoBehaviour
 {
     [SerializeField] private GameObject townUI;
-    [SerializeField] private TextMeshProUGUI totalCoinsText; // -->
+    [SerializeField] private TextMeshProUGUI totalCoinsText;
+    private int totalCoins;
     [SerializeField] private GameObject heroPopup;
     [SerializeField] private TextMeshProUGUI heroName;
     // [SerializeField] private TextMeshProUGUI heroClass;
     [SerializeField] private TextMeshProUGUI heroHp;
     [SerializeField] private TextMeshProUGUI heroSanity;
-
 
 
     public void ShowHeroPopup(Hero hero)
@@ -31,4 +31,9 @@ public class TownUIManager : MonoBehaviour
         townUI.SetActive(isActive);
     }
 
+    public void UpdateCoins(int newCoins = 0)
+    {
+        totalCoins += newCoins;
+        totalCoinsText.text = totalCoins.ToString();
+    }
 }

@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class RunManager : MonoBehaviour
 {
-    private TownUIManager townUIManager;
+    private TownUIManager townUImanager;
     private LevelManager levelManager;
     private HeroManager heroManager;
     private DiceManager diceManager;
     private MainUIManager UImanager;
 
     private int runCoins;
+    private int earnedCoins;
+    // coins multipliers:
+    [SerializeField] private int giveUpMultiplier;
+    [SerializeField] private int youLoseMultiplier;
+    [SerializeField] private int youWinMultiplier;
 
 
     void Awake()
     {
-        townUIManager = GetComponent<TownUIManager>();
+        townUImanager = GetComponent<TownUIManager>();
         levelManager = GetComponent<LevelManager>();
         heroManager = GetComponent<HeroManager>();
         diceManager = GetComponent<DiceManager>();
@@ -25,7 +30,7 @@ public class RunManager : MonoBehaviour
     public void StartNewRun() // invoked by button
     {
         heroManager.CreateNewHero();
-        townUIManager.ShowHeroPopup(heroManager.hero);
+        townUImanager.ShowHeroPopup(heroManager.hero);
         heroManager.InstantiateHero();
 
         // prepare stuff for later:
@@ -38,7 +43,7 @@ public class RunManager : MonoBehaviour
 
     public void BeginRun() // invoked by button
     {
-        townUIManager.ActivateTownUI(false);
+        townUImanager.ActivateTownUI(false);
         UImanager.ActivateMainUI(true);
 
         levelManager.MoveTown();
@@ -53,7 +58,6 @@ public class RunManager : MonoBehaviour
     }
 
 
-
     public void RollDice() // invoked by ROLL button
     {
         diceManager.Roll();
@@ -61,24 +65,26 @@ public class RunManager : MonoBehaviour
         if (heroManager.hero.hp < 1 || heroManager.hero.sanity < 1)
         {
             // you're dead
-            EndRun();
+            earnedCoins = runCoins * youLoseMultiplier;
+            UImanager.ShowYouLosePopup(earnedCoins);
         }
-        else if (levelManager.currentRoom.isLastLevel)
+        else if (levelManager.isLastLevel())
         {
             // last level: you win
+            earnedCoins = runCoins * youWinMultiplier;
+            UImanager.ShowYouWinPopup(earnedCoins);
         }
-        else if (levelManager.currentRoom.isLastRoom)
+        else if (levelManager.isEndLevel())
         {
             // mostra pop up con possibilità di tornare al villaggio
-            // tasto vai avanti: --> EnterNextRoom();
-            // tasto go back: --> abort
+            earnedCoins = runCoins * giveUpMultiplier;
+            UImanager.ShowEndLevelPopup(earnedCoins);
         }
         else
         {
             EnterNextRoom();
         }
     }
-
 
 
     // possible consequences of dice roll:
@@ -105,7 +111,6 @@ public class RunManager : MonoBehaviour
     }
 
 
-
     public void EnterNextRoom()
     {
         levelManager.GoToNextRoom();
@@ -113,15 +118,15 @@ public class RunManager : MonoBehaviour
         diceManager.PrepareDice(levelManager.currentRoom);
     }
 
-
-
-
-
-
-
-
     public void EndRun()
     {
         Debug.Log("GAME OVER!");
+
+        UImanager.ActivateMainUI(false);
+        townUImanager.UpdateCoins(earnedCoins);
+        townUImanager.ActivateTownUI(true);
+
+        levelManager.EndRunDestroyRooms();
+        heroManager.EndHero();
     }
 }

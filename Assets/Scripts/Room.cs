@@ -8,11 +8,8 @@ public class Room : ScriptableObject
     public new string name;
     public string flavorText;
 
-    public bool isLight; // state
-    public bool isSpecial; // type
+    public bool isLight;
+    public bool isSpecial;
     [Range(1,3)] public int diceNum;
     public GameObject background;
-
-    [HideInInspector] public bool isLastRoom = false;
-    [HideInInspector] public bool isLastLevel = false;
 }

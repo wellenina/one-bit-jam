@@ -9,6 +9,7 @@ public class HeroManager : MonoBehaviour
     private List<HeroClass> unlockedClasses = new List<HeroClass>();
     [SerializeField] private List<GameObject> heroImages = new List<GameObject>();
     [SerializeField] private Vector3 heroPosition;
+    private GameObject heroInScene;
 
     public Hero hero;
 
@@ -42,7 +43,11 @@ public class HeroManager : MonoBehaviour
 
     public void InstantiateHero()
     {
-        Instantiate(hero.image, heroPosition, Quaternion.identity);
+        heroInScene = Instantiate(hero.image, heroPosition, Quaternion.identity);
     }
 
+    public void EndHero()
+    {
+        Destroy(heroInScene);
+    }
 }
