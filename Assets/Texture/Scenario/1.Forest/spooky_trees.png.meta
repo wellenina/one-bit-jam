@@ -126,10 +126,10 @@ TextureImporter:
       name: spooky_trees_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 3
-        width: 66
-        height: 105
+        x: 5
+        y: 2
+        width: 68
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: spooky_trees_1
       rect:
         serializedVersion: 2
-        x: 75
-        y: 3
-        width: 52
-        height: 88
+        x: 74
+        y: 2
+        width: 54
+        height: 90
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: spooky_trees_2
       rect:
         serializedVersion: 2
-        x: 133
-        y: 3
-        width: 43
-        height: 102
+        x: 132
+        y: 2
+        width: 45
+        height: 104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -189,10 +189,10 @@ TextureImporter:
       name: spooky_trees_3
       rect:
         serializedVersion: 2
-        x: 187
-        y: 4
-        width: 42
-        height: 139
+        x: 186
+        y: 3
+        width: 44
+        height: 141
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
