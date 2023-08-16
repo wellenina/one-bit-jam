@@ -35,6 +35,7 @@ public class RunManager : MonoBehaviour
 
         // prepare stuff for later:
         runCoins = 0;
+        UImanager.UpdateCoinsText(runCoins);
         levelManager.GenerateRun();
         UImanager.SetNewRoom(levelManager.currentRoom);
         UImanager.ShowHeroStats(heroManager.hero);
@@ -62,6 +63,11 @@ public class RunManager : MonoBehaviour
     {
         diceManager.Roll();
 
+        Invoke("ShowDiceOutcome", 2.0f);
+    }
+
+    void ShowDiceOutcome()
+    {
         if (heroManager.hero.hp < 1 || heroManager.hero.sanity < 1)
         {
             // you're dead
@@ -106,7 +112,7 @@ public class RunManager : MonoBehaviour
     public void GainCoins(int amount)
     {
         runCoins += amount;
-        UImanager.coinsText.text = "Coins: " + runCoins.ToString();
+        UImanager.UpdateCoinsText(runCoins);
         Debug.Log("You get " + amount + " coins! :D"); // TESTING
     }
 

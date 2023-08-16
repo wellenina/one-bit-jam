@@ -69,15 +69,19 @@ public class LevelManager : MonoBehaviour
 
     void InstantiateNextRoom()
     {
-        if (roomsInScene.Count == 5)
+        if (currentRoomIndex > 2)
         {
             Destroy(roomsInScene[0]);
             roomsInScene.RemoveAt(0);
         }
-        GameObject prefab = roomList[currentRoomIndex+2].background;
-        GameObject newRoom = Instantiate(prefab, nextRoomPosition, Quaternion.identity);
-        newRoom.transform.SetParent(roomsParent.transform);
-        roomsInScene.Add(newRoom);
+        int nextRoomIndex = currentRoomIndex + 2;
+        if (nextRoomIndex < roomList.Count)
+        {
+            GameObject prefab = roomList[nextRoomIndex].background;
+            GameObject newRoom = Instantiate(prefab, nextRoomPosition, Quaternion.identity);
+            newRoom.transform.SetParent(roomsParent.transform);
+            roomsInScene.Add(newRoom);
+        }
     }
 
     void StartMovingRooms(int amount = 1)

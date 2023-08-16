@@ -37,6 +37,10 @@ public class MainUIManager : MonoBehaviour
     public void ActivateMainUI(bool isActive)
     {
         mainUI.SetActive(isActive);
+        if (isTorchDisabled)
+        {
+            isTorchDisabled = false;
+        }
     }
 
     public void SetNewRoom(Room room)
@@ -69,6 +73,11 @@ public class MainUIManager : MonoBehaviour
         {
             isTorchDisabled = true;
         }
+    }
+
+    public void UpdateCoinsText(int coins)
+    {
+        coinsText.text = "Coins: " + coins.ToString();
     }
 
 
