@@ -36,9 +36,8 @@ public class TownUIManager : MonoBehaviour
         townUI.SetActive(isActive);
     }
 
-    public void UpdateCoins(int newCoins = 0)
+    public void UpdateCoins(int totalCoins = 0)
     {
-        totalCoins += newCoins;
         totalCoinsText.text = totalCoins.ToString();
     }
 }

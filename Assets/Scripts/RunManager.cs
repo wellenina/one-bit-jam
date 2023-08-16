@@ -5,6 +5,7 @@ using UnityEngine;
 public class RunManager : MonoBehaviour
 {
     private TownUIManager townUImanager;
+    private TownManager townManager;
     private LevelManager levelManager;
     private HeroManager heroManager;
     private DiceManager diceManager;
@@ -12,6 +13,7 @@ public class RunManager : MonoBehaviour
 
     private int runCoins;
     private int earnedCoins;
+    private int totalCoins;
     // coins multipliers:
     [SerializeField] private int giveUpMultiplier;
     [SerializeField] private int youLoseMultiplier;
@@ -21,6 +23,7 @@ public class RunManager : MonoBehaviour
     void Awake()
     {
         townUImanager = GetComponent<TownUIManager>();
+        townManager = GetComponent<TownManager>();
         levelManager = GetComponent<LevelManager>();
         heroManager = GetComponent<HeroManager>();
         diceManager = GetComponent<DiceManager>();
@@ -129,8 +132,10 @@ public class RunManager : MonoBehaviour
         Debug.Log("GAME OVER!");
 
         UImanager.ActivateMainUI(false);
-        townUImanager.UpdateCoins(earnedCoins);
+        totalCoins += earnedCoins;
+        townUImanager.UpdateCoins(totalCoins);
         townUImanager.ActivateTownUI(true);
+        townManager.UpdateTownVersion(totalCoins);
 
         levelManager.EndRunDestroyRooms();
         heroManager.EndHero();
