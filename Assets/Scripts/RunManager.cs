@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RunManager : MonoBehaviour
 {
+    private TownUIManager townUIManager;
     private LevelManager levelManager;
     private HeroManager heroManager;
     private DiceManager diceManager;
@@ -14,41 +15,36 @@ public class RunManager : MonoBehaviour
 
     void Awake()
     {
+        townUIManager = GetComponent<TownUIManager>();
         levelManager = GetComponent<LevelManager>();
         heroManager = GetComponent<HeroManager>();
         diceManager = GetComponent<DiceManager>();
         UImanager = GetComponent<MainUIManager>();
     }
 
-
-    void Start() // public START A NEW RUN <-- BUTTON NEW RUN
+    public void StartNewRun() // invoked by button
     {
         heroManager.CreateNewHero();
-        // townUIManager.ShowHeroPopup(heroManager.hero);
-        // appare personaggio in scena: heroManager.InstantiateHero();
+        townUIManager.ShowHeroPopup(heroManager.hero);
+        heroManager.InstantiateHero();
 
-        // PREPARA COSE PER DOPO:
+        // prepare stuff for later:
         runCoins = 0;
         levelManager.GenerateRun();
         UImanager.SetNewRoom(levelManager.currentRoom);
         UImanager.ShowHeroStats(heroManager.hero);
-        diceManager.PrepareDice(levelManager.currentRoom.diceNum, levelManager.currentRoom.isSpecial, levelManager.currentRoom.isLight);
-    
-        levelManager.MoveTown(); // FOR TESTING
+        diceManager.PrepareDice(levelManager.currentRoom);
     }
 
-
-    public void BeginRun() // <-- BUTTON OK su pop up del personaggio
+    public void BeginRun() // invoked by button
     {
-        // tutta la UI del villagio si spegne: townUIManager.ActivateTownUI(false);
-        // tutta la UI della nuova RUN si accende
+        townUIManager.ActivateTownUI(false);
+        UImanager.ActivateMainUI(true);
 
         levelManager.MoveTown();
     }
 
-
-
-    public void UseTorch() // ON CLICK - TORCH BUTTON
+    public void UseTorch() // invoked by torch button
     {
         UImanager.LightRoom(true);
         diceManager.LightDice();
@@ -58,7 +54,7 @@ public class RunManager : MonoBehaviour
 
 
 
-    public void RollDice() // ON CLICK - 'ROLL' BUTTON
+    public void RollDice() // invoked by ROLL button
     {
         diceManager.Roll();
 
@@ -110,15 +106,11 @@ public class RunManager : MonoBehaviour
 
 
 
-
-
-
     public void EnterNextRoom()
     {
         levelManager.GoToNextRoom();
         UImanager.SetNewRoom(levelManager.currentRoom);
-        Debug.Log("Entering new room: " + levelManager.currentRoom.name); // TESTING
-        diceManager.PrepareDice(levelManager.currentRoom.diceNum, levelManager.currentRoom.isSpecial, levelManager.currentRoom.isLight);
+        diceManager.PrepareDice(levelManager.currentRoom);
     }
 
 

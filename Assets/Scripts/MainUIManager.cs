@@ -6,6 +6,9 @@ using TMPro;
 
 public class MainUIManager : MonoBehaviour
 {
+    [SerializeField] private GameObject mainUI;
+    public TextMeshProUGUI coinsText;
+
     // ROOM
     [SerializeField] private TextMeshProUGUI roomNameText;
     [SerializeField] private TextMeshProUGUI roomFlavorText;
@@ -14,8 +17,8 @@ public class MainUIManager : MonoBehaviour
     [SerializeField] private Color lightColor = Color.white;
     [SerializeField] private Color shadowColor = Color.black;
 
-
     // HERO
+    [SerializeField] private TextMeshProUGUI heroNameText;
     public TextMeshProUGUI hpText;
     public TextMeshProUGUI sanityText;
     [SerializeField] private TextMeshProUGUI torchText;
@@ -23,8 +26,10 @@ public class MainUIManager : MonoBehaviour
     private bool isTorchDisabled;
 
 
-    public TextMeshProUGUI coinsText;
-
+    public void ActivateMainUI(bool isActive)
+    {
+        mainUI.SetActive(isActive);
+    }
 
     public void SetNewRoom(Room room)
     {
@@ -35,6 +40,7 @@ public class MainUIManager : MonoBehaviour
 
     public void ShowHeroStats(Hero hero)
     {
+        heroNameText.text = hero.name;
         hpText.text = hero.hp.ToString();
         sanityText.text = hero.sanity.ToString();
         torchText.text = hero.torch.ToString();

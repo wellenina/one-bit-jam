@@ -18,20 +18,20 @@ public class DiceManager : MonoBehaviour
         runManager = GetComponent<RunManager>();
     }
 
-    public void PrepareDice(int diceNum, bool roomIsSpecial, bool roomIsLight)
+    public void PrepareDice(Room room)
     {
         if (diceQuantity != 0) // se non è la prima stanza della run
         {
             dicePool[diceQuantity - 1].SetActive(false); // spegne i dadi della stanza precedente
         }
-        diceQuantity = diceNum;
+        diceQuantity = room.diceNum;
         dicePool[diceQuantity - 1].SetActive(true); // accende i dadi della nuova stanza
 
-        if (roomIsSpecial)
+        if (room.isSpecial)
         {
             die = pyramidDie;
         }
-        else if (roomIsLight)
+        else if (room.isLight)
         {
             die = whiteDie;
         }

@@ -8,10 +8,9 @@ public class HeroManager : MonoBehaviour
     [SerializeField] private HeroClasses potentialClasses;
     private List<HeroClass> unlockedClasses = new List<HeroClass>();
     [SerializeField] private List<GameObject> heroImages = new List<GameObject>();
-
+    [SerializeField] private Vector3 heroPosition;
 
     public Hero hero;
-
 
     public void CreateNewHero()
     {
@@ -22,12 +21,8 @@ public class HeroManager : MonoBehaviour
         HeroClass heroClass = unlockedClasses[PickRandomIndex(unlockedClasses.Count)];
         hero.GetValuesFromClass(heroClass);
 
-        // hero.image = heroImages[PickRandomIndex(heroImages.Count)];
-
-        // FOR TESTING:
-        Debug.Log("Your hero is a " + hero.className + " named " + hero.name);
+        hero.image = heroImages[PickRandomIndex(heroImages.Count)];
     }
-
 
     void GetUnlockedClasses()
     {
@@ -43,6 +38,11 @@ public class HeroManager : MonoBehaviour
     int PickRandomIndex(int count)
     {
         return UnityEngine.Random.Range(0, count);
+    }
+
+    public void InstantiateHero()
+    {
+        Instantiate(hero.image, heroPosition, Quaternion.identity);
     }
 
 }

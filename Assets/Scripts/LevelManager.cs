@@ -6,17 +6,17 @@ using System.Linq;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] private Levels levels;
-    private List<Room> roomList = new List<Room>();
-    private int currentRoomIndex = 0;
-    public Room currentRoom;
-    [SerializeField] private List<GameObject> roomsInScene = new List<GameObject>();
+    private List<Room> roomList = new List<Room>(); //
+    private int currentRoomIndex = 0; //
+    [HideInInspector] public Room currentRoom;
+    private List<GameObject> roomsInScene = new List<GameObject>();
 
     [SerializeField] private Vector3 firstRoomPosition;
     [SerializeField] private Vector3 nextRoomPosition;
     [SerializeField] private GameObject roomsParent;
     private Vector3 targetPosition;
     private bool roomsAreMoving = false;
-    [SerializeField] private float speed = 1.0f;
+    [SerializeField] private float speed;
     [SerializeField] private float roomWidth = 106.0f;
 
     [SerializeField] private GameObject town;
@@ -59,7 +59,7 @@ public class LevelManager : MonoBehaviour
 
     public void GoToNextRoom()
     {
-        currentRoom = roomList[currentRoomIndex++];
+        currentRoom = roomList[++currentRoomIndex];
         InstantiateNextRoom();
         if (currentRoomIndex == 2)
         {
