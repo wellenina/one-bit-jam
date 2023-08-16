@@ -14,8 +14,10 @@ public class Hero
     public void GetValuesFromClass(HeroClass heroClass)
     {
         className = heroClass.name;
+        Debug.Log(className); // TESTING
         hp = heroClass.hp;
         sanity = heroClass.sanity;
+        image = heroClass.image;
     }
 
 }

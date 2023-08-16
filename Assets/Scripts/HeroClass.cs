@@ -9,4 +9,5 @@ using UnityEngine;
     public int hp;
     public int sanity;
     public bool isUnlocked;
+    public GameObject image;
 }

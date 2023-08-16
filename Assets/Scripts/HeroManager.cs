@@ -21,8 +21,6 @@ public class HeroManager : MonoBehaviour
         GetUnlockedClasses();
         HeroClass heroClass = unlockedClasses[PickRandomIndex(unlockedClasses.Count)];
         hero.GetValuesFromClass(heroClass);
-
-        hero.image = heroImages[PickRandomIndex(heroImages.Count)];
     }
 
     void GetUnlockedClasses()
