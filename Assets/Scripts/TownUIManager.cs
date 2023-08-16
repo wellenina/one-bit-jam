@@ -16,6 +16,11 @@ public class TownUIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI heroSanity;
 
 
+    void Start()
+    {
+        UpdateCoins();
+    }
+
     public void ShowHeroPopup(Hero hero)
     {
         heroName.text = hero.name;

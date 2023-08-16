@@ -51,6 +51,7 @@ public class DiceManager : MonoBehaviour
 
     public void Roll()
     {
+        Debug.Log("rolling " + diceQuantity + " dice:"); // TESTING
         for (int i = 0; i < diceQuantity; i++)
         {
             int faceIndex = UnityEngine.Random.Range(0, die.faces.Count);
