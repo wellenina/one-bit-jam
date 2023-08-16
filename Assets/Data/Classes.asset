@@ -13,22 +13,22 @@ MonoBehaviour:
   m_Name: Classes
   m_EditorClassIdentifier: 
   list:
-  - name: Warrior
+  - name: Adventurer
     cost: 0
     hp: 2
     sanity: 3
-    isUnlocked: 1
-  - name: Bard
+    isUnlocked: 0
+  - name: Cleric
     cost: 0
     hp: 4
     sanity: 5
-    isUnlocked: 1
-  - name: Cleric
+    isUnlocked: 0
+  - name: Knight
     cost: 0
     hp: 6
     sanity: 7
-    isUnlocked: 1
-  - name: Rogue
+    isUnlocked: 0
+  - name: Mage
     cost: 0
     hp: 8
     sanity: 9
