@@ -17,19 +17,23 @@ MonoBehaviour:
     cost: 0
     hp: 2
     sanity: 3
-    isUnlocked: 0
+    isUnlocked: 1
+    image: {fileID: 1737643725765298906, guid: 15fd68bb5a26949c683232a6ae8c6ca1, type: 3}
   - name: Cleric
     cost: 0
     hp: 4
     sanity: 5
-    isUnlocked: 0
+    isUnlocked: 1
+    image: {fileID: 3771171767709991473, guid: 18820d1fb74574425980d97346d81bff, type: 3}
   - name: Knight
     cost: 0
     hp: 6
     sanity: 7
-    isUnlocked: 0
+    isUnlocked: 1
+    image: {fileID: 4757338799478453360, guid: 45809d87eff024f91a78090cb9be6598, type: 3}
   - name: Mage
     cost: 0
     hp: 8
     sanity: 9
-    isUnlocked: 0
+    isUnlocked: 1
+    image: {fileID: 4030980001187360991, guid: 1cc4dab62b7c249368aebbafc6a6b8e7, type: 3}
