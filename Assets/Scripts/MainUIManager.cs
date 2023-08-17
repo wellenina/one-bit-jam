@@ -24,6 +24,7 @@ public class MainUIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI torchText;
     [SerializeField] private Button torchBtn;
     private bool isTorchDisabled;
+    [SerializeField] private Button rollBtn;
 
     // popups
     [SerializeField] GameObject walkingPanel;
@@ -49,6 +50,7 @@ public class MainUIManager : MonoBehaviour
         roomNameText.text = room.name;
         roomFlavorText.text = room.flavorText;
         LightRoom(room.isLight);
+        ActivateRollBtn(true);
     }
 
     public void ShowHeroStats(Hero hero)
@@ -70,6 +72,13 @@ public class MainUIManager : MonoBehaviour
 
         if (isTorchDisabled) { return; }
         torchBtn.interactable = !light;
+    }
+
+    public void ActivateRollBtn(bool isActive)
+    {
+        rollBtn.interactable = isActive;
+        if (isActive) { return; }
+        torchBtn.interactable = false;
     }
 
     public void UpdateTorchText(int newValue)

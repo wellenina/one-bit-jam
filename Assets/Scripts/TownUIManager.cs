@@ -14,11 +14,18 @@ public class TownUIManager : MonoBehaviour
     // [SerializeField] private TextMeshProUGUI heroClass;
     [SerializeField] private TextMeshProUGUI heroHp;
     [SerializeField] private TextMeshProUGUI heroSanity;
+    [SerializeField] private Button startBtn;
 
 
     void Start()
     {
         UpdateCoins();
+    }
+
+    public void ActivateTownUI(bool isActive)
+    {
+        heroPopup.SetActive(false);
+        townUI.SetActive(isActive);
     }
 
     public void ShowHeroPopup(Hero hero)
@@ -27,13 +34,13 @@ public class TownUIManager : MonoBehaviour
         // heroClass.text = hero.className;
         heroHp.text = hero.hp.ToString();
         heroSanity.text = hero.sanity.ToString();
+        ActivateStartBtn(true);
         heroPopup.SetActive(true);
     }
 
-    public void ActivateTownUI(bool isActive)
+    public void ActivateStartBtn(bool isActive)
     {
-        heroPopup.SetActive(false);
-        townUI.SetActive(isActive);
+        startBtn.interactable = isActive;
     }
 
     public void UpdateCoins(int totalCoins = 0)

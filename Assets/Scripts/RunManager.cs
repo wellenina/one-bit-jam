@@ -45,8 +45,9 @@ public class RunManager : MonoBehaviour
         diceManager.PrepareDice(levelManager.currentRoom);
     }
 
-    public void BeginRun() // invoked by button
+    public void BeginRun() // invoked by start button
     {
+        townUImanager.ActivateStartBtn(false);
         heroManager.StartRunning(true);
         levelManager.MoveTown();
     }
@@ -72,6 +73,7 @@ public class RunManager : MonoBehaviour
 
     public void RollDice() // invoked by ROLL button
     {
+        UImanager.ActivateRollBtn(false);
         StartCoroutine(diceManager.Roll());
     }
 
