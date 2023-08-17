@@ -32,6 +32,7 @@ Transform:
   m_Children:
   - {fileID: 2209525633966310674}
   - {fileID: 254018038122886928}
+  - {fileID: 7792730716563510977}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &207226358603814490
@@ -244,3 +245,98 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &8263047084864993426
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 7962182261955214300}
+    m_Modifications:
+    - target: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_Name
+      value: Torch
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 10.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051257985518399066, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_Name
+      value: Torch_Particle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7661677967627957181, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1543434516407415095}
+  m_SourcePrefab: {fileID: 100100000, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+--- !u!1 &1801301380738239279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7661677967627957181, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+  m_PrefabInstance: {fileID: 8263047084864993426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1543434516407415095
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801301380738239279}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a518d70e1742d43358a8990594cb87c6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &7792730716563510977 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+  m_PrefabInstance: {fileID: 8263047084864993426}
+  m_PrefabAsset: {fileID: 0}
