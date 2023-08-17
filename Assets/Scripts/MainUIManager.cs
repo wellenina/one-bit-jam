@@ -6,7 +6,7 @@ using TMPro;
 
 public class MainUIManager : MonoBehaviour
 {
-    [SerializeField] private GameObject mainUI;
+    public GameObject mainUI;
     public TextMeshProUGUI coinsText;
 
     // ROOM
@@ -26,6 +26,7 @@ public class MainUIManager : MonoBehaviour
     private bool isTorchDisabled;
 
     // popups
+    [SerializeField] GameObject walkingPanel;
     [SerializeField] GameObject endLevelPopup;
     [SerializeField] private TextMeshProUGUI endLevelCoins;
     [SerializeField] GameObject youLosePopup;
@@ -82,6 +83,10 @@ public class MainUIManager : MonoBehaviour
 
 
     // popups
+    public void ShowWalkingPanel(bool isActive)
+    {
+        walkingPanel.SetActive(isActive);
+    }
 
     public void ShowEndLevelPopup(int coins)
     {

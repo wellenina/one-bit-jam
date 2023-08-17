@@ -47,16 +47,18 @@ public class RunManager : MonoBehaviour
 
     public void BeginRun() // invoked by button
     {
-        townUImanager.ActivateTownUI(false);
-        UImanager.ActivateMainUI(true);
-
         heroManager.StartRunning(true);
-        levelManager.MoveTown(); // hero run
+        levelManager.MoveTown();
     }
 
     public void MovementIsOver()
     {
         heroManager.StartRunning(false);
+        UImanager.ShowWalkingPanel(false);
+
+        if (UImanager.mainUI.activeSelf) { return; }
+        townUImanager.ActivateTownUI(false);
+        UImanager.ActivateMainUI(true);
     }
 
     public void UseTorch() // invoked by torch button
@@ -91,7 +93,6 @@ public class RunManager : MonoBehaviour
         }
         else if (levelManager.isEndLevel())
         {
-            // mostra pop up con possibilità di tornare al villaggio
             earnedCoins = runCoins * giveUpMultiplier;
             UImanager.ShowEndLevelPopup(earnedCoins);
         }
@@ -128,16 +129,15 @@ public class RunManager : MonoBehaviour
 
     public void EnterNextRoom()
     {
+        UImanager.ShowWalkingPanel(true);
         heroManager.StartRunning(true);
-        levelManager.GoToNextRoom(); // hero run
+        levelManager.GoToNextRoom();
         UImanager.SetNewRoom(levelManager.currentRoom);
         diceManager.PrepareDice(levelManager.currentRoom);
     }
 
     public void EndRun()
     {
-        Debug.Log("GAME OVER!");
-
         UImanager.ActivateMainUI(false);
         totalCoins += earnedCoins;
         townUImanager.UpdateCoins(totalCoins);
