@@ -59,6 +59,11 @@ public class MainUIManager : MonoBehaviour
         torchText.text = hero.torch.ToString();
     }
 
+    public void UpdateCoinsText(int coins)
+    {
+        coinsText.text = coins.ToString();
+    }
+
     public void LightRoom(bool light)
     {
         roomStateIcon.color = light ? lightColor : shadowColor;
@@ -74,11 +79,6 @@ public class MainUIManager : MonoBehaviour
         {
             isTorchDisabled = true;
         }
-    }
-
-    public void UpdateCoinsText(int coins)
-    {
-        coinsText.text = "Coins: " + coins.ToString();
     }
 
 

@@ -72,12 +72,15 @@ public class RunManager : MonoBehaviour
 
     public void RollDice() // invoked by ROLL button
     {
-        diceManager.Roll();
-
-        Invoke("ShowDiceOutcome", 2.0f);
+        StartCoroutine(diceManager.Roll());
     }
 
-    void ShowDiceOutcome()
+    public void EndDiceRoll()
+    {
+        Invoke("ShowConsequences", 1.0f);
+    }
+
+    void ShowConsequences()
     {
         if (heroManager.hero.hp < 1 || heroManager.hero.sanity < 1)
         {

@@ -5,7 +5,9 @@ using UnityEngine;
 public class DiceManager : MonoBehaviour
 {
 	private int diceQuantity;
+    private int counter;
     private RunManager runManager;
+    [SerializeField] private float rollDelay = 0.2f;
 
     [SerializeField] private List<DiceCombination> whiteDiceCombinations;
     [SerializeField] private List<DiceCombination> blackDiceCombinations;
@@ -20,10 +22,14 @@ public class DiceManager : MonoBehaviour
 
     public void PrepareDice(Room room)
     {
-        // MI SERVE UN MODO MIGLIORE PER CAPIRE SE è LA PRIMA STANZA
-        if (diceQuantity != 0) // se non è la prima stanza della run
+        if (currentDice != null)
         {
             ShowDice(currentDice, false); // spegne i dadi della stanza precedente
+            counter = 0;
+            foreach (DiceMovement die in currentDice.diceMoves)
+            {                
+                die.ResetPosition();
+            }
         }
         
         diceQuantity = room.diceNum;
@@ -48,32 +54,39 @@ public class DiceManager : MonoBehaviour
     {
         dice.frame.SetActive(isActive);
 
-        // da riscrivere meglio ma ora ci accontentiamo
-        foreach (GameObject mask in dice.masks)
+        for (int i = 0; i < diceQuantity; i++)
         {
-            mask.SetActive(isActive);
-        }
-
-        foreach (DiceMovement die in dice.diceMoves)
-        {
-            die.gameObject.SetActive(isActive);
+            dice.masks[i].SetActive(isActive);
+            dice.diceMoves[i].gameObject.SetActive(isActive);
         }
     }
 
     public void LightDice()
     {
-        // DA FARE
+        ShowDice(currentDice, false);
+        currentDice = whiteDiceCombinations[diceQuantity-1];
+        ShowDice(currentDice, true);
     }
 
-    public void Roll()
+    public IEnumerator Roll()
     {
-        Debug.Log("rolling " + diceQuantity + " dice: " + currentDice.name); // TESTING
         for (int i = 0; i < diceQuantity; i++)
         {
             int dieSize = currentDice.dieData.faces.Count;
             int faceIndex = UnityEngine.Random.Range(0, dieSize);
-            currentDice.diceMoves[i].StartAnimation(faceIndex); // first test
-            GetDiceRollOutcome(currentDice.dieData.faces[faceIndex]);
+            currentDice.diceMoves[i].StartAnimation(faceIndex);
+            yield return new WaitForSeconds(rollDelay);
+        }
+    }
+
+    public void EndOneRoll(int faceIndex)
+    {
+        counter++;
+        GetDiceRollOutcome(currentDice.dieData.faces[faceIndex]);
+
+        if (counter == diceQuantity)
+        {
+            runManager.EndDiceRoll();
         }
     }
 
@@ -94,7 +107,8 @@ public class DiceManager : MonoBehaviour
             Debug.Log("evento casuale!"); // evento casuale decisamente temporaneo
             break;
         case DieFace.Parameters.randomTreasure:
-            runManager.GainCoins(10); // tesoro casuale temporaneo
+            int treasureCoins = UnityEngine.Random.Range(6, 11);
+            runManager.GainCoins(treasureCoins); // tesoro casuale temporaneo
             break;
         default:
             Debug.Log("Something went wrong with the dice roll");

@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainUI: {fileID: 1732109237}
-  coinsText: {fileID: 454982568}
+  coinsText: {fileID: 675569144}
   roomNameText: {fileID: 1918892125}
   roomFlavorText: {fileID: 1634224776}
   roomStateIcon: {fileID: 1978998591}
@@ -305,6 +305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87007ebc96e4b4cc9830e143b047205c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rollDelay: 0.3
   whiteDiceCombinations:
   - name: White 1
     frame: {fileID: 3100040881189414341}
@@ -401,11 +402,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c3389af33cb41d8acc78b1d75f14d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialSpeed: 20
-  firstDelay: 1
+  initialSpeed: 500
+  minSpeed: 160
+  firstDelay: 0.8
   repeatRate: 0.5
-  speedMultiplier: 0.3
+  speedMultiplier: 0.8
   maxDistance: 4
+  rollDuration: 1.5
 --- !u!43 &19300867
 Mesh:
   m_ObjectHideFlags: 0
@@ -1257,17 +1260,6 @@ Transform:
 --- !u!114 &438165175 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4779182973855575920, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &454982568 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1342914899896942622, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -2351,6 +2343,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &675569144 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2846821402741462620, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+  m_PrefabInstance: {fileID: 3100040881189414329}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &734269661
 GameObject:
   m_ObjectHideFlags: 0
@@ -5366,6 +5369,10 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 106661383741477209, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 132685757759293101, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5378,10 +5385,18 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 171538102692718294, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 217641214510184943, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 217641214510184943, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 266697925861866903, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5402,10 +5417,18 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 428832684362313807, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 439797179520480650, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 439797179520480650, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -5450,14 +5473,26 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 680028538543509203, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 811102783302353900, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 811102783302353900, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 912230509331809444, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 912230509331809444, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 1054668665963019764, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5514,6 +5549,10 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 3365522506271989672, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -5562,6 +5601,10 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 4081526352050839900, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 4104108090708511189, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5570,6 +5613,10 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 4167505738804898002, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 4209467834931617767, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5586,17 +5633,29 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 4584142398827604544, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 4661874933720567006, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 4661874933720567006, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 4710632923650021856, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 4710632923650021856, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 4937389955175041530, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -5646,6 +5705,10 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 6309287640435313087, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 6707300954811124696, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5666,6 +5729,10 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 6945993343348523787, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 6973970739535557620, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5694,6 +5761,10 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 7488571964463812422, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 7562534938841517847, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -5794,6 +5865,10 @@ PrefabInstance:
       propertyPath: values
       value: 
       objectReference: {fileID: 17527215}
+    - target: {fileID: 8829832321046367753, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: diceManager
+      value: 
+      objectReference: {fileID: 17527214}
     - target: {fileID: 9026551194806205742, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
       value: 0
