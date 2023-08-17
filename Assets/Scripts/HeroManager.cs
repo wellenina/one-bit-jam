@@ -11,6 +11,7 @@ public class HeroManager : MonoBehaviour
     [SerializeField] private Vector3 heroPosition;
     [SerializeField] private Quaternion heroRotation;
     private GameObject heroInScene;
+    private GameObject torchImg;
     private Animator heroAnimator;
 
     public Hero hero;
@@ -44,7 +45,17 @@ public class HeroManager : MonoBehaviour
     public void InstantiateHero()
     {
         heroInScene = Instantiate(hero.image, heroPosition, heroRotation);
+        torchImg = heroInScene.transform.Find("Torch").gameObject;
         heroAnimator = heroInScene.GetComponent<Animator>();
+    }
+
+    public void LightTorch(bool light, int amount = 1)
+    {
+        torchImg.SetActive(light);
+        if (light)
+        {
+            hero.torchValue -= amount;
+        }
     }
 
     public void StartRunning(bool isRunning)

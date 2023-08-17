@@ -58,7 +58,7 @@ public class MainUIManager : MonoBehaviour
         heroNameText.text = hero.name;
         hpText.text = hero.hp.ToString();
         sanityText.text = hero.sanity.ToString();
-        torchText.text = hero.torch.ToString();
+        torchText.text = hero.torchValue.ToString();
     }
 
     public void UpdateCoinsText(int coins)

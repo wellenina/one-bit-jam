@@ -9,12 +9,11 @@ public class Hero
     public int hp;
     public int sanity;
     public GameObject image;
-    public int torch = 3;
+    public int torchValue = 3;
 
     public void GetValuesFromClass(HeroClass heroClass)
     {
         className = heroClass.name;
-        Debug.Log(className); // TESTING
         hp = heroClass.hp;
         sanity = heroClass.sanity;
         image = heroClass.image;
