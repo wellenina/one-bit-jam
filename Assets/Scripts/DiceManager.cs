@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class DiceManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] dicePool = new GameObject[3];
-	[SerializeField] private Die whiteDie;
-	[SerializeField] private Die blackDie;
-	[SerializeField] private Die pyramidDie;
-	private Die die;
+    // [SerializeField] private GameObject[] dicePool = new GameObject[3];
+	// [SerializeField] private Die whiteDie;
+	// [SerializeField] private Die blackDie;
+	// [SerializeField] private Die pyramidDie;
+	// private Die dieData;
 	private int diceQuantity;
     private RunManager runManager;
 
+    [SerializeField] private List<DiceCombination> whiteDiceCombinations;
+    [SerializeField] private List<DiceCombination> blackDiceCombinations;
+    [SerializeField] private List<DiceCombination> pyramidDiceCombinations;
+
+    private DiceCombination currentDice;
 
     void Awake()
     {
@@ -20,42 +25,49 @@ public class DiceManager : MonoBehaviour
 
     public void PrepareDice(Room room)
     {
+        // MI SERVE UN MODO MIGLIORE PER CAPIRE SE è LA PRIMA STANZA
         if (diceQuantity != 0) // se non è la prima stanza della run
         {
-            dicePool[diceQuantity - 1].SetActive(false); // spegne i dadi della stanza precedente
+            ShowDice(currentDice, false); // spegne i dadi della stanza precedente
         }
+
         diceQuantity = room.diceNum;
-        dicePool[diceQuantity - 1].SetActive(true); // accende i dadi della nuova stanza
 
         if (room.isSpecial)
         {
-            die = pyramidDie;
+            currentDice = pyramidDiceCombinations[diceQuantity-1];
         }
         else if (room.isLight)
         {
-            die = whiteDie;
+            currentDice = whiteDiceCombinations[diceQuantity-1];
         }
         else
         {
-            die = blackDie;
+            currentDice = blackDiceCombinations[diceQuantity-1];
         }
 
-        // per ciascuno dei figli dell'elemento acceso:
-        // cambiare l'aspetto del dado
+        ShowDice(currentDice, true);
+    }
+
+    void ShowDice(DiceCombination dice, bool isActive)
+    {
+        dice.mask.SetActive(isActive);
+        dice.frame.SetActive(isActive);
     }
 
     public void LightDice()
     {
-        die = whiteDie;
+        // DA FARE
     }
 
     public void Roll()
     {
-        Debug.Log("rolling " + diceQuantity + " dice:"); // TESTING
+        Debug.Log("rolling " + diceQuantity + " dice: " + currentDice.name); // TESTING
         for (int i = 0; i < diceQuantity; i++)
         {
-            int faceIndex = UnityEngine.Random.Range(0, die.faces.Count);
-            GetDiceRollOutcome(die.faces[faceIndex]);
+            int dieSize = currentDice.dieData.faces.Count;
+            int faceIndex = UnityEngine.Random.Range(0, dieSize);
+            GetDiceRollOutcome(currentDice.dieData.faces[faceIndex]);
         }
     }
 
