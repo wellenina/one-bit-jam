@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class DiceManager : MonoBehaviour
 {
-    // [SerializeField] private GameObject[] dicePool = new GameObject[3];
-	// [SerializeField] private Die whiteDie;
-	// [SerializeField] private Die blackDie;
-	// [SerializeField] private Die pyramidDie;
-	// private Die dieData;
 	private int diceQuantity;
     private RunManager runManager;
 
@@ -30,7 +25,7 @@ public class DiceManager : MonoBehaviour
         {
             ShowDice(currentDice, false); // spegne i dadi della stanza precedente
         }
-
+        
         diceQuantity = room.diceNum;
 
         if (room.isSpecial)
@@ -51,8 +46,18 @@ public class DiceManager : MonoBehaviour
 
     void ShowDice(DiceCombination dice, bool isActive)
     {
-        dice.mask.SetActive(isActive);
         dice.frame.SetActive(isActive);
+
+        // da riscrivere meglio ma ora ci accontentiamo
+        foreach (GameObject mask in dice.masks)
+        {
+            mask.SetActive(isActive);
+        }
+
+        foreach (DiceMovement die in dice.diceMoves)
+        {
+            die.gameObject.SetActive(isActive);
+        }
     }
 
     public void LightDice()
@@ -67,6 +72,7 @@ public class DiceManager : MonoBehaviour
         {
             int dieSize = currentDice.dieData.faces.Count;
             int faceIndex = UnityEngine.Random.Range(0, dieSize);
+            currentDice.diceMoves[i].StartAnimation(faceIndex); // first test
             GetDiceRollOutcome(currentDice.dieData.faces[faceIndex]);
         }
     }

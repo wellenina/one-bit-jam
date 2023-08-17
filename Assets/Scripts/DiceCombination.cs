@@ -6,8 +6,10 @@ using UnityEngine;
 [System.Serializable] public class DiceCombination
 {
     public string name;
-    public GameObject mask;
-    public GameObject frame;
 
-    public Die dieData;
+    public GameObject frame;
+    public GameObject[] masks;
+    public DiceMovement[] diceMoves;
+
+    public Die dieData;   
 }
