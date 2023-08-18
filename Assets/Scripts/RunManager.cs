@@ -10,6 +10,7 @@ public class RunManager : MonoBehaviour
     private HeroManager heroManager;
     private DiceManager diceManager;
     private MainUIManager UImanager;
+    private AudioManager audio;
 
     private int runCoins;
     private int earnedCoins;
@@ -28,6 +29,7 @@ public class RunManager : MonoBehaviour
         heroManager = GetComponent<HeroManager>();
         diceManager = GetComponent<DiceManager>();
         UImanager = GetComponent<MainUIManager>();
+        audio = GetComponent<AudioManager>();
     }
 
     public void StartNewRun() // invoked by button
@@ -49,12 +51,14 @@ public class RunManager : MonoBehaviour
     {
         townUImanager.ActivateStartBtn(false);
         heroManager.StartRunning(true);
+        audio.PlayFootStepsSound(true);
         levelManager.MoveTown();
     }
 
     public void MovementIsOver()
     {
         levelManager.StartRoomShadowAnimation();
+        audio.PlayFootStepsSound(false);
         heroManager.StartRunning(false);
         UImanager.ShowWalkingPanel(false);
 
@@ -65,6 +69,7 @@ public class RunManager : MonoBehaviour
 
     public void UseTorch() // invoked by torch button
     {
+        audio.PlayClip(audio.lightTorch);
         UImanager.LightRoom(true);
         diceManager.LightDice();
         heroManager.LightTorch(true);
@@ -76,6 +81,7 @@ public class RunManager : MonoBehaviour
     public void RollDice() // invoked by ROLL button
     {
         UImanager.ActivateRollBtn(false);
+        audio.PlayDiceSound();
         StartCoroutine(diceManager.Roll());
     }
 
@@ -84,6 +90,7 @@ public class RunManager : MonoBehaviour
         if (heroManager.hero.hp < 1 || heroManager.hero.sanity < 1)
         {
             // you're dead
+            audio.PlayClip(audio.death);
             earnedCoins = runCoins * youLoseMultiplier;
             UImanager.ShowYouLosePopup(earnedCoins);
         }
@@ -109,6 +116,14 @@ public class RunManager : MonoBehaviour
 
     public void AddToHP(int amount)
     {
+        if (amount < 0)
+        {
+            audio.PlayClip(audio.loseHp);
+        }
+        else
+        {
+            audio.PlayClip(audio.gainHp);
+        }
         // HP PARTICLE
         heroManager.hero.hp += amount;
         UImanager.hpText.text = heroManager.hero.hp.ToString();
@@ -116,6 +131,14 @@ public class RunManager : MonoBehaviour
 
     public void AddToSanity(int amount)
     {
+        if (amount < 0)
+        {
+            audio.PlayClip(audio.loseSanity);
+        }
+        else
+        {
+            audio.PlayClip(audio.gainSanity);
+        }
         // SANITY PARTICLE
         heroManager.hero.sanity += amount;
         UImanager.sanityText.text = heroManager.hero.sanity.ToString();
@@ -123,6 +146,14 @@ public class RunManager : MonoBehaviour
 
     public void AddToCoins(int amount)
     {
+        if (amount > 0)
+        {
+            audio.PlayClip(audio.gainCoins);
+        }
+        else
+        {
+            audio.PlayClip(audio.loseCoins);
+        }
         // COIN PARTICLE
         runCoins += amount;
         UImanager.UpdateCoinsText(runCoins);
@@ -130,6 +161,10 @@ public class RunManager : MonoBehaviour
 
     public void AddToTorchValue(int amount)
     {
+        if (amount > 0)
+        {
+            audio.PlayClip(audio.gainTorch);
+        }
         // TORCH PARTICLE
         heroManager.hero.torchValue += amount;
         UImanager.UpdateTorchText(heroManager.hero.torchValue);
@@ -143,6 +178,7 @@ public class RunManager : MonoBehaviour
         UImanager.ShowWalkingPanel(true, runCoins);
         heroManager.LightTorch(false);
         heroManager.StartRunning(true);
+        audio.PlayFootStepsSound(true);
         levelManager.GoToNextRoom();
         UImanager.SetNewRoom(levelManager.currentRoom, heroManager.hero.torchValue);
         diceManager.PrepareDice(levelManager.currentRoom);
