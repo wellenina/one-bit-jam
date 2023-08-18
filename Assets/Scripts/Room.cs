@@ -6,6 +6,7 @@ using UnityEngine;
 public class Room : ScriptableObject
 {
     public new string name;
+    [TextArea(10, 100)]
     public string flavorText;
 
     public bool isLight;

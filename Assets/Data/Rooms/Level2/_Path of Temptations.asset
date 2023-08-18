@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9d6c11e27694595b41dd39eb419b71, type: 3}
+  m_Name: _Path of Temptations
+  m_EditorClassIdentifier: 
+  name: Path of Temptations
+  flavorText: You follow a path made of dried leaves that seem to emit familiar temptations,
+    luring you off the beaten track. The familiarity of the sounds contrasts with
+    the dark atmosphere, creating a constant feeling of insecurity.
+  isLight: 0
+  isSpecial: 0
+  diceNum: 3
+  background: {fileID: 7435492053415536126, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}

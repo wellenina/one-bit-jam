@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e9d6c11e27694595b41dd39eb419b71, type: 3}
-  m_Name: TestRoom 1
+  m_Name: Path of Remorse
   m_EditorClassIdentifier: 
-  name: Shadow Bay
-  flavorText: The Bay of the Shadows
-  isLight: 1
+  name: Path of Remorse
+  flavorText: Trapped in a narrow and winding path, you venture amidst stones inscribed
+    with mysterious symbols. Shivers run down your spine as the feeling of guilt
+    and doubt intensifies with each step forward.
+  isLight: 0
   isSpecial: 0
-  diceNum: 3
+  diceNum: 1
   background: {fileID: 7435492053415536126, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9d6c11e27694595b41dd39eb419b71, type: 3}
+  m_Name: Crossroad1
+  m_EditorClassIdentifier: 
+  name: Crossroad (1-3)
+  flavorText: "Esplorare la Foresta richieder\xE0 fortuna e coraggio. Dovrai affrontare
+    scelte, ma molto spesso il tuo destino sar\xE0 stabilito da un lancio di dadi.\n\nIl
+    luogo nel quale ti trovi, ai margini della Foresta, \xE8 un luogo ancora illuminato
+    da bagliori di luce.\nPer questo motivo, i dadi che lancerai sono BIANCHI. I
+    dadi bianchi hanno meno possibilit\xE0 di danneggiarti, ma ti permetteranno di
+    raccogliere meno braci."
+  isLight: 1
+  isSpecial: 0
+  diceNum: 1
+  background: {fileID: 7435492053415536126, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}

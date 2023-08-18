@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9d6c11e27694595b41dd39eb419b71, type: 3}
+  m_Name: Crossroad2
+  m_EditorClassIdentifier: 
+  name: Crossroad (2-3)
+  flavorText: "Inoltrandoti nella Foresta incontrerai luoghi pi\xF9 pericolosi, i
+    luoghi dove neppure un bagliore di luce \xE8 rimasto.\n\nIn questi luoghi troverai
+    lancerai i dadi NERI. I dadi neri sono pi\xF9 pericolosi, ma ti permetteranno
+    di raccogliere pi\xF9 Braci.\n\nSe non vuoi rischiare, puoi accendere la torcia
+    che porti con te. Ma \xE8 una risorsa preziosa e che si esaurir\xE0 in fretta:
+    sfruttala bene.\n\nA te la scelta."
+  isLight: 0
+  isSpecial: 0
+  diceNum: 1
+  background: {fileID: 7435492053415536126, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}

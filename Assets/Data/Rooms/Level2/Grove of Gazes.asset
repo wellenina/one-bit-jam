@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9d6c11e27694595b41dd39eb419b71, type: 3}
+  m_Name: Grove of Gazes
+  m_EditorClassIdentifier: 
+  name: Grove of Gazes
+  flavorText: Every tree you encounter has luminescent eyes etched into their trunks.
+    You feel constantly watched as you delve into this forest of mute sentinels,
+    with a constant chill that someone is scrutinizing you in the darkness.
+  isLight: 1
+  isSpecial: 0
+  diceNum: 1
+  background: {fileID: 7435492053415536126, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}
