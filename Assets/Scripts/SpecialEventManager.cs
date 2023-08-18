@@ -26,7 +26,6 @@ public class SpecialEventManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI hpText;
     [SerializeField] private TextMeshProUGUI sanityText;
     [SerializeField] private TextMeshProUGUI torchText;
-    [SerializeField] private Button torchBtn;
 
     private GameObject eventProp;
 
@@ -60,8 +59,6 @@ public class SpecialEventManager : MonoBehaviour
         hpText.text = mainHpText.text;
         sanityText.text = mainSanityText.text;
         torchText.text = mainTorchText.text;
-
-        torchBtn.interactable = false;
     }
 
     public void OptionA() // invoked by button

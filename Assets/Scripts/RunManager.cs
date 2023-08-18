@@ -142,7 +142,7 @@ public class RunManager : MonoBehaviour
 
     public void EnterNextRoom()
     {
-        UImanager.ShowWalkingPanel(true);
+        UImanager.ShowWalkingPanel(true, runCoins);
         heroManager.LightTorch(false);
         heroManager.StartRunning(true);
         levelManager.GoToNextRoom();
