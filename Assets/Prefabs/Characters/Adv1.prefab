@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7962182261955214300}
   - component: {fileID: 207226358603814490}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Adv1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ GameObject:
   - component: {fileID: 7854378737815005644}
   - component: {fileID: 3949097310891594090}
   - component: {fileID: 5770672174012849731}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2209525633966310674}
   - component: {fileID: 8072433670749117730}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Adv1_StripSheet_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,6 +258,10 @@ PrefabInstance:
       value: Torch
       objectReference: {fileID: 0}
     - target: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -301,9 +305,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7661677967627957181, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 9051257985518399066, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
       propertyPath: m_Name
       value: Torch_Particle
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051257985518399066, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

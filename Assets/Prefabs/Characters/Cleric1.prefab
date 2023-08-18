@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7275315550824878243}
   - component: {fileID: 6554632506942368703}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8159053431935213649}
   - component: {fileID: 3640388194663631405}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cleric1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 2844790566325284509}
   - component: {fileID: 7405447805989115136}
   - component: {fileID: 4929980402240063128}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Pivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,6 +258,10 @@ PrefabInstance:
       value: Torch
       objectReference: {fileID: 0}
     - target: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -300,6 +304,14 @@ PrefabInstance:
     - target: {fileID: 2200407299112005203, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7661677967627957181, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9051257985518399066, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
