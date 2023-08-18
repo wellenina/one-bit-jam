@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Shadow Bay
   flavorText: The Bay of the Shadows
-  isLight: 0
+  isLight: 1
   isSpecial: 0
   diceNum: 3
   background: {fileID: 7435492053415536126, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}

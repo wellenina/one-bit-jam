@@ -19,8 +19,6 @@ public class RunManager : MonoBehaviour
     [SerializeField] private int youLoseMultiplier;
     [SerializeField] private int youWinMultiplier;
 
-    [SerializeField] private int delayAfterRoll;
-
 
     void Awake()
     {
@@ -80,11 +78,6 @@ public class RunManager : MonoBehaviour
         StartCoroutine(diceManager.Roll());
     }
 
-    public void EndDiceRoll()
-    {
-        Invoke("ShowConsequences", delayAfterRoll);
-    }
-
     public void ShowConsequences()
     {
         if (heroManager.hero.hp < 1 || heroManager.hero.sanity < 1)
@@ -115,24 +108,28 @@ public class RunManager : MonoBehaviour
 
     public void AddToHP(int amount)
     {
+        // HP PARTICLE
         heroManager.hero.hp += amount;
         UImanager.hpText.text = heroManager.hero.hp.ToString();
     }
 
     public void AddToSanity(int amount)
     {
+        // SANITY PARTICLE
         heroManager.hero.sanity += amount;
         UImanager.sanityText.text = heroManager.hero.sanity.ToString();
     }
 
     public void AddToCoins(int amount)
     {
+        // COIN PARTICLE
         runCoins += amount;
         UImanager.UpdateCoinsText(runCoins);
     }
 
     public void AddToTorchValue(int amount)
     {
+        // TORCH PARTICLE
         heroManager.hero.torchValue += amount;
         UImanager.UpdateTorchText(heroManager.hero.torchValue);
     }
