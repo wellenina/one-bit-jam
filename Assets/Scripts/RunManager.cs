@@ -66,8 +66,8 @@ public class RunManager : MonoBehaviour
     {
         UImanager.LightRoom(true);
         diceManager.LightDice();
-        heroManager.hero.torch--;
-        UImanager.UpdateTorchText(heroManager.hero.torch);
+        heroManager.LightTorch(true);
+        UImanager.UpdateTorchText(heroManager.hero.torchValue);
     }
 
 
@@ -135,6 +135,7 @@ public class RunManager : MonoBehaviour
     public void EnterNextRoom()
     {
         UImanager.ShowWalkingPanel(true);
+        heroManager.LightTorch(false);
         heroManager.StartRunning(true);
         levelManager.GoToNextRoom();
         UImanager.SetNewRoom(levelManager.currentRoom);
