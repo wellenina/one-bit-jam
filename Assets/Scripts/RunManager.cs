@@ -20,6 +20,14 @@ public class RunManager : MonoBehaviour
     [SerializeField] private int youLoseMultiplier;
     [SerializeField] private int youWinMultiplier;
 
+    // particles
+    [SerializeField] private ParticleSystem gainCoinsParticle;
+    [SerializeField] private ParticleSystem loseCoinsParticle;
+    [SerializeField] private ParticleSystem loseHpParticle;
+    [SerializeField] private ParticleSystem loseSanityParticle;
+    [SerializeField] private ParticleSystem gainHpParticle;
+    [SerializeField] private ParticleSystem gainSanityParticle;
+
 
     void Awake()
     {
@@ -119,12 +127,13 @@ public class RunManager : MonoBehaviour
         if (amount < 0)
         {
             audio.PlayClip(audio.loseHp);
+            loseHpParticle.Play();
         }
         else
         {
             audio.PlayClip(audio.gainHp);
+            gainHpParticle.Play();
         }
-        // HP PARTICLE
         heroManager.hero.hp += amount;
         UImanager.hpText.text = heroManager.hero.hp.ToString();
     }
@@ -134,12 +143,13 @@ public class RunManager : MonoBehaviour
         if (amount < 0)
         {
             audio.PlayClip(audio.loseSanity);
+            loseSanityParticle.Play();
         }
         else
         {
             audio.PlayClip(audio.gainSanity);
+            gainSanityParticle.Play();
         }
-        // SANITY PARTICLE
         heroManager.hero.sanity += amount;
         UImanager.sanityText.text = heroManager.hero.sanity.ToString();
     }
@@ -149,12 +159,13 @@ public class RunManager : MonoBehaviour
         if (amount > 0)
         {
             audio.PlayClip(audio.gainCoins);
+            gainCoinsParticle.Play();
         }
         else
         {
             audio.PlayClip(audio.loseCoins);
+            loseCoinsParticle.Play();
         }
-        // COIN PARTICLE
         runCoins += amount;
         UImanager.UpdateCoinsText(runCoins);
     }
