@@ -12,8 +12,21 @@ public class SpecialEventManager : MonoBehaviour
     // UI
     [SerializeField] private GameObject specialEventPopup;
     [SerializeField] private TextMeshProUGUI messageUIText;
-    [SerializeField] private TextMeshProUGUI optionAUIText;
-    [SerializeField] private TextMeshProUGUI optionBUIText;
+    [SerializeField] private TextMeshProUGUI optionABtnText;
+    [SerializeField] private TextMeshProUGUI optionBBtnText;
+
+    [SerializeField] private TextMeshProUGUI mainCoinsText;
+    [SerializeField] private TextMeshProUGUI mainHeroNameText;
+    [SerializeField] private TextMeshProUGUI mainHpText;
+    [SerializeField] private TextMeshProUGUI mainSanityText;
+    [SerializeField] private TextMeshProUGUI mainTorchText;
+
+    [SerializeField] private TextMeshProUGUI coinsText;
+    [SerializeField] private TextMeshProUGUI heroNameText;
+    [SerializeField] private TextMeshProUGUI hpText;
+    [SerializeField] private TextMeshProUGUI sanityText;
+    [SerializeField] private TextMeshProUGUI torchText;
+    [SerializeField] private Button torchBtn;
 
     private GameObject eventProp;
 
@@ -29,34 +42,35 @@ public class SpecialEventManager : MonoBehaviour
     // PER ORA: da DiceManager in GetDiceRollOutcome()
     public void StartSpecialEvent()
     {
-        // sceglie un evento casuale tra quelli della lista:
         int randomIndex = UnityEngine.Random.Range(0, specialEvents.list.Count);
         currentEvent = specialEvents.list[randomIndex];
-        // aggiorna la UI dell'evento (messaggio, testo bottoni a e b):
         UpdateUI();
-        // rende visibile popup:
         specialEventPopup.SetActive(true);
-        // istanzia il prefab e lo salva:
         eventProp = Instantiate(currentEvent.prefab, currentEvent.prefab.transform.position, Quaternion.identity);
     }
 
     void UpdateUI()
     {
         messageUIText.text = currentEvent.message;
-        optionAUIText.text = currentEvent.optionAText;
-        optionBUIText.text = currentEvent.optionBText;
+        optionABtnText.text = currentEvent.optionAText;
+        optionBBtnText.text = currentEvent.optionBText;
+
+        coinsText.text = mainCoinsText.text;
+        heroNameText.text = mainHeroNameText.text;
+        hpText.text = mainHpText.text;
+        sanityText.text = mainSanityText.text;
+        torchText.text = mainTorchText.text;
+
+        torchBtn.interactable = false;
     }
 
-    // ha due funzioni collegate ai bottoni:
-
-    public void OptionA()
+    public void OptionA() // invoked by button
     {
-        // prende parametro e numero e fa cose:
         GetOptionConsequence(currentEvent.optionAParameter, currentEvent.optionAValue);
         EndSpecialEvent();
     }
 
-    public void OptionB()
+    public void OptionB() // invoked by button
     {
         GetOptionConsequence(currentEvent.optionBParameter, currentEvent.optionBValue);
         EndSpecialEvent();
@@ -86,9 +100,8 @@ public class SpecialEventManager : MonoBehaviour
 
     void EndSpecialEvent()
     {
-        // spegne la pop up:
+        runManager.ShowConsequences();
         specialEventPopup.SetActive(false);
-        // distrugge prefab in scena:
         Destroy(eventProp);
     }
 

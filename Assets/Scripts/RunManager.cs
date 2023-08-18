@@ -22,6 +22,8 @@ public class RunManager : MonoBehaviour
     [SerializeField] private int youLoseMultiplier;
     [SerializeField] private int youWinMultiplier;
 
+    [SerializeField] private int delayAfterRoll;
+
 
     void Awake()
     {
@@ -85,10 +87,10 @@ public class RunManager : MonoBehaviour
 
     public void EndDiceRoll()
     {
-        Invoke("ShowConsequences", 1.0f);
+        Invoke("ShowConsequences", delayAfterRoll);
     }
 
-    void ShowConsequences()
+    public void ShowConsequences()
     {
         if (heroManager.hero.hp < 1 || heroManager.hero.sanity < 1)
         {

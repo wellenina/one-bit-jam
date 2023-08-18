@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba223bed85e134a938585c6abda290c3, type: 3}
+  m_Name: SpecialEvents
+  m_EditorClassIdentifier: 
+  list:
+  - message: Evento speciale!
+    optionAText: Ottieni 2 hp
+    optionAParameter: 0
+    optionAValue: 2
+    optionBText: Ottieni 2 punti torcia
+    optionBParameter: 3
+    optionBValue: 2
+    prefab: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+  - message: Evento speciale! 2
+    optionAText: 3 monete
+    optionAParameter: 2
+    optionAValue: 3
+    optionBText: 5 sanity
+    optionBParameter: 1
+    optionBValue: 5
+    prefab: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+  - message: Evento speciale! 3
+    optionAText: 3 punti torcia
+    optionAParameter: 3
+    optionAValue: 3
+    optionBText: 3 sanity
+    optionBParameter: 1
+    optionBValue: 3
+    prefab: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}

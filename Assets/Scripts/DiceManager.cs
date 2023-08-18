@@ -7,6 +7,7 @@ public class DiceManager : MonoBehaviour
 	private int diceQuantity;
     private int counter;
     private RunManager runManager;
+    private SpecialEventManager specialEventManager;
     [SerializeField] private float rollDelay = 0.2f;
 
     [SerializeField] private List<DiceCombination> whiteDiceCombinations;
@@ -18,6 +19,7 @@ public class DiceManager : MonoBehaviour
     void Awake()
     {
         runManager = GetComponent<RunManager>();
+        specialEventManager = GetComponent<SpecialEventManager>();
     }
 
     public void PrepareDice(Room room)
@@ -104,7 +106,9 @@ public class DiceManager : MonoBehaviour
             runManager.AddToCoins(face.value);
             break;
         case DieFace.Parameters.specialEvent:
-            Debug.Log("evento casuale!"); // evento casuale decisamente temporaneo
+            Debug.Log("evento casuale!"); // TESTING
+            counter = 10; // ugly but temporary
+            specialEventManager.StartSpecialEvent();
             break;
         case DieFace.Parameters.randomTreasure:
             int treasureCoins = UnityEngine.Random.Range(6, 11);
