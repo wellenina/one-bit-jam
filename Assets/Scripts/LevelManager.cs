@@ -10,6 +10,8 @@ public class LevelManager : MonoBehaviour
     private int currentRoomIndex = 0;
     [HideInInspector] public Room currentRoom;
     private List<GameObject> roomsInScene = new List<GameObject>();
+    private Animator shadowAnimator;
+    private bool wasLit;
 
     [SerializeField] private Vector3 firstRoomPosition;
     [SerializeField] private Vector3 nextRoomPosition;
@@ -42,6 +44,7 @@ public class LevelManager : MonoBehaviour
         roomsParent.transform.position = Vector3.zero;
         InstantiateFirstRooms();
         currentRoom = roomList[currentRoomIndex];
+        wasLit = false;
     }
 
     void InstantiateFirstRooms()
@@ -56,14 +59,36 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    void GetShadowAnimator()
+    {
+        GameObject newRoom = roomsInScene[roomsInScene.Count-3];
+        GameObject shadowSystem = newRoom.transform.Find("ShadowSystem").gameObject;
+        shadowAnimator = shadowSystem.GetComponent<Animator>();
+    }
+
+    public void RoomWasLit()
+    {
+        wasLit = true;
+        shadowAnimator.Play("TurnLightOn");
+    }
+
     public void MoveTown() // <-- run manager BeginRun()
     {
         town.transform.SetParent(roomsParent.transform);
+        GetShadowAnimator();
         StartMovingRooms(2);
+        if (currentRoom.isLight)
+        {
+            shadowAnimator.Play("TurnLightOn");
+        }
     }
 
     public void GoToNextRoom()
     {
+        if (currentRoom.isLight || wasLit)
+        {
+            shadowAnimator.Play("TurnLightOff");
+        }
         currentRoom = roomList[++currentRoomIndex];
         InstantiateNextRoom();
         if (currentRoomIndex == 2)
@@ -71,7 +96,13 @@ public class LevelManager : MonoBehaviour
             town.transform.SetParent(null);
             town.SetActive(false);
         }
+        GetShadowAnimator();
         StartMovingRooms();
+
+        if (currentRoom.isLight)
+        {
+            shadowAnimator.Play("TurnLightOn");
+        }
     }
 
     void InstantiateNextRoom()

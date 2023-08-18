@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Dragonford
   flavorText: Welcome to Dragonford
-  isLight: 1
+  isLight: 0
   isSpecial: 0
   diceNum: 2
   background: {fileID: 7435492053415536126, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}

@@ -27,6 +27,12 @@ public class FadeObjectBlockingObject : MonoBehaviour
 
     private RaycastHit[] Hits = new RaycastHit[10];
 
+
+    void Awake()
+    {
+        Camera = Camera.main;
+    }
+
     private void OnEnable()
     {
         StartCoroutine(CheckForObjects());
