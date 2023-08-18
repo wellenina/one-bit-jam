@@ -46,6 +46,7 @@ public class HeroManager : MonoBehaviour
     {
         heroInScene = Instantiate(hero.image, heroPosition, heroRotation);
         torchImg = heroInScene.transform.Find("Torch").gameObject;
+        torchImg.SetActive(false);
         heroAnimator = heroInScene.GetComponent<Animator>();
     }
 

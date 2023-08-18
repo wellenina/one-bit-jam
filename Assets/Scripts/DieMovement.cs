@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DiceMovement : MonoBehaviour
+public class DieMovement : MonoBehaviour
 {
     private bool isRolling;
 

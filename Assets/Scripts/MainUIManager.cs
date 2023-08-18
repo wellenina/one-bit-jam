@@ -23,7 +23,6 @@ public class MainUIManager : MonoBehaviour
     public TextMeshProUGUI sanityText;
     [SerializeField] private TextMeshProUGUI torchText;
     [SerializeField] private Button torchBtn;
-    private bool isTorchDisabled;
     [SerializeField] private Button rollBtn;
 
     // popups
@@ -39,17 +38,13 @@ public class MainUIManager : MonoBehaviour
     public void ActivateMainUI(bool isActive)
     {
         mainUI.SetActive(isActive);
-        if (isTorchDisabled)
-        {
-            isTorchDisabled = false;
-        }
     }
 
-    public void SetNewRoom(Room room)
+    public void SetNewRoom(Room room, int torchValue)
     {
         roomNameText.text = room.name;
         roomFlavorText.text = room.flavorText;
-        LightRoom(room.isLight);
+        LightRoom(room.isLight, torchValue);
         ActivateRollBtn(true);
     }
 
@@ -66,12 +61,18 @@ public class MainUIManager : MonoBehaviour
         coinsText.text = coins.ToString();
     }
 
-    public void LightRoom(bool light)
+    public void LightRoom(bool light, int torchValue = 1)
     {
         roomStateIcon.color = light ? lightColor : shadowColor;
 
-        if (isTorchDisabled) { return; }
-        torchBtn.interactable = !light;
+        if (light)
+        {
+            torchBtn.interactable = false;
+        }
+        else if (torchValue > 0)
+        {
+            torchBtn.interactable = true;
+        }
     }
 
     public void ActivateRollBtn(bool isActive)
@@ -84,10 +85,6 @@ public class MainUIManager : MonoBehaviour
     public void UpdateTorchText(int newValue)
     {
         torchText.text = newValue.ToString();
-        if (newValue < 1)
-        {
-            isTorchDisabled = true;
-        }
     }
 
 

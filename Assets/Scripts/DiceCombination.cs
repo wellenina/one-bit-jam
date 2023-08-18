@@ -9,7 +9,7 @@ using UnityEngine;
 
     public GameObject frame;
     public GameObject[] masks;
-    public DiceMovement[] diceMoves;
+    public DieMovement[] diceMoves;
 
     public Die dieData;   
 }

@@ -9,7 +9,7 @@ using UnityEngine;
         hp,
         sanity,
         coin,
-        randomEvent,
+        specialEvent,
         randomTreasure
     }
 

@@ -44,7 +44,7 @@ public class RunManager : MonoBehaviour
         runCoins = 0;
         UImanager.UpdateCoinsText(runCoins);
         levelManager.GenerateRun();
-        UImanager.SetNewRoom(levelManager.currentRoom);
+        UImanager.SetNewRoom(levelManager.currentRoom, heroManager.hero.torchValue);
         UImanager.ShowHeroStats(heroManager.hero);
         diceManager.PrepareDice(levelManager.currentRoom);
     }
@@ -114,28 +114,33 @@ public class RunManager : MonoBehaviour
     }
 
 
-    // possible consequences of dice roll:
+    // possible consequences of dice roll or special event:
 
-    public void ReduceHP(int amount)
+    public void AddToHP(int amount)
     {
         heroManager.hero.hp += amount;
         UImanager.hpText.text = heroManager.hero.hp.ToString();
-        Debug.Log("You lose " + amount + " HP! D:"); // TESTING
     }
 
-    public void ReduceSanity(int amount)
+    public void AddToSanity(int amount)
     {
         heroManager.hero.sanity += amount;
         UImanager.sanityText.text = heroManager.hero.sanity.ToString();
-        Debug.Log("You lose " + amount + " sanity! D:"); // TESTING
     }
 
-    public void GainCoins(int amount)
+    public void AddToCoins(int amount)
     {
         runCoins += amount;
         UImanager.UpdateCoinsText(runCoins);
-        Debug.Log("You get " + amount + " coins! :D"); // TESTING
     }
+
+    public void AddToTorchValue(int amount)
+    {
+        heroManager.hero.torchValue += amount;
+        UImanager.UpdateTorchText(heroManager.hero.torchValue);
+    }
+
+    // // // //
 
 
     public void EnterNextRoom()
@@ -145,7 +150,7 @@ public class RunManager : MonoBehaviour
         shadowAnimator.SetTrigger("Run");
         heroManager.StartRunning(true);
         levelManager.GoToNextRoom();
-        UImanager.SetNewRoom(levelManager.currentRoom);
+        UImanager.SetNewRoom(levelManager.currentRoom, heroManager.hero.torchValue);
         diceManager.PrepareDice(levelManager.currentRoom);
     }
 

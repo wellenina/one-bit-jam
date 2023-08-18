@@ -67,16 +67,16 @@ public class SpecialEventManager : MonoBehaviour
         switch(parameter) 
         {
             case SpecialEvent.Parameters.hp:
-                runManager.ReduceHP(value);
+                runManager.AddToHP(value);
                 break;
             case SpecialEvent.Parameters.sanity:
-                runManager.ReduceSanity(value);
+                runManager.AddToSanity(value);
                 break;
             case SpecialEvent.Parameters.coin:
-                runManager.GainCoins(value);
+                runManager.AddToCoins(value);
                 break;
             case SpecialEvent.Parameters.torch:
-                // aggiunge torcia value
+                runManager.AddToTorchValue(value);
                 break;
             default:
                 Debug.Log("Something went wrong with the special event");

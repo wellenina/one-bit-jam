@@ -26,7 +26,7 @@ public class DiceManager : MonoBehaviour
         {
             ShowDice(currentDice, false); // spegne i dadi della stanza precedente
             counter = 0;
-            foreach (DiceMovement die in currentDice.diceMoves)
+            foreach (DieMovement die in currentDice.diceMoves)
             {                
                 die.ResetPosition();
             }
@@ -95,20 +95,20 @@ public class DiceManager : MonoBehaviour
         switch(face.parameter) 
         {
         case DieFace.Parameters.hp:
-            runManager.ReduceHP(face.value);
+            runManager.AddToHP(face.value);
             break;
         case DieFace.Parameters.sanity:
-            runManager.ReduceSanity(face.value);
+            runManager.AddToSanity(face.value);
             break;
         case DieFace.Parameters.coin:
-            runManager.GainCoins(face.value);
+            runManager.AddToCoins(face.value);
             break;
-        case DieFace.Parameters.randomEvent:
+        case DieFace.Parameters.specialEvent:
             Debug.Log("evento casuale!"); // evento casuale decisamente temporaneo
             break;
         case DieFace.Parameters.randomTreasure:
             int treasureCoins = UnityEngine.Random.Range(6, 11);
-            runManager.GainCoins(treasureCoins); // tesoro casuale temporaneo
+            runManager.AddToCoins(treasureCoins); // tesoro casuale temporaneo
             break;
         default:
             Debug.Log("Something went wrong with the dice roll");
