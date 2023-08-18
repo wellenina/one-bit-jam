@@ -252,6 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24b125de7c66b4ddda1a74c5ced0af7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shadowSystem: {fileID: 106912813}
   giveUpMultiplier: 1
   youLoseMultiplier: 0
   youWinMultiplier: 2
@@ -741,6 +742,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &106912813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3097877450577896404, guid: 7d372848302e84c04bdea3f32102cd6e, type: 3}
+  m_PrefabInstance: {fileID: 1529815431}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &133439443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2272512356360000575, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -6440,7 +6446,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9156520418071330531, guid: 842150bfd00c04817a62625d6f23347a, type: 3}
       propertyPath: orthographic size
-      value: 3.77
+      value: 5.3999996
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -11,6 +11,9 @@ public class RunManager : MonoBehaviour
     private DiceManager diceManager;
     private MainUIManager UImanager;
 
+    [SerializeField] private GameObject shadowSystem;
+    private Animator shadowAnimator;
+
     private int runCoins;
     private int earnedCoins;
     private int totalCoins;
@@ -28,6 +31,7 @@ public class RunManager : MonoBehaviour
         heroManager = GetComponent<HeroManager>();
         diceManager = GetComponent<DiceManager>();
         UImanager = GetComponent<MainUIManager>();
+        shadowAnimator = shadowSystem.GetComponent<Animator>();
     }
 
     public void StartNewRun() // invoked by button
@@ -48,6 +52,7 @@ public class RunManager : MonoBehaviour
     public void BeginRun() // invoked by start button
     {
         townUImanager.ActivateStartBtn(false);
+        shadowAnimator.SetTrigger("Run");
         heroManager.StartRunning(true);
         levelManager.MoveTown();
     }
@@ -66,6 +71,7 @@ public class RunManager : MonoBehaviour
     {
         UImanager.LightRoom(true);
         diceManager.LightDice();
+        shadowAnimator.SetTrigger("KindleFire");
         heroManager.LightTorch(true);
         UImanager.UpdateTorchText(heroManager.hero.torchValue);
     }
@@ -136,6 +142,7 @@ public class RunManager : MonoBehaviour
     {
         UImanager.ShowWalkingPanel(true);
         heroManager.LightTorch(false);
+        shadowAnimator.SetTrigger("Run");
         heroManager.StartRunning(true);
         levelManager.GoToNextRoom();
         UImanager.SetNewRoom(levelManager.currentRoom);
