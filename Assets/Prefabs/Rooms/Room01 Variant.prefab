@@ -35424,6 +35424,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scenario
       objectReference: {fileID: 0}
+    - target: {fileID: 4851731261543225776, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5868442284511388595, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}
       propertyPath: m_IsActive
       value: 0

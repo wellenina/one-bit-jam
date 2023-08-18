@@ -7,7 +7,6 @@ public class HeroManager : MonoBehaviour
     [SerializeField] private List<string> heroNames = new List<string>();
     [SerializeField] private HeroClasses potentialClasses;
     private List<HeroClass> unlockedClasses = new List<HeroClass>();
-    [SerializeField] private List<GameObject> heroImages = new List<GameObject>();
     [SerializeField] private Vector3 heroPosition;
     [SerializeField] private Quaternion heroRotation;
     private GameObject heroInScene;

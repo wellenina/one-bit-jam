@@ -54,6 +54,7 @@ public class RunManager : MonoBehaviour
 
     public void MovementIsOver()
     {
+        levelManager.StartRoomShadowAnimation();
         heroManager.StartRunning(false);
         UImanager.ShowWalkingPanel(false);
 

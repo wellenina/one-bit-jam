@@ -11,6 +11,7 @@ public class LevelManager : MonoBehaviour
     [HideInInspector] public Room currentRoom;
     private List<GameObject> roomsInScene = new List<GameObject>();
     private Animator shadowAnimator;
+    private GameObject scenery;
     private bool wasLit;
 
     [SerializeField] private Vector3 firstRoomPosition;
@@ -64,12 +65,22 @@ public class LevelManager : MonoBehaviour
         GameObject newRoom = roomsInScene[roomsInScene.Count-3];
         GameObject shadowSystem = newRoom.transform.Find("ShadowSystem").gameObject;
         shadowAnimator = shadowSystem.GetComponent<Animator>();
+        scenery = newRoom.transform.Find("Scenario").gameObject;
     }
 
-    public void RoomWasLit()
+    public void StartRoomShadowAnimation()
+    {
+        if (currentRoom.isLight || wasLit)
+        {
+            scenery.SetActive(true);
+            shadowAnimator.Play("TurnLightOn");
+        }
+    }
+
+    public void RoomWasLit() // when torch is used
     {
         wasLit = true;
-        shadowAnimator.Play("TurnLightOn");
+        StartRoomShadowAnimation();
     }
 
     public void MoveTown() // <-- run manager BeginRun()
@@ -77,10 +88,6 @@ public class LevelManager : MonoBehaviour
         town.transform.SetParent(roomsParent.transform);
         GetShadowAnimator();
         StartMovingRooms(2);
-        if (currentRoom.isLight)
-        {
-            shadowAnimator.Play("TurnLightOn");
-        }
     }
 
     public void GoToNextRoom()
@@ -98,11 +105,6 @@ public class LevelManager : MonoBehaviour
         }
         GetShadowAnimator();
         StartMovingRooms();
-
-        if (currentRoom.isLight)
-        {
-            shadowAnimator.Play("TurnLightOn");
-        }
     }
 
     void InstantiateNextRoom()
