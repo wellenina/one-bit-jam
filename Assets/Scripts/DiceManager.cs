@@ -6,9 +6,11 @@ public class DiceManager : MonoBehaviour
 {
 	private int diceQuantity;
     private int counter;
+    private List<int> results = new List<int>();
     private RunManager runManager;
     private SpecialEventManager specialEventManager;
     [SerializeField] private float rollDelay = 0.2f;
+    [SerializeField] private float delayAfterRoll = 1.0f;
 
     [SerializeField] private List<DiceCombination> whiteDiceCombinations;
     [SerializeField] private List<DiceCombination> blackDiceCombinations;
@@ -75,21 +77,52 @@ public class DiceManager : MonoBehaviour
         for (int i = 0; i < diceQuantity; i++)
         {
             int dieSize = currentDice.dieData.faces.Count;
-            int faceIndex = UnityEngine.Random.Range(0, dieSize);
+            int faceIndex = GetRandomResult(dieSize);
+            results.Add(faceIndex);
             currentDice.diceMoves[i].StartAnimation(faceIndex);
             yield return new WaitForSeconds(rollDelay);
         }
     }
 
+    int GetRandomResult(int dieSize) // ""random""
+    {
+        int result = UnityEngine.Random.Range(0, dieSize);
+        if (dieSize == 6 && diceQuantity > 1)
+        {
+            if (result == 2 && results.Contains(2))
+            {
+                result = UnityEngine.Random.Range(3, dieSize);
+            }
+        }
+        return result;
+    }
+
     public void EndOneRoll(int faceIndex)
     {
         counter++;
-        GetDiceRollOutcome(currentDice.dieData.faces[faceIndex]);
+        if (counter < diceQuantity) { return; }
 
-        if (counter == diceQuantity)
+        // after the last die:
+        foreach (int result in results)
         {
-            runManager.EndDiceRoll();
+            if (result == 2) { continue; } // every result except the Special Event
+            GetDiceRollOutcome(currentDice.dieData.faces[result]);
         }
+
+        Invoke("EndRoll", delayAfterRoll);
+    }
+
+    void EndRoll()
+    {
+        if (results.Contains(2))
+        {
+            specialEventManager.StartSpecialEvent();
+        }
+        else
+        {
+            runManager.ShowConsequences();
+        }
+        results.Clear();
     }
 
     void GetDiceRollOutcome(DieFace face)
@@ -107,8 +140,6 @@ public class DiceManager : MonoBehaviour
             break;
         case DieFace.Parameters.specialEvent:
             Debug.Log("evento casuale!"); // TESTING
-            counter = 10; // ugly but temporary
-            specialEventManager.StartSpecialEvent();
             break;
         case DieFace.Parameters.randomTreasure:
             int treasureCoins = UnityEngine.Random.Range(6, 11);

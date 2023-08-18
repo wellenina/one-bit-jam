@@ -46,7 +46,7 @@ public class DieMovement : MonoBehaviour
         //
     }
 
-    void Update()
+    void FixedUpdate()
     {
         if (isRolling)
         {
@@ -64,8 +64,8 @@ public class DieMovement : MonoBehaviour
 
     void RollAnimation()
     {
-        transform.Translate(Vector3.up * Time.deltaTime * speed);
-        timePassed += Time.deltaTime;
+        transform.Translate(Vector3.up * Time.fixedDeltaTime * speed);
+        timePassed += Time.fixedDeltaTime;
 
         if (transform.position.y > startPosition.y + height)
         {
