@@ -13,11 +13,14 @@ MonoBehaviour:
   m_Name: ClearingOfSilence
   m_EditorClassIdentifier: 
   name: Clearing of Silence
-  flavorText: You find yourself in an open clearing, surrounded by skeletal trees
-    that seem to lean towards you. The silence is oppressive, with only a faint rustling
-    of leaves breaking the stillness, creating a sense of unease that seeps into
-    your soul.
+  flavorText: 'You find yourself in an open clearing, surrounded by skeletal trees
+    that seem to lean towards you.
+
+
+    The silence is oppressive, with only a faint
+    rustling of leaves breaking the stillness, creating a sense of unease that seeps
+    into your soul.'
   isLight: 1
   isSpecial: 0
   diceNum: 2
-  background: {fileID: 7435492053415536126, guid: 109775f0555ba4336a80c20c44102d7c, type: 3}
+  background: {fileID: 2402291272564331249, guid: cbb5188faad864801babeafe9791a5d2, type: 3}
