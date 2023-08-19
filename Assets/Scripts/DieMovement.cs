@@ -94,7 +94,10 @@ public class DieMovement : MonoBehaviour
         CancelInvoke();
         //speed = initialSpeed;
         timePassed = 0;
-        diceManager.EndOneRoll(result);
+        // diceManager.EndOneRoll(result);
+
+        IEnumerator coroutine = diceManager.EndOneRoll(result);
+        StartCoroutine(coroutine);
     }
 
     public void ResetPosition()

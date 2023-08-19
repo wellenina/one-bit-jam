@@ -10,6 +10,7 @@ public class DiceManager : MonoBehaviour
     private RunManager runManager;
     private SpecialEventManager specialEventManager;
     [SerializeField] private float rollDelay = 0.2f;
+    [SerializeField] private float resultDelay = 1.0f;
     [SerializeField] private float delayAfterRoll = 1.0f;
 
     [SerializeField] private List<DiceCombination> whiteDiceCombinations;
@@ -97,23 +98,21 @@ public class DiceManager : MonoBehaviour
         return result;
     }
 
-    public void EndOneRoll(int faceIndex)
+    public IEnumerator EndOneRoll(int faceIndex)
     {
         counter++;
-        if (counter < diceQuantity) { return; }
+        if (counter < diceQuantity) { yield break; }
 
         // after the last die:
         foreach (int result in results)
         {
             if (result == 2) { continue; } // every result except the Special Event
             GetDiceRollOutcome(currentDice.dieData.faces[result]);
+            yield return new WaitForSeconds(resultDelay);
         }
 
-        Invoke("EndRoll", delayAfterRoll);
-    }
-
-    void EndRoll()
-    {
+        yield return new WaitForSeconds(delayAfterRoll);
+        
         if (results.Contains(2))
         {
             specialEventManager.StartSpecialEvent();

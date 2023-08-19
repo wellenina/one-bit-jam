@@ -37,15 +37,16 @@ public class SpecialEventManager : MonoBehaviour
     }
 
 
-    // viene chiamato quando un dado risulta in evento casuale:
-    // PER ORA: da DiceManager in GetDiceRollOutcome()
     public void StartSpecialEvent()
     {
         int randomIndex = UnityEngine.Random.Range(0, specialEvents.list.Count);
         currentEvent = specialEvents.list[randomIndex];
         UpdateUI();
         specialEventPopup.SetActive(true);
-        eventProp = Instantiate(currentEvent.prefab, currentEvent.prefab.transform.position, Quaternion.identity);
+        if (currentEvent.prefab != null)
+        {
+            eventProp = Instantiate(currentEvent.prefab, currentEvent.prefab.transform.position, Quaternion.identity);
+        }
     }
 
     void UpdateUI()
@@ -99,7 +100,10 @@ public class SpecialEventManager : MonoBehaviour
     {
         runManager.ShowConsequences();
         specialEventPopup.SetActive(false);
-        Destroy(eventProp);
+        if (eventProp != null)
+        {
+            Destroy(eventProp);
+        }
     }
 
 }

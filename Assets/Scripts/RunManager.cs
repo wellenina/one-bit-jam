@@ -27,6 +27,7 @@ public class RunManager : MonoBehaviour
     [SerializeField] private ParticleSystem loseSanityParticle;
     [SerializeField] private ParticleSystem gainHpParticle;
     [SerializeField] private ParticleSystem gainSanityParticle;
+    [SerializeField] private ParticleSystem gainTorchParticle;
 
 
     void Awake()
@@ -175,8 +176,8 @@ public class RunManager : MonoBehaviour
         if (amount > 0)
         {
             audio.PlayClip(audio.gainTorch);
+            gainTorchParticle.Play();
         }
-        // TORCH PARTICLE
         heroManager.hero.torchValue += amount;
         UImanager.UpdateTorchText(heroManager.hero.torchValue);
     }
