@@ -62,7 +62,12 @@ public class LevelManager : MonoBehaviour
 
     void GetShadowAnimator()
     {
-        GameObject newRoom = roomsInScene[roomsInScene.Count-3];
+        int index = 2;
+        if (currentRoomIndex < 2)
+        {
+            index = currentRoomIndex;
+        }
+        GameObject newRoom = roomsInScene[index];
         GameObject shadowSystem = newRoom.transform.Find("ShadowSystem").gameObject;
         shadowAnimator = shadowSystem.GetComponent<Animator>();
         scenery = newRoom.transform.Find("Scenario").gameObject;
@@ -96,6 +101,7 @@ public class LevelManager : MonoBehaviour
         {
             shadowAnimator.Play("TurnLightOff");
         }
+        wasLit = false;
         currentRoom = roomList[++currentRoomIndex];
         InstantiateNextRoom();
         if (currentRoomIndex == 2)

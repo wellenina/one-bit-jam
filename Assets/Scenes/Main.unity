@@ -2664,6 +2664,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5282142312250736624, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_text
+      value: Call the Townsfolk
+      objectReference: {fileID: 0}
     - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_SpriteState.m_DisabledSprite
       value: 
