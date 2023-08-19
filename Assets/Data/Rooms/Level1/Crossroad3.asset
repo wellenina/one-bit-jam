@@ -13,11 +13,16 @@ MonoBehaviour:
   m_Name: Crossroad3
   m_EditorClassIdentifier: 
   name: Crossroad (3-3)
-  flavorText: "Ora che i tuoi passi sono chiari, prosegui lungo la via dinnanzi a
-    te. Il crocevia finalmente \xE8 giunto al termine e puoi lasciarti alle spalle
-    la citt\xE0 e i suoi abitanti.\n\nIl sentiero acciottolato si immerge nella fitta
-    boscaglia. In lontananza il verso di un animale che non riconosci sembra voler
-    accompagnare i tuoi passi.\nTra le ombre qualcosa sembra muoversi. Non sei solo."
+  flavorText: 'Now that your steps are clear, continue along the path before you.
+    The crossroads has finally come to an end and you can leave the town and its
+    people behind.
+
+
+    The cobbled path plunges into dense bush. In the distance,
+    the cry of an animal you don''t recognize seems to want to accompany your steps.
+
+    In
+    the shadows something seems to move. You are not alone.'
   isLight: 1
   isSpecial: 0
   diceNum: 3

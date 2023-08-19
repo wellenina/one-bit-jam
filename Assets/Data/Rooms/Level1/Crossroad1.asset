@@ -13,12 +13,17 @@ MonoBehaviour:
   m_Name: Crossroad1
   m_EditorClassIdentifier: 
   name: Crossroad (1-3)
-  flavorText: "Esplorare la Foresta richieder\xE0 fortuna e coraggio. Dovrai affrontare
-    scelte, ma molto spesso il tuo destino sar\xE0 stabilito da un lancio di dadi.\n\nIl
-    luogo nel quale ti trovi, ai margini della Foresta, \xE8 un luogo ancora illuminato
-    da bagliori di luce.\nPer questo motivo, i dadi che lancerai sono BIANCHI. I
-    dadi bianchi hanno meno possibilit\xE0 di danneggiarti, ma ti permetteranno di
-    raccogliere meno braci."
+  flavorText: 'Exploring the Forest will require luck and courage. You will be faced
+    with choices, but more often than not your fate will be determined by a roll
+    of the dice.
+
+
+    The place where you are now, at the edge of the Forest, is
+    still brighten by faint glimmers of light.
+
+    For this reason, the dice you
+    roll are WHITE. White dice have less chance of harming you, but will allow you
+    to collect fewer Cinders.'
   isLight: 1
   isSpecial: 0
   diceNum: 1

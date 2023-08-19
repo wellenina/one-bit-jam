@@ -13,12 +13,21 @@ MonoBehaviour:
   m_Name: Crossroad2
   m_EditorClassIdentifier: 
   name: Crossroad (2-3)
-  flavorText: "Inoltrandoti nella Foresta incontrerai luoghi pi\xF9 pericolosi, i
-    luoghi dove neppure un bagliore di luce \xE8 rimasto.\n\nIn questi luoghi troverai
-    lancerai i dadi NERI. I dadi neri sono pi\xF9 pericolosi, ma ti permetteranno
-    di raccogliere pi\xF9 Braci.\n\nSe non vuoi rischiare, puoi accendere la torcia
-    che porti con te. Ma \xE8 una risorsa preziosa e che si esaurir\xE0 in fretta:
-    sfruttala bene.\n\nA te la scelta."
+  flavorText: 'Further into the Forest you will encounter more dangerous places,
+    the places where not even a glimmer of light is left.
+
+
+    In these places you
+    will find and roll the BLACK dice. Black dice are more dangerous, but will allow
+    you to collect more Cinders.
+
+
+    If you don''t want to risk it, you can turn
+    on the torch you carry with you. But it''s a precious resource that will run
+    out quickly: make good use of it.
+
+
+    The choice is yours.'
   isLight: 0
   isSpecial: 0
   diceNum: 1
