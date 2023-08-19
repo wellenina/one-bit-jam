@@ -12,8 +12,13 @@ public class SpecialEventManager : MonoBehaviour
     // UI
     [SerializeField] private GameObject specialEventPopup;
     [SerializeField] private TextMeshProUGUI messageUIText;
+    [SerializeField] private Button optionABtn;
+    [SerializeField] private Button optionBBtn;
     [SerializeField] private TextMeshProUGUI optionABtnText;
     [SerializeField] private TextMeshProUGUI optionBBtnText;
+
+    [SerializeField] private GameObject eventOutcomePanel;
+    [SerializeField] private TextMeshProUGUI outcomeText;
 
     [SerializeField] private TextMeshProUGUI mainCoinsText;
     [SerializeField] private TextMeshProUGUI mainHeroNameText;
@@ -60,18 +65,31 @@ public class SpecialEventManager : MonoBehaviour
         hpText.text = mainHpText.text;
         sanityText.text = mainSanityText.text;
         torchText.text = mainTorchText.text;
+
+        ActivateButtons(true); // bottons are interactable, outcome panel is off
+    }
+
+    void ActivateButtons(bool areActive)
+    {
+        optionABtn.interactable = areActive;
+        optionBBtn.interactable = areActive;
+        eventOutcomePanel.SetActive(!areActive);
     }
 
     public void OptionA() // invoked by button
     {
+        outcomeText.text = currentEvent.optionAOutcomeText;
+        ActivateButtons(false); // bottons are NOT interactable, outcome panel is ON
+
         GetOptionConsequence(currentEvent.optionAParameter, currentEvent.optionAValue);
-        EndSpecialEvent();
     }
 
     public void OptionB() // invoked by button
     {
+        outcomeText.text = currentEvent.optionBOutcomeText;
+        ActivateButtons(false);
+
         GetOptionConsequence(currentEvent.optionBParameter, currentEvent.optionBValue);
-        EndSpecialEvent();
     }
 
     void GetOptionConsequence(SpecialEvent.Parameters parameter, int value)
@@ -90,13 +108,16 @@ public class SpecialEventManager : MonoBehaviour
             case SpecialEvent.Parameters.torch:
                 runManager.AddToTorchValue(value);
                 break;
+            case SpecialEvent.Parameters.nothing:
+                // nothing happens
+                break;
             default:
                 Debug.Log("Something went wrong with the special event");
                 break;
             }
     }
 
-    void EndSpecialEvent()
+    void EndSpecialEvent() // invoked by ok button
     {
         runManager.ShowConsequences();
         specialEventPopup.SetActive(false);
