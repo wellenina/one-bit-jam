@@ -13,55 +13,58 @@ MonoBehaviour:
   m_Name: SpecialEvents
   m_EditorClassIdentifier: 
   list:
-  - message: "Incontri una strana creatura nella foresta. Sembra bisognosa di aiuto:
-      si trascina faticosamente sul terreno, lasciando dietro di s\xE8 una striscia
-      di liquido nero e appiccicoso. Cosa fai?\n\nEsito A: La creatura si rannicchia
-      tra le tue braccia e negli ultimi istanti della sua vita ti dona un calore
-      che non provavi da anni.\n\nEsito B: Mentre ti allontani senti alle tue spalle
-      la creatura esalare l'ultimo respiro, e poi essere divorata dalle tenebre."
-    optionAText: Aiuto
+  - message: 'You meet a strange creature in the Forest. It seems to be in need of
+      help: she trudges on the ground, leaving behind a trail of black, sticky liquid.
+      What do you do?'
+    optionAText: Help
     optionAParameter: 1
     optionAValue: 2
-    optionBText: Ignoro
+    optionAOutcomeText: The creature curls up in your arms and in the last moments
+      of its life gives you a warmth you haven't felt in years.
+    optionBText: Ignore
     optionBParameter: 1
     optionBValue: -1
+    optionBOutcomeText: As you walk away you hear the creature behind you exhale
+      its last breath, and then be devoured by the darkness.
     prefab: {fileID: 0}
-  - message: "Scorgi un piccolo stagno, immerso nel silenzio. Sei assetato, ma qualcosa
-      nello stagno ti inquieta: il tuo riflesso sembra in qualche modo distorto.
-      Cosa fai?\n\nEsito A: L'acqua \xE8 stranamente dolciastra, ma dopo alcune sorsate
-      ti senti rinvigorito.\n\nEsito B: Prosegui passando lontano dallo stagno. La
-      sete, per\xF2, si fa pi\xF9 profonda."
-    optionAText: Bevo
+  - message: 'You see a small pond, immersed in silence. You''re thirsty, but something
+      in the pond is troubling you: your reflection seems somehow distorted. What
+      do you do?'
+    optionAText: Drink
     optionAParameter: 0
     optionAValue: 1
-    optionBText: Proseguo
+    optionAOutcomeText: The water is strangely sweet, but after a few sips you feel
+      invigorated.
+    optionBText: Ignore
     optionBParameter: 0
     optionBValue: -1
+    optionBOutcomeText: You walk on past the pond. The thirst, however, deepens.
     prefab: {fileID: 0}
-  - message: "Dalle fronde degli alberi scivola gi\xF9 un enorme ragno con il volto
-      di un uomo. Ti osserva incuriosito: sembra voler comunicare con te, ma quando
-      apre bocca emette solo suoni gutturali. Cosa fai?\n\nEsito A: La creatura ti
-      salta addosso, spingendoti in un fosso nel terreno. Mentre sei stordito, ruba
-      parte delle tue Braci.\n\nEsito B: Fuggi correndo, prima che la creatura deforme
-      possa assalirti."
-    optionAText: Mi avvicino
+  - message: 'A huge spider with the face of a man slides down from the branches
+      of the trees. Intrigued, it looks at you: it seems to want to communicate,
+      but when it opens its mouth it only makes guttural sounds. What do you do?'
+    optionAText: Get closer
     optionAParameter: 2
     optionAValue: -5
-    optionBText: Fuggo
+    optionAOutcomeText: "The creature leaps at you, pushing you into a ditch in the
+      ground. While you\u2019re stunned, it steals some of your Cinders."
+    optionBText: Run away
     optionBParameter: 1
     optionBValue: 1
+    optionBOutcomeText: You manage to run away before the deformed creature could
+      attack you.
     prefab: {fileID: 0}
-  - message: "Al centro di una piccola radura scorgi un antico altare, ricoperto
-      di muffa e muschio nero. Su di esso \xE8 appoggiato un braciere di ottone.
-      Un tempo, forse, era un luogo di preghiera. Cosa fai?\n\nEsito A: accendi il
-      braciere e ti inginocchi, pregando in silenzio. Ma gli dei hanno ormai abbandonato
-      questo mondo, e non ricevi alcuna risposta.\n\nEsito B: ignori l'altare e le
-      vecchie usanze, sperando che nessuno dio decida di maledire il tuo viaggio
-      per questo. NOTA: qui l'esito del tasto dovrebbe essere NIENTE."
-    optionAText: Prego
+  - message: In the center of a small clearing you see an ancient altar, covered
+      in mold and black moss. A brass brazier rests on it. Once, perhaps, it was
+      a place of prayer. What do you do?
+    optionAText: Pray
     optionAParameter: 3
     optionAValue: -1
-    optionBText: Proseguo
-    optionBParameter: 1
-    optionBValue: 3
+    optionAOutcomeText: You light the brazier and kneel down, praying in silence.
+      But the gods have now left this world, and you receive no answer.
+    optionBText: Ignore
+    optionBParameter: 4
+    optionBValue: 0
+    optionBOutcomeText: You ignore the altar and the old ways, hoping that no god
+      decides to curse your journey.
     prefab: {fileID: 0}
