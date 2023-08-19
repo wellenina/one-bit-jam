@@ -1833,6 +1833,28 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
+    - target: {fileID: 905531297486351243, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_text
+      value: 'Darkness has conquered every place, devouring things, people, memories.
+        The town of XXX is the last outpost that resists the advance of the shadows.
+        You are the ruler of the town, or at least of what''s left.
+
+
+        Day
+        after day the places outside the walls of your kingdom disappear, becoming
+        thick darkness. There is no more time: if you don''t act quickly, everything
+        will be lost. To stop the darkness you must ignite the Primordial Flame,
+        an ancient power that once sustained the heat and light of the world itself.
+
+
+        But
+        the Primordial Flame is now extinguished, and its Cinders are found in the
+        Forest of Sorrow, a place from which no one has ever returned.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 905531297486351243, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_fontSize
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 912230509331809444, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -1841,6 +1863,20 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
+    - target: {fileID: 1036992609389610498, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_text
+      value: 'Do you wish to continue the expedition or go back to the town?
+
+
+        The
+        further you go into the Forest, the greater amount of Cinders you will be
+        able to collect, but the obstacles will be more dangerous.
+
+
+        If you
+        return to the town, you will take with you the Cinders you have gathered
+        so far.'
+      objectReference: {fileID: 0}
     - target: {fileID: 1548168346408211347, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1865,6 +1901,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527210}
+    - target: {fileID: 3283769880940710624, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_text
+      value: The obstacles of the Forest have proved too dangerous for you and you
+        have met your destiny at last.
+      objectReference: {fileID: 0}
     - target: {fileID: 3365522506271989672, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -1932,6 +1973,16 @@ PrefabInstance:
     - target: {fileID: 4209467834931617767, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4278565108125177557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_text
+      value: 'Your journey ends here. You can go no further: everything has been
+        devoured by darkness. You can only go back.
+
+
+        But don''t despair:
+        you will take the Cinders you have collected with you and soon a new volunteer
+        will venture into the Forest in your place.'
       objectReference: {fileID: 0}
     - target: {fileID: 4584142398827604544, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
@@ -2125,6 +2176,24 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 17527210}
+    - target: {fileID: 8228498301237338152, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_text
+      value: Continue the journey...
+      objectReference: {fileID: 0}
+    - target: {fileID: 8300063271279516379, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_text
+      value: 'Once again you muster the townsfolk. As the wind blows lightly, you
+        begin to tell the legend of the Primordial Flame, and how only the bravest
+        are able to face the journey in search of its Cinders.
+
+
+        Your words
+        echo in the air, reaching the souls of those present. The few inhabitants
+        of your kingdom, those who have still resisted the shadows, remain silent
+        for a few moments.
+
+        Then a new volunteer steps forward:'
+      objectReference: {fileID: 0}
     - target: {fileID: 8829832321046367753, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
