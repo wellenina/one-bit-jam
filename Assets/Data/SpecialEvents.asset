@@ -13,27 +13,55 @@ MonoBehaviour:
   m_Name: SpecialEvents
   m_EditorClassIdentifier: 
   list:
-  - message: Evento speciale!
-    optionAText: Ottieni 2 hp
-    optionAParameter: 0
+  - message: "Incontri una strana creatura nella foresta. Sembra bisognosa di aiuto:
+      si trascina faticosamente sul terreno, lasciando dietro di s\xE8 una striscia
+      di liquido nero e appiccicoso. Cosa fai?\n\nEsito A: La creatura si rannicchia
+      tra le tue braccia e negli ultimi istanti della sua vita ti dona un calore
+      che non provavi da anni.\n\nEsito B: Mentre ti allontani senti alle tue spalle
+      la creatura esalare l'ultimo respiro, e poi essere divorata dalle tenebre."
+    optionAText: Aiuto
+    optionAParameter: 1
     optionAValue: 2
-    optionBText: Ottieni 2 punti torcia
-    optionBParameter: 3
-    optionBValue: 2
-    prefab: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
-  - message: Evento speciale! 2
-    optionAText: 3 monete
-    optionAParameter: 2
-    optionAValue: 3
-    optionBText: 5 sanity
+    optionBText: Ignoro
     optionBParameter: 1
-    optionBValue: 5
-    prefab: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
-  - message: Evento speciale! 3
-    optionAText: 3 punti torcia
+    optionBValue: -1
+    prefab: {fileID: 0}
+  - message: "Scorgi un piccolo stagno, immerso nel silenzio. Sei assetato, ma qualcosa
+      nello stagno ti inquieta: il tuo riflesso sembra in qualche modo distorto.
+      Cosa fai?\n\nEsito A: L'acqua \xE8 stranamente dolciastra, ma dopo alcune sorsate
+      ti senti rinvigorito.\n\nEsito B: Prosegui passando lontano dallo stagno. La
+      sete, per\xF2, si fa pi\xF9 profonda."
+    optionAText: Bevo
+    optionAParameter: 0
+    optionAValue: 1
+    optionBText: Proseguo
+    optionBParameter: 0
+    optionBValue: -1
+    prefab: {fileID: 0}
+  - message: "Dalle fronde degli alberi scivola gi\xF9 un enorme ragno con il volto
+      di un uomo. Ti osserva incuriosito: sembra voler comunicare con te, ma quando
+      apre bocca emette solo suoni gutturali. Cosa fai?\n\nEsito A: La creatura ti
+      salta addosso, spingendoti in un fosso nel terreno. Mentre sei stordito, ruba
+      parte delle tue Braci.\n\nEsito B: Fuggi correndo, prima che la creatura deforme
+      possa assalirti."
+    optionAText: Mi avvicino
+    optionAParameter: 2
+    optionAValue: -5
+    optionBText: Fuggo
+    optionBParameter: 1
+    optionBValue: 1
+    prefab: {fileID: 0}
+  - message: "Al centro di una piccola radura scorgi un antico altare, ricoperto
+      di muffa e muschio nero. Su di esso \xE8 appoggiato un braciere di ottone.
+      Un tempo, forse, era un luogo di preghiera. Cosa fai?\n\nEsito A: accendi il
+      braciere e ti inginocchi, pregando in silenzio. Ma gli dei hanno ormai abbandonato
+      questo mondo, e non ricevi alcuna risposta.\n\nEsito B: ignori l'altare e le
+      vecchie usanze, sperando che nessuno dio decida di maledire il tuo viaggio
+      per questo. NOTA: qui l'esito del tasto dovrebbe essere NIENTE."
+    optionAText: Prego
     optionAParameter: 3
-    optionAValue: 3
-    optionBText: 3 sanity
+    optionAValue: -1
+    optionBText: Proseguo
     optionBParameter: 1
     optionBValue: 3
-    prefab: {fileID: 779426453933137242, guid: ecc51fc0607f747ac944c01d0f78a490, type: 3}
+    prefab: {fileID: 0}

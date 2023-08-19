@@ -4,6 +4,7 @@ using UnityEngine;
 
 [System.Serializable] public class SpecialEvent
 {
+    [TextArea(10, 100)]
     public string message;
 
     public enum Parameters
