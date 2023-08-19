@@ -19,6 +19,7 @@ public class AudioManager : MonoBehaviour
     public AudioClip gainSanity;
     public AudioClip gainCoins;
     public AudioClip gainTorch;
+    public AudioClip loseTorch;
 
     public AudioClip death;
 

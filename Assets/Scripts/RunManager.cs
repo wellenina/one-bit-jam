@@ -28,6 +28,7 @@ public class RunManager : MonoBehaviour
     [SerializeField] private ParticleSystem gainHpParticle;
     [SerializeField] private ParticleSystem gainSanityParticle;
     [SerializeField] private ParticleSystem gainTorchParticle;
+    [SerializeField] private ParticleSystem loseTorchParticle;
 
 
     void Awake()
@@ -179,7 +180,13 @@ public class RunManager : MonoBehaviour
             audio.PlayClip(audio.gainTorch);
             gainTorchParticle.Play();
         }
+        else
+        {
+            audio.PlayClip(audio.loseTorch);
+            loseTorchParticle.Play();
+        }
         heroManager.hero.torchValue += amount;
+        if (heroManager.hero.torchValue < 0) { heroManager.hero.torchValue = 0; }
         UImanager.UpdateTorchText(heroManager.hero.torchValue);
     }
 
