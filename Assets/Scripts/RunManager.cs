@@ -209,8 +209,7 @@ public class RunManager : MonoBehaviour
         UImanager.ActivateMainUI(false);
         totalCoins += earnedCoins;
         townUImanager.UpdateCoins(totalCoins);
-        townUImanager.ActivateTownUI(true);
-        townManager.UpdateTownVersion(totalCoins);
+        townManager.UpdateTownVersion(totalCoins); // --> activate town ui
 
         levelManager.EndRunDestroyRooms();
         heroManager.EndHero();

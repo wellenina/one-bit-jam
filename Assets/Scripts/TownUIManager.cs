@@ -16,6 +16,8 @@ public class TownUIManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI heroSanity;
     [SerializeField] private Button startBtn;
 
+    [SerializeField] private GameObject endGamePopUp;
+
 
     void Start()
     {
@@ -47,4 +49,10 @@ public class TownUIManager : MonoBehaviour
     {
         totalCoinsText.text = totalCoins.ToString();
     }
+
+    public void ActivateEndGamePopup(bool isActive)
+    {
+        endGamePopUp.SetActive(isActive);
+    }
+    
 }

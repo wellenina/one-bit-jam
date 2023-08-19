@@ -7,6 +7,13 @@ public class TownManager : MonoBehaviour
     [SerializeField] private List<TownVersion> townVersions = new List<TownVersion>();
     private int currentVersionIndex = 0;
 
+    private TownUIManager UImanager;
+
+    void Awake()
+    {
+        UImanager = GetComponent<TownUIManager>();
+    }
+
     void Start()
     {
         townVersions[currentVersionIndex].image.SetActive(true);
@@ -27,6 +34,16 @@ public class TownManager : MonoBehaviour
                 }
                 break;
             }
+        }
+
+        if (currentVersionIndex == townVersions.Count - 1)
+        {
+            // accendi pannello finale
+            UImanager.ActivateEndGamePopup(true);
+        }
+        else
+        {
+            UImanager.ActivateTownUI(true);
         }
     }
 
