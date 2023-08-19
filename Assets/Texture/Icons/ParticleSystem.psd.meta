@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6f4d7173e7caf4b9f9d88f8d59334e23
+guid: 36e5e925d304e41dfb88ef9b30437396
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,106 +123,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 1-bit_UI_byBatuhanK_0
+      name: ParticleSystem_0
       rect:
         serializedVersion: 2
-        x: 12
-        y: 227
-        width: 63
-        height: 20
+        x: 0
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 015803bd6553b4fc8a35868408d0befc
-      internalID: -846603346
+      spriteID: 8deaa921f0d5f440fa4f11e4c613f569
+      internalID: -1451049160
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BoxText
+      name: ParticleSystem_1
       rect:
         serializedVersion: 2
-        x: 271
-        y: 57
-        width: 174
-        height: 83
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 14, y: 15, z: 15, w: 14}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0065f716fb76f43ca8a88b60202e706d
-      internalID: -110093337
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Btn_up
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 22
-        width: 39
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 4, y: 4, z: 4, w: 4}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfdfcdc127dde420f8f9f08c95415e41
-      internalID: 886245068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Btn_down
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 162
-        width: 39
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 4, y: 4, z: 4, w: 4}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce41085723a9f487faa59f3a1929002c
-      internalID: 1825580564
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Btn_disabled
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 22
-        width: 39
-        height: 14
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 4, y: 4, z: 4, w: 4}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3be4946164c994d5f9405396d6ad405f
-      internalID: -865705225
+      spriteID: ec6dde61466a24f0c9eab57cea1ac3d1
+      internalID: 810318672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParticleSystem_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d8fe8b29c855408ca8c6b8db3c29961
+      internalID: -1216016774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParticleSystem_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627118d8632ef4b7bb1f8c841e744d45
+      internalID: 1481512966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParticleSystem_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95fe857fc52f54f2f8bbbdca6630429d
+      internalID: 2129692516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParticleSystem_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c49573ce1f1455d8e644d042a6bb60
+      internalID: 1095031584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ParticleSystem_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1046dae2b735c40eb8e30b58a8756838
+      internalID: -932709509
       vertices: []
       indices: 
       edges: []
@@ -230,7 +272,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f3b094c440ac94cfd89734a35c0739a6
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -238,11 +280,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      1-bit_UI_byBatuhanK_0: -846603346
-      BoxText: -110093337
-      Btn_disabled: -865705225
-      Btn_down: 1825580564
-      Btn_up: 886245068
+      ParticleSystem_0: -1451049160
+      ParticleSystem_1: 810318672
+      ParticleSystem_2: -1216016774
+      ParticleSystem_3: 1481512966
+      ParticleSystem_4: 2129692516
+      ParticleSystem_5: 1095031584
+      ParticleSystem_6: -932709509
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
