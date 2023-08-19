@@ -20,8 +20,14 @@ public class FadingPanel : MonoBehaviour
     public bool isStart = false;
     public float opacity;
 
+    private StartGame startGameScript;
 
-    // Start is called before the first frame update
+
+
+    void Awake()
+    {
+        startGameScript = GetComponent<StartGame>();
+    }
     void Start()
     {
         spriteRenderer = this.gameObject.GetComponent<Image>();
@@ -36,6 +42,14 @@ public class FadingPanel : MonoBehaviour
             StartFade();
         }
 
+    }
+
+    void Update()
+    {
+        if (isStart && material.GetFloat("_Opacity") == 0)
+        {
+            startGameScript.EndStartAnimation();
+        }
     }
 
     public void StartFade()
@@ -91,6 +105,5 @@ public class FadingPanel : MonoBehaviour
             }
 
     }
-
 
 }
