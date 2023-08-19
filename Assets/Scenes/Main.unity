@@ -638,7 +638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2936041221b8449959b7da60fe7f0412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  endBtn: {fileID: 1830621177}
+  mainCanvas: {fileID: 1743782291}
 --- !u!1 &133439443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2272512356360000575, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -984,6 +984,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_StartEnd
       objectReference: {fileID: 0}
+    - target: {fileID: 3668473451586066977, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6324058014874826937, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
       propertyPath: m_Camera
       value: 
@@ -1225,6 +1229,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &852691521 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8003152862408902056, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+  m_PrefabInstance: {fileID: 3100040881189414329}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &852691522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5866445430759220267, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+  m_PrefabInstance: {fileID: 3100040881189414329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &870185898 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1936677191954728009, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -1666,17 +1686,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1830621177 stripped
+--- !u!114 &1830621178
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3800536365272261584, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 852691522}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 17527208}
+          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+          m_MethodName: ChangeTextColorOnPress
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 852691521}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 17527208}
+          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+          m_MethodName: ChangeTextColorOnRelease
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 852691521}
+            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &1853693960 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4487619339717002455, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -2133,6 +2187,24 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
+    - target: {fileID: 905531297486351243, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_text
+      value: 'Darkness has conquered every place, devouring things, people, memories.
+        The town of Ember is the last outpost that resists the advance of the shadows.
+        You are the ruler of the town, or at least of what''s left.
+
+
+        Day
+        after day the places outside the walls of your kingdom disappear, becoming
+        thick darkness. There is no more time: if you don''t act quickly, everything
+        will be lost. To stop the darkness you must ignite the Primordial Flame,
+        an ancient power that once sustained the heat and light of the world itself.
+
+
+        But
+        the Primordial Flame is now extinguished, and its Cinders are found in the
+        Forest of Sorrow, a place from which no one has ever returned.'
+      objectReference: {fileID: 0}
     - target: {fileID: 912230509331809444, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2238,6 +2310,10 @@ PrefabInstance:
       value: -540
       objectReference: {fileID: 0}
     - target: {fileID: 3800536365272261584, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_SpriteState.m_DisabledSprite
+      value: 
+      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
+    - target: {fileID: 3800536365272261584, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -2333,6 +2409,27 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527216}
+    - target: {fileID: 5748110419833924414, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_text
+      value: 'When the last Cinder is placed on the ground, together with the others,
+        an eerie silence falls over the whole town.
+
+
+        The few survivors have
+        all eyes on you. They watch you in silence, almost holding their breath,
+        clinging to the feeble hope of your promises on the Primordial Flame.
+
+
+        You
+        hesitate for a moment: what if they were just legends? What if there''s no
+        hope of stopping the dark? But you drive this thought away almost immediately:
+        you have not seen the blood of so many citizens shed only to be assailed
+        by doubts when everything is ready.
+
+
+        Firmly, you grab the torch
+        and bring it close to the Cinders.'
+      objectReference: {fileID: 0}
     - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2520,7 +2617,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5866445430759220267, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1830621178}
   m_SourcePrefab: {fileID: 100100000, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
 --- !u!1 &3100040881189414330 stripped
 GameObject:

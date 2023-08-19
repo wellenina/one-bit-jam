@@ -6,9 +6,7 @@ using UnityEngine.UI;
 public class EndGame : MonoBehaviour
 {
     private FadingPanel fade;
-    // [SerializeField] private GameObject endText;
-    [SerializeField] private Button endBtn;
-    //[SerializeField] private float endDelay = 4.0;
+    [SerializeField] private GameObject mainCanvas;
 
     void Awake()
     {
@@ -19,14 +17,9 @@ public class EndGame : MonoBehaviour
     // parte al CLICK del bottone
     public void EndGameAnimation()
     {
-        endBtn.interactable = false;
+        mainCanvas.SetActive(false);
         gameObject.SetActive(true);
         fade.EndFade();
-        //Invoke("ShowText", endDelay);
     }
 
-    /* void ShowText()
-    {
-        endText.SetActive(true);
-    } */
 }

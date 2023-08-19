@@ -96,9 +96,10 @@ public class FadingPanel : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-            while (material.GetFloat("_Opacity") < InitialOpacity)
+
+            while (material.GetFloat("_Opacity") < 1.0f)
             {
-                material.SetFloat("_Opacity", Mathf.Lerp(FadedAlpha, InitialOpacity, time * FadeSpeed));
+                material.SetFloat("_Opacity", Mathf.Lerp(FadedAlpha, 1.0f, time * FadeSpeed));
 
                 time += Time.deltaTime;
                 yield return null;
