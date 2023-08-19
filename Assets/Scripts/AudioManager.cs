@@ -9,6 +9,7 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip lightTorch;
     [SerializeField] private AudioClip footSteps;
+    [SerializeField] private AudioClip preRoll;
     [SerializeField] private AudioClip diceRoll;
 
     public AudioClip loseHp;
@@ -37,11 +38,6 @@ public class AudioManager : MonoBehaviour
         source.PlayOneShot(clip, 1.0f);
     }
 
-    public void PlayDiceSound()
-    {
-        source.PlayOneShot(diceRoll, 1.0f);
-    }
-
     public void PlayFootStepsSound(bool isLooping)
     {   
         source.clip = footSteps;
@@ -49,5 +45,18 @@ public class AudioManager : MonoBehaviour
         source.Play();
     }
 
+    public void PlayDiceSound()
+    {
+        source.clip = preRoll;
+        source.loop = true;
+        source.Play();
+        Invoke("PlayDiceRollSound", 1.4f);
+    }
+
+    void PlayDiceRollSound()
+    {
+        source.loop = false;
+        source.PlayOneShot(diceRoll, 1.0f);
+    }
 
 }

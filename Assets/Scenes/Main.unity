@@ -571,14 +571,15 @@ MonoBehaviour:
   btnClick: {fileID: 8300000, guid: 073bf4b30e54b45198dce40f1034b98f, type: 3}
   lightTorch: {fileID: 8300000, guid: e231500db7f804056a3955de7aa0f1a3, type: 3}
   footSteps: {fileID: 8300000, guid: a85e422eb7b664e9fa3824c8c2f2222c, type: 3}
-  diceRoll: {fileID: 8300000, guid: f63be3ba9efe542b2b79e3957ee96b1c, type: 3}
+  preRoll: {fileID: 8300000, guid: 313840912aaa54bd7b8fd1b6cd3b319c, type: 3}
+  diceRoll: {fileID: 8300000, guid: 89000b4d31f7c44f6b377b0c061b97d9, type: 3}
   loseHp: {fileID: 8300000, guid: 39d5432bf060b45e0a32ede10ede6fd1, type: 3}
   loseSanity: {fileID: 8300000, guid: 4df3c676f031e4d35bbb47d6b828d678, type: 3}
   loseCoins: {fileID: 8300000, guid: d899b4f4a4684448595654c0feb1985d, type: 3}
-  gainHp: {fileID: 8300000, guid: 86679a72856444a63adda02668e9d0bb, type: 3}
-  gainSanity: {fileID: 8300000, guid: 86679a72856444a63adda02668e9d0bb, type: 3}
+  gainHp: {fileID: 8300000, guid: 757f3390199894d54bd6aa62cedf8efa, type: 3}
+  gainSanity: {fileID: 8300000, guid: 731fc96f779fb47e09a96e1eea394f18, type: 3}
   gainCoins: {fileID: 8300000, guid: 409aabe209a5d401a9ea4e6cf92c8637, type: 3}
-  gainTorch: {fileID: 8300000, guid: 86679a72856444a63adda02668e9d0bb, type: 3}
+  gainTorch: {fileID: 8300000, guid: b96d114697f994142993af835b28bdb0, type: 3}
   death: {fileID: 8300000, guid: 709ee7a7880194901af39e2271e3a0bc, type: 3}
 --- !u!1 &38589393
 GameObject:
@@ -2354,13 +2355,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
     - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 17527218}
+      objectReference: {fileID: 17527217}
     - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527210}
+    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 073bf4b30e54b45198dce40f1034b98f, type: 3}
+    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 428832684362313807, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2523,13 +2544,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
     - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 17527218}
+      objectReference: {fileID: 17527217}
     - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 17527210}
+    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 073bf4b30e54b45198dce40f1034b98f, type: 3}
+    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2595,6 +2636,10 @@ PrefabInstance:
         But don''t despair:
         you will take the Cinders you have collected with you and soon a new volunteer
         will venture into the Forest in your place.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 4517745530542227914, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4584142398827604544, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
@@ -2673,13 +2718,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
     - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 17527218}
+      objectReference: {fileID: 17527217}
     - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527210}
+    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayOneShot
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.AudioSource, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8300000, guid: 073bf4b30e54b45198dce40f1034b98f, type: 3}
+    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.AudioClip, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6309287640435313087, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
