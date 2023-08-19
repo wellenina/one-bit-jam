@@ -60,13 +60,17 @@ public class SpecialEventManager : MonoBehaviour
         optionABtnText.text = currentEvent.optionAText;
         optionBBtnText.text = currentEvent.optionBText;
 
-        coinsText.text = mainCoinsText.text;
         heroNameText.text = mainHeroNameText.text;
+        UpdateUIValues();
+        ActivateButtons(true); // bottons are interactable, outcome panel is off
+    }
+
+    void UpdateUIValues()
+    {
+        coinsText.text = mainCoinsText.text;
         hpText.text = mainHpText.text;
         sanityText.text = mainSanityText.text;
         torchText.text = mainTorchText.text;
-
-        ActivateButtons(true); // bottons are interactable, outcome panel is off
     }
 
     void ActivateButtons(bool areActive)
@@ -114,10 +118,11 @@ public class SpecialEventManager : MonoBehaviour
             default:
                 Debug.Log("Something went wrong with the special event");
                 break;
-            }
+        }
+        UpdateUIValues();
     }
 
-    void EndSpecialEvent() // invoked by ok button
+    public void EndSpecialEvent() // invoked by ok button
     {
         runManager.ShowConsequences();
         specialEventPopup.SetActive(false);

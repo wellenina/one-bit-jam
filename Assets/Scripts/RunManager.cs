@@ -168,6 +168,7 @@ public class RunManager : MonoBehaviour
             loseCoinsParticle.Play();
         }
         runCoins += amount;
+        if (runCoins < 0) { runCoins = 0; }
         UImanager.UpdateCoinsText(runCoins);
     }
 
