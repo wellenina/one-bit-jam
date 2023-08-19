@@ -114,4 +114,17 @@ public class MainUIManager : MonoBehaviour
         youWinPopup.SetActive(true);
     }
 
+    // al PRESS chiamo
+    public void ChangeTextColorOnPress(TextMeshProUGUI btnText)
+    {
+        btnText.color = lightColor;
+    }
+
+
+    // al RELEASE chiamo
+    public void ChangeTextColorOnRelease(TextMeshProUGUI btnText)
+    {
+        btnText.color = shadowColor;
+    }
+
 }
