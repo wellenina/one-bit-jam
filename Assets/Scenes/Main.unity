@@ -123,17 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &16710979 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5282142312250736624, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &17527205
 GameObject:
   m_ObjectHideFlags: 0
@@ -619,17 +608,6 @@ Transform:
   - {fileID: 200655789}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &64560765 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7153657608184290290, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &133439443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2272512356360000575, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -749,17 +727,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2961579482259197807, guid: 580da4b7f722f4c84b64faedf7797779, type: 3}
   m_PrefabInstance: {fileID: 1554388134306676136}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &290327683 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2066094771708943679, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &310047047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -821,17 +788,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f0720ba407dd42c694d4b81a4f1e1be, type: 3}
---- !u!114 &350966988 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 730155764749593726, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &372175043
 GameObject:
   m_ObjectHideFlags: 0
@@ -889,11 +845,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &490035362 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9181693237958184829, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &525188674 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8138513498669832959, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -940,17 +891,6 @@ MonoBehaviour:
 --- !u!114 &614508523 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 281176085743139918, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &657133219 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8496285799495039451, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
@@ -1030,56 +970,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2039074291438144039, guid: 7f0720ba407dd42c694d4b81a4f1e1be, type: 3}
   m_PrefabInstance: {fileID: 310047047}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &727145415 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5340989950591381559, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &727145420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 727145415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 16710979}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 16710979}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &734269661
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,57 +1043,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490035362}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &790745440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490035362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1274950707}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1274950707}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &797725209 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7767335513353924292, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -1220,7 +1065,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1936677191954728009, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089926693}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -1282,256 +1127,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 266697925861866903, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1067822513 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4333690178059023801, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1067822518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1067822513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1434898241}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1434898241}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &1089926693 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8377255825730370867, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1089926697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1089926693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 657133219}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 657133219}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &1099281856 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7658636584889716530, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1099281861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1099281856}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 290327683}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 290327683}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &1103745381 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8030845095918735214, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1103745386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1103745381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1562936942}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1562936942}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &1109582054 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7732470636060353908, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1109582059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1109582054}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1328353387}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1328353387}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &1111562944 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8871681586431064194, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -1579,17 +1174,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4209467834931617767, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1274950707 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6944593919601079489, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!198 &1320853300 stripped
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 3967727898094002630, guid: 6e42a40475ed2456991fa6b7f69b4b91, type: 3}
@@ -1611,17 +1195,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3637040334965964871, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1340733037 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4685345401036260455, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1379297255 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8694301156705860316, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -1685,17 +1258,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1886521338774467648, guid: 54e3d7058fa1441f0b11f04d044fc317, type: 3}
   m_PrefabInstance: {fileID: 2443787876884516000}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1562936942 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3534711747161311547, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1634224776 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 313336993732818397, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -1734,11 +1296,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1696863128 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6078735925293707100, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1732109237 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4937389955175041530, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -1933,56 +1490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1971849950 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1222533466640578282, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1971849955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1971849950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 64560765}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 64560765}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &1978998591 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2222466254704221202, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -2005,56 +1512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1982566306 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 220421083244041214, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1982566311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1982566306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1340733037}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1340733037}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &2060285159 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5579140558843257823, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -2071,57 +1528,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2254896356933920600, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1696863128}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2117062323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1696863128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 350966988}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 350966988}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &810379075780556708 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6547325131532850210, guid: 9f1043129a206422685cad98b4270f9d, type: 3}
@@ -2326,6 +1738,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 39437659059653207, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 39437659059653207, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
     - target: {fileID: 106661383741477209, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2350,14 +1770,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
-    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2366,22 +1778,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527210}
-    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayOneShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 8300000, guid: 073bf4b30e54b45198dce40f1034b98f, type: 3}
-    - target: {fileID: 421952278323904917, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.AudioClip, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 428832684362313807, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2398,34 +1794,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 554515530191279588, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
     - target: {fileID: 554515530191279588, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2450,28 +1818,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 905531297486351243, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_text
-      value: 'Darkness has conquered every place, devouring things, people, memories.
-        The town of XXX is the last outpost that resists the advance of the shadows.
-        You are the ruler of the town, or at least of what''s left.
-
-
-        Day
-        after day the places outside the walls of your kingdom disappear, becoming
-        thick darkness. There is no more time: if you don''t act quickly, everything
-        will be lost. To stop the darkness you must ignite the Primordial Flame,
-        an ancient power that once sustained the heat and light of the world itself.
-
-
-        But
-        the Primordial Flame is now extinguished, and its Cinders are found in the
-        Forest of Sorrow, a place from which no one has ever returned.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 905531297486351243, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_fontSize
-      value: 32
-      objectReference: {fileID: 0}
     - target: {fileID: 912230509331809444, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2480,24 +1826,22 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 1036992609389610498, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_text
-      value: 'Do you wish to continue the expedition or go back to the town?
-
-
-        The
-        further you go into the Forest, the greater amount of Cinders you will be
-        able to collect, but the obstacles will be more dangerous.
-
-
-        If you
-        return to the town, you will take with you the Cinders you have gathered
-        so far.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1548168346408211347, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
+    - target: {fileID: 1105735195186146115, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 1105735195186146115, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 1367893340570684244, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 1367893340570684244, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
     - target: {fileID: 1548168346408211347, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2506,18 +1850,18 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527216}
+    - target: {fileID: 1737775611607935375, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 1737775611607935375, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
     - target: {fileID: 1936677191954728009, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 17527210}
-    - target: {fileID: 2022978145932875236, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2254896356933920600, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
     - target: {fileID: 2254896356933920600, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2526,11 +1870,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527210}
-    - target: {fileID: 3283769880940710624, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_text
-      value: The obstacles of the Forest have proved too dangerous for you and you
-        have met your destiny at last.
-      objectReference: {fileID: 0}
+    - target: {fileID: 3172412437656165079, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 3172412437656165079, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
     - target: {fileID: 3365522506271989672, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2540,14 +1887,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 17527214}
     - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
-    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 17527217}
@@ -2555,50 +1894,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 17527210}
-    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayOneShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 8300000, guid: 073bf4b30e54b45198dce40f1034b98f, type: 3}
-    - target: {fileID: 3462490594167702956, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.AudioClip, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3824408023471248476, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
     - target: {fileID: 3824408023471248476, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2623,24 +1918,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 4209467834931617767, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4278565108125177557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_text
-      value: 'Your journey ends here. You can go no further: everything has been
-        devoured by darkness. You can only go back.
-
-
-        But don''t despair:
-        you will take the Cinders you have collected with you and soon a new volunteer
-        will venture into the Forest in your place.'
-      objectReference: {fileID: 0}
-    - target: {fileID: 4517745530542227914, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4584142398827604544, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2665,38 +1942,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 4937389955175041530, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5079403866883519165, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
     - target: {fileID: 5079403866883519165, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2705,22 +1950,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527216}
-    - target: {fileID: 5219022136364826098, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5282142312250736624, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_text
-      value: Call the Townsfolk
-      objectReference: {fileID: 0}
-    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
-    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2729,22 +1958,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527210}
-    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayOneShot
-      objectReference: {fileID: 0}
-    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: UnityEngine.AudioSource, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
-      value: 
-      objectReference: {fileID: 8300000, guid: 073bf4b30e54b45198dce40f1034b98f, type: 3}
-    - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.AudioClip, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 6309287640435313087, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2761,10 +1974,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 6973970739535557620, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7077643851118629695, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -2777,6 +1986,22 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
+    - target: {fileID: 7622538565694467877, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 7622538565694467877, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 7925880474463510787, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 7925880474463510787, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
     - target: {fileID: 8057972638789852418, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2858,10 +2083,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8095015475940467197, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
-    - target: {fileID: 8095015475940467197, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 17527218}
@@ -2869,24 +2090,22 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 17527210}
-    - target: {fileID: 8228498301237338152, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_text
-      value: Continue the journey...
-      objectReference: {fileID: 0}
-    - target: {fileID: 8300063271279516379, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_text
-      value: 'Once again you muster the townsfolk. As the wind blows lightly, you
-        begin to tell the legend of the Primordial Flame, and how only the bravest
-        are able to face the journey in search of its Cinders.
-
-
-        Your words
-        echo in the air, reaching the souls of those present. The few inhabitants
-        of your kingdom, those who have still resisted the shadows, remain silent
-        for a few moments.
-
-        Then a new volunteer steps forward:'
-      objectReference: {fileID: 0}
+    - target: {fileID: 8341689461515711646, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 8341689461515711646, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 8698261699905005318, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 8698261699905005318, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
     - target: {fileID: 8829832321046367753, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2895,40 +2114,18 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
+    - target: {fileID: 8889753960832432180, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
+    - target: {fileID: 8889753960832432180, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 17527208}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5340989950591381559, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 727145420}
-    - targetCorrespondingSourceObject: {fileID: 9181693237958184829, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 790745440}
-    - targetCorrespondingSourceObject: {fileID: 8377255825730370867, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1089926697}
-    - targetCorrespondingSourceObject: {fileID: 6078735925293707100, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2117062323}
-    - targetCorrespondingSourceObject: {fileID: 4333690178059023801, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1067822518}
-    - targetCorrespondingSourceObject: {fileID: 7732470636060353908, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1109582059}
-    - targetCorrespondingSourceObject: {fileID: 8030845095918735214, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1103745386}
-    - targetCorrespondingSourceObject: {fileID: 7658636584889716530, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1099281861}
-    - targetCorrespondingSourceObject: {fileID: 220421083244041214, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1982566311}
-    - targetCorrespondingSourceObject: {fileID: 1222533466640578282, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1971849955}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
 --- !u!1 &3100040881189414330 stripped
 GameObject:
