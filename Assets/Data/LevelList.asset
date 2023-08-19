@@ -37,11 +37,3 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 85b6cbc2d26e34cf9abdde9aaee238ad, type: 2}
     slot3Rooms:
     - {fileID: 11400000, guid: 0af6e14c5f6114d709d175bcd211e5bf, type: 2}
-  - name: TEST
-    bonusMultiplier: 5
-    slot1Rooms:
-    - {fileID: 11400000, guid: f8076d39640a04e73a4598d487006c34, type: 2}
-    slot2Rooms:
-    - {fileID: 11400000, guid: e1269018413db4e89bb86b3ed75562a5, type: 2}
-    slot3Rooms:
-    - {fileID: 11400000, guid: 133afeaa92e8d400eadd1dcf11a26156, type: 2}
