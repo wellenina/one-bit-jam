@@ -43,9 +43,10 @@ public class AudioManager : MonoBehaviour
     }
 
     public void PlayFootStepsSound(bool isLooping)
-    {
-        source.PlayOneShot(footSteps, 1.0f);
+    {   
+        source.clip = footSteps;
         source.loop = isLooping;
+        source.Play();
     }
 
 
