@@ -46,7 +46,7 @@ public class RunManager : MonoBehaviour
     public void StartNewRun() // invoked by button
     {
         heroManager.CreateNewHero();
-        townUImanager.ShowHeroPopup(heroManager.hero);
+        townUImanager.ShowHeroPopup(true, heroManager.hero);
         heroManager.InstantiateHero();
 
         // prepare stuff for later:
@@ -60,7 +60,7 @@ public class RunManager : MonoBehaviour
 
     public void BeginRun() // invoked by start button
     {
-        townUImanager.ActivateStartBtn(false);
+        townUImanager.ShowHeroPopup(false);
         heroManager.StartRunning(true);
         audio.PlayFootStepsSound(true);
         levelManager.MoveTown();
@@ -71,10 +71,9 @@ public class RunManager : MonoBehaviour
         levelManager.StartRoomShadowAnimation();
         audio.PlayFootStepsSound(false);
         heroManager.StartRunning(false);
-        UImanager.ShowWalkingPanel(false);
+        UImanager.ShowWalking(false);
 
         if (UImanager.mainUI.activeSelf) { return; }
-        townUImanager.ActivateTownUI(false);
         UImanager.ActivateMainUI(true);
     }
 
@@ -197,7 +196,7 @@ public class RunManager : MonoBehaviour
 
     public void EnterNextRoom()
     {
-        UImanager.ShowWalkingPanel(true, runCoins);
+        UImanager.ShowWalking(true);
         heroManager.LightTorch(false);
         heroManager.StartRunning(true);
         audio.PlayFootStepsSound(true);

@@ -26,8 +26,9 @@ public class MainUIManager : MonoBehaviour
     [SerializeField] private Button rollBtn;
 
     // popups
-    [SerializeField] GameObject walkingPanel;
-    [SerializeField] private TextMeshProUGUI walkinPanelCoins;
+    [SerializeField] GameObject mainRunPanel;
+    // [SerializeField] GameObject walkingPanel;
+    // [SerializeField] private TextMeshProUGUI walkinPanelCoins;
     [SerializeField] GameObject endLevelPopup;
     [SerializeField] private TextMeshProUGUI endLevelCoins;
     [SerializeField] GameObject youLosePopup;
@@ -90,10 +91,11 @@ public class MainUIManager : MonoBehaviour
 
 
     // popups
-    public void ShowWalkingPanel(bool isActive, int coins = 0)
+    public void ShowWalking(bool isWalking)
     {
-        walkingPanel.SetActive(isActive);
-        walkinPanelCoins.text = coins.ToString();
+        // walkingPanel.SetActive(isActive);
+        // walkinPanelCoins.text = coins.ToString();
+        mainRunPanel.SetActive(!isWalking);
     }
 
     public void ShowEndLevelPopup(int coins)
