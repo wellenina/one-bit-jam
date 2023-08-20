@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9d6c11e27694595b41dd39eb419b71, type: 3}
+  m_Name: Frozen Echo Grove
+  m_EditorClassIdentifier: 
+  name: Frozen Echo Grove
+  flavorText: 'Entering this grove, you feel a chill in the air that seems to freeze
+    both time and sound.
+
+
+    The stillness is unnerving, and every breath hangs
+    in the air like a suspended note in a forgotten melody.'
+  isLight: 1
+  isSpecial: 0
+  diceNum: 3
+  background: {fileID: 8106717318831202531, guid: 19ebde842627f4266b2f560a9fa4098a, type: 3}
