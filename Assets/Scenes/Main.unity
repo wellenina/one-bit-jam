@@ -1537,10 +1537,22 @@ PrefabInstance:
       propertyPath: mainCanvas
       value: 
       objectReference: {fileID: 1743782291}
+    - target: {fileID: 5635035095109360605, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: delayShowCanvas
+      value: 1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 6324058014874826937, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2390148698407706414}
+    - target: {fileID: 7224492571483624784, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: delay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224492571483624784, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: FadeSpeed
+      value: 0.28
+      objectReference: {fileID: 0}
     - target: {fileID: 7224492571483624784, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
       propertyPath: initialOpacity
       value: 1
@@ -1712,12 +1724,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734269661}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1743782292}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &797725209 stripped
 MonoBehaviour:
@@ -2156,6 +2168,11 @@ GameObject:
 --- !u!1 &1743782291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7077643851118629695, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+  m_PrefabInstance: {fileID: 3100040881189414329}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &1743782292 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8057972638789852418, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
 --- !u!198 &1777425083 stripped
@@ -3000,7 +3017,10 @@ PrefabInstance:
       objectReference: {fileID: 17527214}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8057972638789852418, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 734269664}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
 --- !u!1 &3100040881189414330 stripped
@@ -3569,7 +3589,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 17527207}
-  - {fileID: 734269664}
   - {fileID: 3100040881189414329}
   - {fileID: 2390148698407706413}
   - {fileID: 930695568}

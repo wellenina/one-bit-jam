@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FadingPanel : MonoBehaviour
 {
@@ -27,16 +28,15 @@ public class FadingPanel : MonoBehaviour
     {
         material = img.material;
         material.SetFloat("_Opacity", initialOpacity);
-
-        if (isStart)
-        {
-            StartCoroutine(FadePanelOut());
-        }
-
     }
 
     void Update()
     {
+        if (isStart && SceneManager.GetSceneByBuildIndex(1) == SceneManager.GetActiveScene())
+        {
+            StartCoroutine(FadePanelOut());
+        }
+
         if (isStart && material.GetFloat("_Opacity") == targetOpacity)
         {
             startGameScript.EndStartAnimation();

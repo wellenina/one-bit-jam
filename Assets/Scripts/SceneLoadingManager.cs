@@ -7,13 +7,14 @@ public class SceneLoadingManager : MonoBehaviour
 {
     [SerializeField] private GameObject startBtn;
     [SerializeField] private GameObject loadingAnimation;
+    [SerializeField] private AudioListener listener;
 
     private AsyncOperation loadingOperation;
     private float timePassed;
     private bool isLoading;
     [SerializeField] private float minDuration = 2.0f;
 
-    void LoadMainScene() // invoked by START button
+    public void LoadMainScene() // invoked by START button
     {
         timePassed = 0;
         isLoading = true;
@@ -31,6 +32,7 @@ public class SceneLoadingManager : MonoBehaviour
 
         if (timePassed > minDuration && loadingOperation.isDone)
         {
+            listener.enabled = false;
             loadingAnimation.SetActive(false);
             SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(1));
             SceneManager.UnloadSceneAsync(0);
