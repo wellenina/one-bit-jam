@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 2109130868420298305}
   - component: {fileID: 3462490594167702956}
   - component: {fileID: 7622538565694467877}
+  - component: {fileID: 6300418733208570183}
   m_Layer: 0
   m_Name: Continue_Btn
   m_TagString: Untagged
@@ -250,13 +251,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 6300418733208570183}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 4685345401036260455}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -266,18 +267,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 6300418733208570183}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 4685345401036260455}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &6300418733208570183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220421083244041214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &262920913144403810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1613,6 +1626,7 @@ GameObject:
   - component: {fileID: 6418319302048582876}
   - component: {fileID: 8095015475940467197}
   - component: {fileID: 1737775611607935375}
+  - component: {fileID: 8382279463921065330}
   m_Layer: 0
   m_Name: Continue_Btn
   m_TagString: Untagged
@@ -1775,13 +1789,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 8382279463921065330}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 7153657608184290290}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -1791,18 +1805,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 8382279463921065330}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 7153657608184290290}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &8382279463921065330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1222533466640578282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1397397555397410122
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,14 +2448,23 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Quando l'ultima Brace viene appoggiata a terra, assieme alle altre, un
-    silenzio irreale cala su tutto il villaggio.\n\nI pochi sopravvissuti hanno tutti
-    gli occhi fissi su di te. Ti osservano in silenzio, trattenendo quasi il fiato,
-    aggrappati alla flebile speranza delle tue promesse sulla Fiamma Primordiale.\n\nEsiti
-    per un istante: e se fossero solo leggende? Se non ci fosse nessuna speranza
-    di fermare le tenebre? Ma scacci quasi subito questo pensiero: non hai visto
-    versare il sangue di tanti cittadini per poi farti assalire dai dubbi quando
-    tutto \xE8 pronto.\n\nCon fermezza afferri la torcia e la avvicini alle Braci."
+  m_text: 'When the last Cinder is placed on the ground, together with the others,
+    an eerie silence falls over the whole town.
+
+
+    The few survivors have all
+    eyes on you. They watch you in silence, almost holding their breath, clinging
+    to the feeble hope of your promises on the Primordial Flame.
+
+
+    You hesitate
+    for a moment: what if they were just legends? What if there''s no hope of stopping
+    the dark? But you drive this thought away almost immediately: you have not seen
+    the blood of so many citizens shed only to be assailed by doubts when everything
+    is ready.
+
+
+    Firmly, you grab the torch and bring it close to the Cinders.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 61d08206c8c194cf584697deeb1e0767, type: 2}
   m_sharedMaterial: {fileID: 2345833317629219358, guid: 61d08206c8c194cf584697deeb1e0767, type: 2}
@@ -3495,6 +3530,7 @@ GameObject:
   - component: {fileID: 418603932669306200}
   - component: {fileID: 2409479399468248143}
   - component: {fileID: 8081770599920847857}
+  - component: {fileID: 7527537043773212183}
   m_Layer: 0
   m_Name: Result_Btn
   m_TagString: Untagged
@@ -3633,13 +3669,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 7527537043773212183}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 9161984138722349747}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -3649,18 +3685,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 7527537043773212183}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 9161984138722349747}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &7527537043773212183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2671638658549852080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2759097232891075928
 GameObject:
   m_ObjectHideFlags: 0
@@ -5160,10 +5208,10 @@ RectTransform:
   - {fileID: 424569170060039910}
   m_Father: {fileID: 8057972638789852418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 320, y: -540}
+  m_SizeDelta: {x: 640, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3539731970248599771
 GameObject:
@@ -5971,10 +6019,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8057972638789852418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 960, y: -540}
+  m_SizeDelta: {x: 640, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4071002347021342406
 GameObject:
@@ -6331,6 +6379,7 @@ GameObject:
   - component: {fileID: 5696069876760420159}
   - component: {fileID: 1548168346408211347}
   - component: {fileID: 1367893340570684244}
+  - component: {fileID: 3772168842463940312}
   m_Layer: 0
   m_Name: OptionA_Btn
   m_TagString: Untagged
@@ -6481,13 +6530,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 3772168842463940312}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 7718829538108345637}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -6497,18 +6546,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 3772168842463940312}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 7718829538108345637}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &3772168842463940312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4333690178059023801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4484741480803337102
 GameObject:
   m_ObjectHideFlags: 0
@@ -7519,6 +7580,7 @@ GameObject:
   - component: {fileID: 6649956269290135796}
   - component: {fileID: 421952278323904917}
   - component: {fileID: 8341689461515711646}
+  - component: {fileID: 5459612061851694395}
   m_Layer: 0
   m_Name: Start_Btn
   m_TagString: Untagged
@@ -7669,13 +7731,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 5459612061851694395}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 5282142312250736624}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -7685,18 +7747,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 5459612061851694395}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 5282142312250736624}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &5459612061851694395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5340989950591381559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5866445430759220267
 GameObject:
   m_ObjectHideFlags: 0
@@ -7709,6 +7783,8 @@ GameObject:
   - component: {fileID: 3702600930217906454}
   - component: {fileID: 6900395793568647130}
   - component: {fileID: 3800536365272261584}
+  - component: {fileID: 6607309492418262233}
+  - component: {fileID: 1781299827128133601}
   m_Layer: 0
   m_Name: End_Btn
   m_TagString: Untagged
@@ -7806,7 +7882,7 @@ MonoBehaviour:
     m_HighlightedSprite: {fileID: 886245068, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
     m_PressedSprite: {fileID: 1825580564, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
     m_SelectedSprite: {fileID: 886245068, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
-    m_DisabledSprite: {fileID: 886245068, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
+    m_DisabledSprite: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -7819,8 +7895,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
-        m_MethodName: PlayBtnSound
+        m_TargetAssemblyTypeName: EndGame, Assembly-CSharp
+        m_MethodName: EndGameAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7830,18 +7906,63 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RunManager, Assembly-CSharp
-        m_MethodName: StartNewRun
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+--- !u!114 &6607309492418262233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5866445430759220267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1781299827128133601}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+          m_MethodName: ChangeTextColorOnPress
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1781299827128133601}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+          m_MethodName: ChangeTextColorOnRelease
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1781299827128133601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5866445430759220267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5877345460386472674
 GameObject:
   m_ObjectHideFlags: 0
@@ -8536,6 +8657,7 @@ GameObject:
   - component: {fileID: 7950739017751854406}
   - component: {fileID: 2254896356933920600}
   - component: {fileID: 39437659059653207}
+  - component: {fileID: 8378877651751952722}
   m_Layer: 0
   m_Name: Roll_Btn
   m_TagString: Untagged
@@ -8686,13 +8808,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 8378877651751952722}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 730155764749593726}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -8702,18 +8824,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 8378877651751952722}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 730155764749593726}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &8378877651751952722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6078735925293707100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6158022588392742223
 GameObject:
   m_ObjectHideFlags: 0
@@ -9753,10 +9887,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8057972638789852418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 1600, y: -540}
+  m_SizeDelta: {x: 640, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6934997746459577886
 GameObject:
@@ -10013,7 +10147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8057972638789852418
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10610,6 +10744,7 @@ GameObject:
   - component: {fileID: 7511874629876843037}
   - component: {fileID: 3824408023471248476}
   - component: {fileID: 7925880474463510787}
+  - component: {fileID: 5916298536396098694}
   m_Layer: 0
   m_Name: End_Btn
   m_TagString: Untagged
@@ -10772,13 +10907,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 5916298536396098694}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 2066094771708943679}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -10788,18 +10923,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 5916298536396098694}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 2066094771708943679}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &5916298536396098694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7658636584889716530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7670755201148752438
 GameObject:
   m_ObjectHideFlags: 0
@@ -10988,6 +11135,7 @@ GameObject:
   - component: {fileID: 7183087796390286340}
   - component: {fileID: 5079403866883519165}
   - component: {fileID: 1105735195186146115}
+  - component: {fileID: 4996531132396597150}
   m_Layer: 0
   m_Name: OptionB_Btn
   m_TagString: Untagged
@@ -11138,13 +11286,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 4996531132396597150}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 6086827945173894568}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -11154,18 +11302,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 4996531132396597150}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 6086827945173894568}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &4996531132396597150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7732470636060353908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7816981283684731696
 GameObject:
   m_ObjectHideFlags: 0
@@ -11664,6 +11824,7 @@ GameObject:
   - component: {fileID: 393103280470280293}
   - component: {fileID: 554515530191279588}
   - component: {fileID: 8889753960832432180}
+  - component: {fileID: 8929903518652084748}
   m_Layer: 0
   m_Name: Continue_Btn
   m_TagString: Untagged
@@ -11826,13 +11987,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 8929903518652084748}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 3534711747161311547}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -11842,18 +12003,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 8929903518652084748}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 3534711747161311547}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &8929903518652084748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8030845095918735214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8138513498669832959
 GameObject:
   m_ObjectHideFlags: 0
@@ -12079,6 +12252,7 @@ GameObject:
   - component: {fileID: 4744161791593762938}
   - component: {fileID: 1936677191954728009}
   - component: {fileID: 3172412437656165079}
+  - component: {fileID: 2165510678808531353}
   m_Layer: 0
   m_Name: Torch_Btn
   m_TagString: Untagged
@@ -12217,13 +12391,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 2165510678808531353}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 8496285799495039451}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -12233,18 +12407,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 2165510678808531353}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 8496285799495039451}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &2165510678808531353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8377255825730370867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8453725191257708859
 GameObject:
   m_ObjectHideFlags: 0
@@ -12386,7 +12572,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: 'Darkness has conquered every place, devouring things, people, memories.
-    The town of XXX is the last outpost that resists the advance of the shadows.
+    The town of Ember is the last outpost that resists the advance of the shadows.
     You are the ruler of the town, or at least of what''s left.
 
 
@@ -12648,7 +12834,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Continue the journey...
+  m_text: The journey continues...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 61d08206c8c194cf584697deeb1e0767, type: 2}
   m_sharedMaterial: {fileID: 2345833317629219358, guid: 61d08206c8c194cf584697deeb1e0767, type: 2}
@@ -13263,6 +13449,7 @@ GameObject:
   - component: {fileID: 8850284616510657910}
   - component: {fileID: 6015722572904925557}
   - component: {fileID: 8698261699905005318}
+  - component: {fileID: 485764983185748772}
   m_Layer: 0
   m_Name: Start_Btn
   m_TagString: Untagged
@@ -13413,13 +13600,13 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 485764983185748772}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 6944593919601079489}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
@@ -13429,18 +13616,30 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
+        - m_Target: {fileID: 485764983185748772}
+          m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
           m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
+          m_Mode: 1
           m_Arguments:
-            m_ObjectArgument: {fileID: 6944593919601079489}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &485764983185748772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9181693237958184829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b3e166608d34c14ba392bfcd1f1463, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &437982624254335627
 PrefabInstance:
   m_ObjectHideFlags: 0

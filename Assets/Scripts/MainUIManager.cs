@@ -22,7 +22,7 @@ public class MainUIManager : MonoBehaviour
     public TextMeshProUGUI hpText;
     public TextMeshProUGUI sanityText;
     [SerializeField] private TextMeshProUGUI torchText;
-    [SerializeField] private Button torchBtn;
+    [SerializeField] private GameObject torchBtn;
     [SerializeField] private Button rollBtn;
 
     // popups
@@ -68,11 +68,11 @@ public class MainUIManager : MonoBehaviour
 
         if (light)
         {
-            torchBtn.interactable = false;
+            torchBtn.SetActive(false);
         }
         else if (torchValue > 0)
         {
-            torchBtn.interactable = true;
+            torchBtn.SetActive(true);
         }
     }
 
@@ -80,7 +80,7 @@ public class MainUIManager : MonoBehaviour
     {
         rollBtn.interactable = isActive;
         if (isActive) { return; }
-        torchBtn.interactable = false;
+        torchBtn.SetActive(false);
     }
 
     public void UpdateTorchText(int newValue)
@@ -112,19 +112,6 @@ public class MainUIManager : MonoBehaviour
     {
         youWinCoins.text = coins.ToString();
         youWinPopup.SetActive(true);
-    }
-
-    // al PRESS chiamo
-    public void ChangeTextColorOnPress(TextMeshProUGUI btnText)
-    {
-        btnText.color = lightColor;
-    }
-
-
-    // al RELEASE chiamo
-    public void ChangeTextColorOnRelease(TextMeshProUGUI btnText)
-    {
-        btnText.color = shadowColor;
     }
 
 }

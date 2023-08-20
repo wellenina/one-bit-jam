@@ -208,7 +208,7 @@ MonoBehaviour:
   hpText: {fileID: 1224638694}
   sanityText: {fileID: 535320350}
   torchText: {fileID: 1810821812}
-  torchBtn: {fileID: 870185898}
+  torchBtn: {fileID: 1281172356}
   rollBtn: {fileID: 2117062319}
   walkingPanel: {fileID: 591955619}
   walkinPanelCoins: {fileID: 614508523}
@@ -1659,33 +1659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &852691521 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8003152862408902056, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &852691522 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5866445430759220267, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &870185898 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1936677191954728009, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &930695567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,6 +1838,11 @@ GameObject:
 --- !u!1 &1241550861 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4209467834931617767, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+  m_PrefabInstance: {fileID: 3100040881189414329}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1281172356 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8377255825730370867, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
 --- !u!198 &1320853300 stripped
@@ -2272,51 +2250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1830621178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 852691522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnPress
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 852691521}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 17527208}
-          m_TargetAssemblyTypeName: MainUIManager, Assembly-CSharp
-          m_MethodName: ChangeTextColorOnRelease
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 852691521}
-            m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!114 &1853693960 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4487619339717002455, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -2584,7 +2517,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9156520418071330531, guid: 842150bfd00c04817a62625d6f23347a, type: 3}
       propertyPath: orthographic size
-      value: 0.32
+      value: 5.3999996
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2669,14 +2602,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 39437659059653207, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 39437659059653207, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
     - target: {fileID: 106661383741477209, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2725,30 +2650,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 640
-      objectReference: {fileID: 0}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 320
-      objectReference: {fileID: 0}
-    - target: {fileID: 517375107267527809, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -540
-      objectReference: {fileID: 0}
     - target: {fileID: 554515530191279588, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2773,24 +2674,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 905531297486351243, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_text
-      value: 'Darkness has conquered every place, devouring things, people, memories.
-        The town of Ember is the last outpost that resists the advance of the shadows.
-        You are the ruler of the town, or at least of what''s left.
-
-
-        Day
-        after day the places outside the walls of your kingdom disappear, becoming
-        thick darkness. There is no more time: if you don''t act quickly, everything
-        will be lost. To stop the darkness you must ignite the Primordial Flame,
-        an ancient power that once sustained the heat and light of the world itself.
-
-
-        But
-        the Primordial Flame is now extinguished, and its Cinders are found in the
-        Forest of Sorrow, a place from which no one has ever returned.'
-      objectReference: {fileID: 0}
     - target: {fileID: 912230509331809444, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2799,22 +2682,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 1105735195186146115, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 1105735195186146115, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 1367893340570684244, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 1367893340570684244, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
     - target: {fileID: 1548168346408211347, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2823,14 +2690,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527216}
-    - target: {fileID: 1737775611607935375, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 1737775611607935375, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
     - target: {fileID: 1936677191954728009, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2847,14 +2706,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 17527216}
-    - target: {fileID: 3172412437656165079, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 3172412437656165079, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
     - target: {fileID: 3365522506271989672, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -2871,50 +2722,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 17527210}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 640
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1600
-      objectReference: {fileID: 0}
-    - target: {fileID: 3667838319170886680, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -540
-      objectReference: {fileID: 0}
-    - target: {fileID: 3800536365272261584, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SpriteState.m_DisabledSprite
-      value: 
-      objectReference: {fileID: -865705225, guid: 6f4d7173e7caf4b9f9d88f8d59334e23, type: 3}
-    - target: {fileID: 3800536365272261584, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3800536365272261584, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 126050711}
-    - target: {fileID: 3800536365272261584, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: EndGameAnimation
-      objectReference: {fileID: 0}
-    - target: {fileID: 3800536365272261584, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: EndGame, Assembly-CSharp
-      objectReference: {fileID: 0}
     - target: {fileID: 3824408023471248476, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2963,30 +2774,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 640
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 1080
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 960
-      objectReference: {fileID: 0}
-    - target: {fileID: 4962784182468388477, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -540
-      objectReference: {fileID: 0}
     - target: {fileID: 5079403866883519165, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2995,27 +2782,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 17527216}
-    - target: {fileID: 5748110419833924414, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_text
-      value: 'When the last Cinder is placed on the ground, together with the others,
-        an eerie silence falls over the whole town.
-
-
-        The few survivors have
-        all eyes on you. They watch you in silence, almost holding their breath,
-        clinging to the feeble hope of your promises on the Primordial Flame.
-
-
-        You
-        hesitate for a moment: what if they were just legends? What if there''s no
-        hope of stopping the dark? But you drive this thought away almost immediately:
-        you have not seen the blood of so many citizens shed only to be assailed
-        by doubts when everything is ready.
-
-
-        Firmly, you grab the torch
-        and bring it close to the Cinders.'
-      objectReference: {fileID: 0}
     - target: {fileID: 6015722572904925557, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3044,10 +2810,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
-    - target: {fileID: 7077643851118629695, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7488571964463812422, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -3056,22 +2818,6 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 7622538565694467877, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 7622538565694467877, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 7925880474463510787, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 7925880474463510787, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
     - target: {fileID: 8057972638789852418, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3152,14 +2898,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8081770599920847857, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 8081770599920847857, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
     - target: {fileID: 8095015475940467197, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3168,22 +2906,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 17527210}
-    - target: {fileID: 8341689461515711646, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 8341689461515711646, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 8698261699905005318, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 8698261699905005318, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
     - target: {fileID: 8829832321046367753, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
       propertyPath: values
       value: 
@@ -3192,21 +2914,10 @@ PrefabInstance:
       propertyPath: diceManager
       value: 
       objectReference: {fileID: 17527214}
-    - target: {fileID: 8889753960832432180, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
-    - target: {fileID: 8889753960832432180, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 17527208}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5866445430759220267, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1830621178}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
 --- !u!1 &3100040881189414330 stripped
 GameObject:
