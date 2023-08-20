@@ -360,11 +360,11 @@ MonoBehaviour:
   townVersions:
   - coinThreshold: 0
     image: {fileID: 810379075780556708}
-  - coinThreshold: 10
+  - coinThreshold: 25
     image: {fileID: 944263232}
-  - coinThreshold: 30
+  - coinThreshold: 50
     image: {fileID: 723377107}
-  - coinThreshold: 70
+  - coinThreshold: 120
     image: {fileID: 958751456}
 --- !u!114 &17527214
 MonoBehaviour:
@@ -2615,7 +2615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9156520418071330531, guid: 842150bfd00c04817a62625d6f23347a, type: 3}
       propertyPath: orthographic size
-      value: 5.3999996
+      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
