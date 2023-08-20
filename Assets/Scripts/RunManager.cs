@@ -11,6 +11,7 @@ public class RunManager : MonoBehaviour
     private DiceManager diceManager;
     private MainUIManager UImanager;
     private AudioManager audio;
+    [SerializeField] CameraManager camera;
 
     private int runCoins;
     private int earnedCoins;
@@ -97,6 +98,7 @@ public class RunManager : MonoBehaviour
 
     public void ShowConsequences()
     {
+        camera.SwitchToParticleCamera(false);
         if (heroManager.hero.hp < 1 || heroManager.hero.sanity < 1)
         {
             // you're dead

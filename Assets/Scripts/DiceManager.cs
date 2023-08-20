@@ -9,6 +9,7 @@ public class DiceManager : MonoBehaviour
     private List<int> results = new List<int>();
     private RunManager runManager;
     private SpecialEventManager specialEventManager;
+    [SerializeField] CameraManager camera;
     [SerializeField] private float rollDelay = 0.2f;
     [SerializeField] private float resultDelay = 1.0f;
     [SerializeField] private float delayAfterRoll = 1.0f;
@@ -104,6 +105,8 @@ public class DiceManager : MonoBehaviour
         if (counter < diceQuantity) { yield break; }
 
         // after the last die:
+        camera.SwitchToParticleCamera(true);
+        yield return new WaitForSeconds(delayAfterRoll);
         foreach (int result in results)
         {
             if (result == 2) { continue; } // every result except the Special Event
