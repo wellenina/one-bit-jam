@@ -13,9 +13,12 @@ MonoBehaviour:
   m_Name: Enshrouded Ruins
   m_EditorClassIdentifier: 
   name: Enshrouded Ruins
-  flavorText: You tread through a labyrinth of ancient ruins, covered in dense vegetation.
-    Among the stones weathered by time, it seems like echoes of past voices whisper
-    to you, blurring the boundary between past and present.
+  flavorText: 'You tread through a labyrinth of ancient ruins, covered in dense vegetation.
+
+
+    Among
+    the stones weathered by time, it seems like echoes of past voices whisper to
+    you, blurring the boundary between past and present.'
   isLight: 0
   isSpecial: 0
   diceNum: 2
