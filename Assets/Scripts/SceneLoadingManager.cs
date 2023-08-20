@@ -11,7 +11,7 @@ public class SceneLoadingManager : MonoBehaviour
     private AsyncOperation loadingOperation;
     private float timePassed;
     private bool isLoading;
-    [SerializeField] private minDuration = 2.0f; 
+    [SerializeField] private float minDuration = 2.0f;
 
     void LoadMainScene() // invoked by START button
     {
