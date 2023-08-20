@@ -202,8 +202,8 @@ MonoBehaviour:
   roomNameText: {fileID: 1918892125}
   roomFlavorText: {fileID: 1634224776}
   roomStateIcon: {fileID: 1978998591}
-  lightColor: {r: 1, g: 1, b: 1, a: 1}
-  shadowColor: {r: 0, g: 0, b: 0, a: 1}
+  lightColor: {r: 0.9098039, g: 0.9019608, b: 0.88235295, a: 1}
+  shadowColor: {r: 0.07058824, g: 0.07058824, b: 0.08627451, a: 1}
   heroNameText: {fileID: 2060285159}
   hpText: {fileID: 1224638694}
   sanityText: {fileID: 535320350}
@@ -704,24 +704,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73563472}
   m_Mesh: {fileID: -2432090755550338912, guid: 9b747afb98f6b344eb460640983a0f95, type: 3}
---- !u!1 &126050706 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4831906641145239932, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+--- !u!114 &126050711 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4575472898852659662, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
   m_PrefabInstance: {fileID: 584027732}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &126050711
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 126050706}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2936041221b8449959b7da60fe7f0412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCanvas: {fileID: 1743782291}
 --- !u!1 &133439443 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2272512356360000575, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -1450,52 +1443,23 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas_StartEnd
       objectReference: {fileID: 0}
-    - target: {fileID: 3668473451586066977, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
+    - target: {fileID: 4575472898852659662, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: mainCanvas
+      value: 
+      objectReference: {fileID: 1743782291}
+    - target: {fileID: 5635035095109360605, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: mainCanvas
+      value: 
+      objectReference: {fileID: 1743782291}
     - target: {fileID: 6324058014874826937, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2390148698407706414}
-    - target: {fileID: 7224492571483624784, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
-      propertyPath: mainStartPanel
-      value: 
-      objectReference: {fileID: 584027733}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3347998529574449277, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 584027735}
-    - targetCorrespondingSourceObject: {fileID: 4831906641145239932, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 126050711}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
---- !u!1 &584027733 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 823897302868631548, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
-  m_PrefabInstance: {fileID: 584027732}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &584027734 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3347998529574449277, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
-  m_PrefabInstance: {fileID: 584027732}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &584027735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584027734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cb887917510646529bda04cb6a6a6be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCanvas: {fileID: 1743782291}
 --- !u!1 &591955619 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7103346293885140092, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -2620,7 +2584,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9156520418071330531, guid: 842150bfd00c04817a62625d6f23347a, type: 3}
       propertyPath: orthographic size
-      value: 5.3999996
+      value: 0.32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
