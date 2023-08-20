@@ -13,10 +13,13 @@ MonoBehaviour:
   m_Name: Grove of Gazes
   m_EditorClassIdentifier: 
   name: Grove of Gazes
-  flavorText: Every tree you encounter has luminescent eyes etched into their trunks.
-    You feel constantly watched as you delve into this forest of mute sentinels,
-    with a constant chill that someone is scrutinizing you in the darkness.
+  flavorText: 'Every tree you encounter has luminescent eyes etched into their trunks.
+
+
+    You
+    feel constantly watched as you delve into this forest of mute sentinels, with
+    a constant chill that someone is scrutinizing you in the darkness.'
   isLight: 1
   isSpecial: 0
   diceNum: 1
-  background: {fileID: 2402291272564331249, guid: cbb5188faad864801babeafe9791a5d2, type: 3}
+  background: {fileID: 8106717318831202531, guid: 19ebde842627f4266b2f560a9fa4098a, type: 3}
