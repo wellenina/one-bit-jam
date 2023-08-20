@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   list:
   - name: Crossroads
-    bonusMultiplier: 2
+    bonusMultiplier: 1
     slot1Rooms:
     - {fileID: 11400000, guid: a04efd5f007ca475fbe0986f89a10394, type: 2}
     slot2Rooms:
@@ -22,7 +22,7 @@ MonoBehaviour:
     slot3Rooms:
     - {fileID: 11400000, guid: f123ef7ff4d074471a961b655732b9cc, type: 2}
   - name: Forest 1
-    bonusMultiplier: 5
+    bonusMultiplier: 2
     slot1Rooms:
     - {fileID: 11400000, guid: c987e7f7b3836411d9383d097fb5688b, type: 2}
     - {fileID: 11400000, guid: de7a7180012504432bebef7acd4264f7, type: 2}
@@ -37,3 +37,48 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 85b6cbc2d26e34cf9abdde9aaee238ad, type: 2}
     slot3Rooms:
     - {fileID: 11400000, guid: 0af6e14c5f6114d709d175bcd211e5bf, type: 2}
+  - name: Forest 2
+    bonusMultiplier: 3
+    slot1Rooms:
+    - {fileID: 11400000, guid: ff0cfc10ef1c54b8bbd5434cf5f6302d, type: 2}
+    - {fileID: 11400000, guid: 103edc1e9a2a74c27a79b619f41cddd9, type: 2}
+    - {fileID: 11400000, guid: cc16a1d82f0e64f81b2a6eae6455624b, type: 2}
+    - {fileID: 11400000, guid: 04f44fe454fd24206ba160b1d682cddf, type: 2}
+    - {fileID: 11400000, guid: e5e479648bf9946c3909fdc216fad0b3, type: 2}
+    - {fileID: 11400000, guid: 21af30bf10c4e4b01afa0fa6ff5e89a8, type: 2}
+    slot2Rooms:
+    - {fileID: 11400000, guid: ff0cfc10ef1c54b8bbd5434cf5f6302d, type: 2}
+    - {fileID: 11400000, guid: 103edc1e9a2a74c27a79b619f41cddd9, type: 2}
+    - {fileID: 11400000, guid: cc16a1d82f0e64f81b2a6eae6455624b, type: 2}
+    - {fileID: 11400000, guid: 04f44fe454fd24206ba160b1d682cddf, type: 2}
+    - {fileID: 11400000, guid: e5e479648bf9946c3909fdc216fad0b3, type: 2}
+    - {fileID: 11400000, guid: 21af30bf10c4e4b01afa0fa6ff5e89a8, type: 2}
+    slot3Rooms:
+    - {fileID: 11400000, guid: 003b28ee7daa347ada3d6cdea536b010, type: 2}
+  - name: Forest 3
+    bonusMultiplier: 4
+    slot1Rooms:
+    - {fileID: 11400000, guid: ff0cfc10ef1c54b8bbd5434cf5f6302d, type: 2}
+    - {fileID: 11400000, guid: 103edc1e9a2a74c27a79b619f41cddd9, type: 2}
+    - {fileID: 11400000, guid: cc16a1d82f0e64f81b2a6eae6455624b, type: 2}
+    - {fileID: 11400000, guid: 04f44fe454fd24206ba160b1d682cddf, type: 2}
+    - {fileID: 11400000, guid: e5e479648bf9946c3909fdc216fad0b3, type: 2}
+    - {fileID: 11400000, guid: c987e7f7b3836411d9383d097fb5688b, type: 2}
+    - {fileID: 11400000, guid: de7a7180012504432bebef7acd4264f7, type: 2}
+    - {fileID: 11400000, guid: 4069faf4920144d7193bdc3458b765c4, type: 2}
+    - {fileID: 11400000, guid: da3b09b2c03084d2aae5c7eba343aeed, type: 2}
+    - {fileID: 11400000, guid: 85b6cbc2d26e34cf9abdde9aaee238ad, type: 2}
+    slot2Rooms:
+    - {fileID: 11400000, guid: ff0cfc10ef1c54b8bbd5434cf5f6302d, type: 2}
+    - {fileID: 11400000, guid: 103edc1e9a2a74c27a79b619f41cddd9, type: 2}
+    - {fileID: 11400000, guid: cc16a1d82f0e64f81b2a6eae6455624b, type: 2}
+    - {fileID: 11400000, guid: 04f44fe454fd24206ba160b1d682cddf, type: 2}
+    - {fileID: 11400000, guid: e5e479648bf9946c3909fdc216fad0b3, type: 2}
+    - {fileID: 11400000, guid: c987e7f7b3836411d9383d097fb5688b, type: 2}
+    - {fileID: 11400000, guid: de7a7180012504432bebef7acd4264f7, type: 2}
+    - {fileID: 11400000, guid: 4069faf4920144d7193bdc3458b765c4, type: 2}
+    - {fileID: 11400000, guid: da3b09b2c03084d2aae5c7eba343aeed, type: 2}
+    - {fileID: 11400000, guid: 85b6cbc2d26e34cf9abdde9aaee238ad, type: 2}
+    slot3Rooms:
+    - {fileID: 11400000, guid: 0af6e14c5f6114d709d175bcd211e5bf, type: 2}
+    - {fileID: 11400000, guid: 003b28ee7daa347ada3d6cdea536b010, type: 2}

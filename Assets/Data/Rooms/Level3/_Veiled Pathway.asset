@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9d6c11e27694595b41dd39eb419b71, type: 3}
+  m_Name: _Veiled Pathway
+  m_EditorClassIdentifier: 
+  name: Veiled Pathway
+  flavorText: Following a veiled pathway, your vision is obscured by a silken mist
+    that clings to the foliage. Each step feels like a journey into the unknown,
+    guided only by the whispers of unseen forces.
+  isLight: 0
+  isSpecial: 0
+  diceNum: 3
+  background: {fileID: 1264482417329457706, guid: 5b9d7e322022c4e36b51cc9208cc24fa, type: 3}
