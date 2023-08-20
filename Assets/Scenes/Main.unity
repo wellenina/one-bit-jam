@@ -239,6 +239,67 @@ MonoBehaviour:
   - Pherwerdmi
   - Werd'ric
   - Luisa
+  - Chelwig
+  - Layha
+  - Neorah
+  - Ceobrand
+  - Braschard
+  - Ferumbeorn
+  - Sylgrim
+  - Jenfrith
+  - Freanan
+  - Laliam
+  - Awig
+  - Orahwyneal
+  - Winebeohere
+  - Bandoeadla
+  - Brimessyl
+  - Sanpanethchris
+  - Ronchrisry
+  - Nedalthal
+  - Algilia
+  - Deuilasrion
+  - Anajarian
+  - Ionieil
+  - Kalam
+  - Kruppe
+  - Rasanas
+  - Thircurulia
+  - Adirthir
+  - Dehquendin
+  - Anorar
+  - Wedorcuru
+  - Uilthelrod
+  - Thosaeg
+  - Mothriamar
+  - Resthalionriel
+  - Thargon
+  - Cwenlaf
+  - Drargcyn
+  - Sigtheod
+  - Kelera
+  - Varadrud
+  - Poppy
+  - Jasper
+  - Cooper
+  - Mulder
+  - Zucchina
+  - Matteo
+  - Axel
+  - Cressida
+  - Anders
+  - Raven
+  - Dallas
+  - Bertram
+  - Akira
+  - Belinda
+  - Egon
+  - Odilia
+  - Rosalind
+  - Jadumoyazod
+  - Arisynthzodke
+  - Mogkaorc
+  - Banana
   potentialClasses: {fileID: 11400000, guid: 0a674dddcc70f4afdb66c46add70b02d, type: 2}
   heroPosition: {x: 45, y: 44, z: -72}
   heroRotation: {x: 0, y: 0.104528464, z: 0, w: 0.9945219}
@@ -1444,9 +1505,17 @@ PrefabInstance:
       value: Canvas_StartEnd
       objectReference: {fileID: 0}
     - target: {fileID: 4575472898852659662, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: endBtn
+      value: 
+      objectReference: {fileID: 852691522}
+    - target: {fileID: 4575472898852659662, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
       propertyPath: mainCanvas
       value: 
       objectReference: {fileID: 1743782291}
+    - target: {fileID: 4575472898852659662, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: delayHideCanvas
+      value: 1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 5635035095109360605, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
       propertyPath: mainCanvas
       value: 
@@ -1455,6 +1524,18 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2390148698407706414}
+    - target: {fileID: 7224492571483624784, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: initialOpacity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497764283257532600, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: delay
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497764283257532600, guid: 0e81da866f7384bda9b8452ababb10a3, type: 3}
+      propertyPath: targetOpacity
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1659,6 +1740,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &852691522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5866445430759220267, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
+  m_PrefabInstance: {fileID: 3100040881189414329}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &930695567
 GameObject:
   m_ObjectHideFlags: 0

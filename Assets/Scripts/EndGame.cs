@@ -7,6 +7,8 @@ public class EndGame : MonoBehaviour
 {
     private FadingPanel fade;
     [SerializeField] private GameObject mainCanvas;
+    [SerializeField] private GameObject endBtn;
+    [SerializeField] private float delayHideCanvas = 1.4f;
 
     void Awake()
     {
@@ -17,9 +19,15 @@ public class EndGame : MonoBehaviour
     // parte al CLICK del bottone
     public void EndGameAnimation()
     {
-        mainCanvas.SetActive(false);
+        endBtn.SetActive(false);
+        Invoke("HideCanvas", delayHideCanvas);
         gameObject.SetActive(true);
         fade.EndFade();
+    }
+
+    void HideCanvas()
+    {
+        mainCanvas.SetActive(false);
     }
 
 }

@@ -6,81 +6,56 @@ using UnityEngine.UI;
 public class FadingPanel : MonoBehaviour
 {
 
-    [SerializeField]
-    [Range(0, 1f)]
-    private float FadedAlpha = 0f;
-    [SerializeField]
-    private float FadeSpeed = 1;
+    [SerializeField] private float FadeSpeed = 1;
+    [SerializeField] [Range(0, 1.0f)] private float initialOpacity;
+    [SerializeField] [Range(0, 1.0f)] private float targetOpacity;
+    [SerializeField] private bool isStart;
+    [SerializeField] private float delay = 1f;
 
-    private Image spriteRenderer;
+    private Image img;
     private Material material;
 
-    private float InitialOpacity;
-
-    public bool isStart = false;
-    public float opacity;
-
     private StartGame startGameScript;
-
 
 
     void Awake()
     {
         startGameScript = GetComponent<StartGame>();
+        img = this.gameObject.GetComponent<Image>();
     }
     void Start()
     {
-        spriteRenderer = this.gameObject.GetComponent<Image>();
-        material = spriteRenderer.material;
-
-        material.SetFloat("_Opacity", opacity);
-
-        InitialOpacity = material.GetFloat("_Opacity");
+        material = img.material;
+        material.SetFloat("_Opacity", initialOpacity);
 
         if (isStart)
         {
-            StartFade();
+            StartCoroutine(FadePanelOut());
         }
 
     }
 
     void Update()
     {
-        if (isStart && material.GetFloat("_Opacity") == 0)
+        if (isStart && material.GetFloat("_Opacity") == targetOpacity)
         {
             startGameScript.EndStartAnimation();
         }
     }
 
-    public void StartFade()
+    IEnumerator FadePanelOut() // START
     {
-        StartCoroutine(FadePanelOut());
-    }
-
-    private IEnumerator FadePanelOut()
-    {
-
         float time = 0;
 
+        yield return new WaitForSeconds(delay);
 
-        yield return new WaitForSeconds(1f);
-
-        if (material.GetFloat("_Opacity") > FadedAlpha)
+        while (material.GetFloat("_Opacity") > targetOpacity)
         {
+            material.SetFloat("_Opacity", Mathf.Lerp(initialOpacity, targetOpacity, time * FadeSpeed));
 
-            while (material.GetFloat("_Opacity") > FadedAlpha)
-            {
-                material.SetFloat("_Opacity", Mathf.Lerp(InitialOpacity, FadedAlpha, time * FadeSpeed));
-
-                time += Time.deltaTime;
-                yield return null;
-            }
+            time += Time.deltaTime;
+            yield return null;
         }
-        else
-        {
-            Debug.Log("ERROR");
-        }
-
     }
 
     public void EndFade()
@@ -88,23 +63,19 @@ public class FadingPanel : MonoBehaviour
         StartCoroutine(FadePanelIn());
     }
 
-    private IEnumerator FadePanelIn()
+    IEnumerator FadePanelIn() // END
     {
-
         float time = 0;
 
+        yield return new WaitForSeconds(delay);
 
-        yield return new WaitForSeconds(1f);
+        while (material.GetFloat("_Opacity") < targetOpacity)
+        {
+            material.SetFloat("_Opacity", Mathf.Lerp(initialOpacity, targetOpacity, time * FadeSpeed));
 
-
-            while (material.GetFloat("_Opacity") < 1.0f)
-            {
-                material.SetFloat("_Opacity", Mathf.Lerp(FadedAlpha, 1.0f, time * FadeSpeed));
-
-                time += Time.deltaTime;
-                yield return null;
-            }
-
+            time += Time.deltaTime;
+            yield return null;
+        }
     }
 
 }
