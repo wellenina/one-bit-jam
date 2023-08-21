@@ -1663,74 +1663,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2039074291438144039, guid: 7f0720ba407dd42c694d4b81a4f1e1be, type: 3}
   m_PrefabInstance: {fileID: 310047047}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &734269661
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 734269664}
-  - component: {fileID: 734269663}
-  - component: {fileID: 734269662}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &734269662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734269661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &734269663
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734269661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &734269664
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734269661}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1743782292}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &797725209 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7767335513353924292, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
@@ -2168,11 +2100,6 @@ GameObject:
 --- !u!1 &1743782291 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7077643851118629695, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-  m_PrefabInstance: {fileID: 3100040881189414329}
-  m_PrefabAsset: {fileID: 0}
---- !u!224 &1743782292 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 8057972638789852418, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
   m_PrefabInstance: {fileID: 3100040881189414329}
   m_PrefabAsset: {fileID: 0}
 --- !u!198 &1777425083 stripped
@@ -2615,7 +2542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9156520418071330531, guid: 842150bfd00c04817a62625d6f23347a, type: 3}
       propertyPath: orthographic size
-      value: 0.32
+      value: 5.3999996
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3017,10 +2944,7 @@ PrefabInstance:
       objectReference: {fileID: 17527214}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 8057972638789852418, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 734269664}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb438d0af1c8744da9c1868ed517ada8, type: 3}
 --- !u!1 &3100040881189414330 stripped

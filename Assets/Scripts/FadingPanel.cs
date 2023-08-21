@@ -17,6 +17,7 @@ public class FadingPanel : MonoBehaviour
     private Material material;
 
     private StartGame startGameScript;
+    private bool hasStarted;
 
 
     void Awake()
@@ -32,9 +33,10 @@ public class FadingPanel : MonoBehaviour
 
     void Update()
     {
-        if (isStart && SceneManager.GetSceneByBuildIndex(1) == SceneManager.GetActiveScene())
+        if (isStart && !hasStarted && SceneManager.GetSceneByBuildIndex(1) == SceneManager.GetActiveScene())
         {
             StartCoroutine(FadePanelOut());
+            hasStarted = true;
         }
 
         if (isStart && material.GetFloat("_Opacity") == targetOpacity)
@@ -45,6 +47,7 @@ public class FadingPanel : MonoBehaviour
 
     IEnumerator FadePanelOut() // START
     {
+        Debug.Log("starting coroutine");
         float time = 0;
 
         yield return new WaitForSeconds(delay);
