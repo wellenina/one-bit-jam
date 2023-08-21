@@ -10,6 +10,7 @@ public class DieMovement : MonoBehaviour
     private float faceHeight = 64.0f;
     private int result;
 
+    private Vector3 initialPosition;
     private Vector3 startPosition;
     private Vector3 targetPosition;
     private float maxDistance = 4.0f; //
@@ -105,7 +106,12 @@ public class DieMovement : MonoBehaviour
 
     public void ResetPosition()
     {
-        transform.position = startPosition;
+        if (scale == rt.lossyScale.x)
+        {
+            transform.position = startPosition;
+            return;
+        }
+        transform.position = startPosition * (rt.lossyScale.x / scale);
     }
 
 }
