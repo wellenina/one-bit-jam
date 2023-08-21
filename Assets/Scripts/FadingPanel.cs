@@ -47,7 +47,6 @@ public class FadingPanel : MonoBehaviour
 
     IEnumerator FadePanelOut() // START
     {
-        Debug.Log("starting coroutine");
         float time = 0;
 
         yield return new WaitForSeconds(delay);
