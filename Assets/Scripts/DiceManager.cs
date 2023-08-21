@@ -109,14 +109,14 @@ public class DiceManager : MonoBehaviour
         yield return new WaitForSeconds(delayAfterRoll);
         foreach (int result in results)
         {
-            if (result == 2) { continue; } // every result except the Special Event
+            if (result == 2 && currentDice.isWhite) { continue; } // every result except the Special Event
             GetDiceRollOutcome(currentDice.dieData.faces[result]);
             yield return new WaitForSeconds(resultDelay);
         }
 
         yield return new WaitForSeconds(delayAfterRoll);
         
-        if (results.Contains(2))
+        if (results.Contains(2) && currentDice.isWhite)
         {
             specialEventManager.StartSpecialEvent();
         }

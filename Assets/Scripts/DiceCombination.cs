@@ -7,6 +7,8 @@ using UnityEngine;
 {
     public string name;
 
+    public bool isWhite;
+
     public GameObject frame;
     public GameObject[] masks;
     public DieMovement[] diceMoves;
