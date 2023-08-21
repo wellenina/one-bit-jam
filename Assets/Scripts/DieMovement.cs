@@ -27,13 +27,15 @@ public class DieMovement : MonoBehaviour
 
     [SerializeField] private DiceManager diceManager;
 
-    // for testing
-    public DiceTesting values;
+    public DiceTesting values; // for testing
+
+    private RectTransform rt;
+    private float scale;
     
 
     void Start()
     {
-        startPosition = transform.position;
+        rt = GetComponentInChildren<RectTransform>();
 
         // for testing
         initialSpeed = values.initialSpeed;
@@ -55,9 +57,12 @@ public class DieMovement : MonoBehaviour
     }
     public void StartAnimation(int faceIndex)
     {
-        speed = initialSpeed;
+        startPosition = transform.position;
+        scale = rt.lossyScale.x;
+
+        speed = initialSpeed * scale;
         result = faceIndex;
-        targetPosition = new Vector3(startPosition.x, startPosition.y + (faceHeight * result), startPosition.z);
+        targetPosition = new Vector3(startPosition.x, startPosition.y + (faceHeight * scale * result), startPosition.z);
         isRolling = true;
         InvokeRepeating("DecreaseSpeed", firstDelay, repeatRate);
     }
@@ -67,12 +72,12 @@ public class DieMovement : MonoBehaviour
         transform.Translate(Vector3.up * Time.fixedDeltaTime * speed);
         timePassed += Time.fixedDeltaTime;
 
-        if (transform.position.y > startPosition.y + height)
+        if (transform.position.y > startPosition.y + height * scale)
         {
             transform.position = startPosition;
         }
 
-        if (timePassed > rollDuration && Vector3.Distance(transform.position, targetPosition) < maxDistance)
+        if (timePassed > rollDuration && Vector3.Distance(transform.position, targetPosition) < maxDistance * scale)
         {
             transform.position = targetPosition;
             EndRollAnimation();
@@ -82,7 +87,7 @@ public class DieMovement : MonoBehaviour
     void DecreaseSpeed()
     {
         speed *= speedMultiplier;
-        if (speed < minSpeed)
+        if (speed < minSpeed * scale)
         {
             CancelInvoke();
         }
@@ -92,9 +97,7 @@ public class DieMovement : MonoBehaviour
     {
         isRolling = false;
         CancelInvoke();
-        //speed = initialSpeed;
         timePassed = 0;
-        // diceManager.EndOneRoll(result);
 
         IEnumerator coroutine = diceManager.EndOneRoll(result);
         StartCoroutine(coroutine);
