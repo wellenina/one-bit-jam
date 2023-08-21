@@ -215,7 +215,7 @@ TextureImporter:
         width: 39
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 4, y: 4, z: 4, w: 4}
       outline: []
       physicsShape: []
@@ -223,6 +223,90 @@ TextureImporter:
       bones: []
       spriteID: 3be4946164c994d5f9405396d6ad405f
       internalID: -865705225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbutton_up
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 180
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba40f7e2946294fb2af3e556729fe81f
+      internalID: 477415995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Xbutton_down
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 180
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53f7b3bc74404f0799b57bd00deee68
+      internalID: -585251868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OptionButton_Up
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 156
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b997295b9d7a4052a170d23ceace441
+      internalID: -81339284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OptionButton_Down
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 156
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9529250115443f08f491b206b3eb14
+      internalID: -431040842
       vertices: []
       indices: 
       edges: []
@@ -243,6 +327,10 @@ TextureImporter:
       Btn_disabled: -865705225
       Btn_down: 1825580564
       Btn_up: 886245068
+      OptionButton_Down: -431040842
+      OptionButton_Up: -81339284
+      Xbutton_down: -585251868
+      Xbutton_up: 477415995
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
